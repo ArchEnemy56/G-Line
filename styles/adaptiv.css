@@ -1,0 +1,43 @@
+/* Responsive 404 */
+@media (max-width: 1200px) {
+    .error-404-section {
+        padding: 60px 120px;
+    }
+
+    .error-404-content {
+        gap: 60px;
+    }
+
+    .error-404-title {
+        font-size: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .error-404-section {
+        padding: 40px 20px;
+    }
+
+    .error-404-content {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .error-404-title {
+        font-size: 100px;
+    }
+
+    .error-404-subtitle {
+        font-size: var(--font-size-md);
+    }
+
+    .error-404-description {
+        font-size: var(--font-size-sm);
+        max-width: 100%;
+    }
+
+    .error-404-actions {
+        gap: 15px;
+    }
+}
