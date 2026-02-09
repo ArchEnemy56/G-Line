@@ -33,11 +33,11 @@
     }
 
     .error-404-subtitle {
-        font-size: var(--font-size-md);
+        font-size: var(--subtitle);
     }
 
     .error-404-description {
-        font-size: var(--font-size-sm);
+        font-size: var(--body-lg);
         max-width: 100%;
     }
 
