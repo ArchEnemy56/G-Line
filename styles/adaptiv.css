@@ -11,6 +11,10 @@
     .error-404-title {
         font-size: 140px;
     }
+
+    .chto-vozim__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -39,5 +43,63 @@
 
     .error-404-actions {
         gap: 15px;
+    }
+
+    .chto-vozim__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .chto-vozim__item {
+        padding: 30px 20px;
+        min-height: 220px;
+    }
+
+    .chto-vozim__icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 12px;
+    }
+
+    .chto-vozim__text {
+        font-size: 16px;
+    }
+
+    .chto-vozim__btn {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chto-vozim__grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .chto-vozim__item {
+        padding: 25px 20px;
+        min-height: 180px;
+    }
+
+    .chto-vozim__icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 10px;
+    }
+
+    .chto-vozim__text {
+        font-size: 15px;
+    }
+
+    .chto-vozim__btn {
+        font-size: 12px;
+        padding: 5px 10px;
+        gap: 6px;
+    }
+
+    .chto-vozim__btn img {
+        width: 14px;
+        height: 14px;
     }
 }

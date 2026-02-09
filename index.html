@@ -1,239 +1,223 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <title>G-Line</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@700&family=Futura:wght@700&family=Mulish:wght@400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/adaptiv.css" />
-  </head>
-  <body>
-    <main class="hero-section">
-      <nav class="site-navigation" role="navigation" aria-label="Основная навигация">
-        <div class="nav-wrapper">
-          <div class="nav-top-bar">
-            <a href="/" class="site-logo" aria-label="G-Line - Главная страница">
-              <img src="img/svg/logo-1.svg" alt="G-Line логотип" />
-            </a>
-            <div class="nav-actions-group" role="group" aria-label="Основные действия">
-              <button class="nav-action-btn" type="button" aria-label="Рассчитать стоимость груза">
-                Рассчитать стоимость груза
-              </button>
-              <button class="nav-action-btn" type="button" aria-label="Отследить груз">
-                Отследить груз
-              </button>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>G-Line</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@700&family=Futura:wght@700&family=Mulish:wght@400;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/adaptiv.css" />
+</head>
+
+<body>
+  <main class="hero-section">
+    <nav class="site-navigation" role="navigation" aria-label="Основная навигация">
+      <div class="nav-wrapper">
+        <div class="nav-top-bar">
+          <a href="/" class="site-logo" aria-label="G-Line - Главная страница">
+            <img src="img/svg/logo-1.svg" alt="G-Line логотип" />
+          </a>
+          <div class="nav-actions-group" role="group" aria-label="Основные действия">
+            <button class="nav-action-btn" type="button" aria-label="Рассчитать стоимость груза">
+              Рассчитать стоимость груза
+            </button>
+            <button class="nav-action-btn" type="button" aria-label="Отследить груз">
+              Отследить груз
+            </button>
+          </div>
+          <form class="nav-search-form" role="search" aria-label="Поиск по сайту">
+            <label for="search-input" class="visually-hidden">Поиск</label>
+            <input type="search" id="search-input" class="nav-search-input" placeholder="Поиск"
+              aria-label="Поле поиска" />
+            <button type="submit" class="nav-search-btn" aria-label="Выполнить поиск">
+              <img class="nav-search-icon" src="img/svg/search.svg" alt="" role="presentation" />
+            </button>
+          </form>
+          <div class="nav-contact-info">
+            <div class="nav-location-info">
+              <div class="nav-location-icon" aria-hidden="true">
+                <img class="nav-location-pin" src="img/svg/map-pin.svg" alt="" role="presentation" />
+              </div>
+              <div class="nav-city-selector">
+                <button type="button" class="nav-city-btn" aria-label="Выбрать город: Норильск" aria-haspopup="listbox">
+                  Норильск
+                  <img class="nav-dropdown-icon" src="img/svg/drop.svg" alt="" role="presentation" />
+                </button>
+              </div>
             </div>
-            <form class="nav-search-form" role="search" aria-label="Поиск по сайту">
-              <label for="search-input" class="visually-hidden">Поиск</label>
-              <input type="search" id="search-input" class="nav-search-input" placeholder="Поиск" aria-label="Поле поиска" />
-              <button type="submit" class="nav-search-btn" aria-label="Выполнить поиск">
-                <img class="nav-search-icon" src="img/svg/search.svg" alt="" role="presentation" />
+            <a href="tel:+73919324249" class="nav-phone-link">+7 (3919) 32-42-49</a>
+            <p class="nav-address-text">ул. Вокзальная, 35а, стр. 4</p>
+          </div>
+        </div>
+        <div class="nav-main-menu">
+          <a href="/" class="nav-menu-link" aria-current="page">
+            <span class="nav-menu-text">Главная</span>
+          </a>
+          <a href="/about" class="nav-menu-link">
+            <span class="nav-menu-text">О компании</span>
+          </a>
+          <a href="/services" class="nav-menu-link">
+            <span class="nav-menu-text">Услуги</span>
+          </a>
+          <a href="/directions" class="nav-menu-link">
+            <span class="nav-menu-text">Направления</span>
+          </a>
+          <a href="/clients" class="nav-menu-link">
+            <span class="nav-menu-text">Клиентам</span>
+          </a>
+          <a href="/contacts" class="nav-menu-link">
+            <span class="nav-menu-text">Контакты</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-container">
+      <header class="hero-header">
+        <h1 class="hero-title">Эксперты в экстремальной<br /> логистике Севера.<br />25 лет доставляем груз в
+          любой<br /> сезон</h1>
+        <p class="hero-subtitle">Авиа, море, река, зимник — 99% грузов без задержек</p>
+      </header>
+      <section class="hero-forms-section">
+        <div class="form-card">
+          <div class="form-section">
+            <h2 class="form-title">Рассчитать доставку</h2>
+            <form class="delivery-form" action="#" method="post">
+              <div class="input-group">
+                <label for="from-location" class="visually-hidden">Откуда</label>
+                <input type="text" id="from-location" name="from-location" class="form-input" placeholder="Откуда"
+                  required aria-label="Откуда" />
+              </div>
+              <div class="input-group">
+                <label for="to-location" class="visually-hidden">Куда</label>
+                <input type="text" id="to-location" name="to-location" class="form-input" placeholder="Куда" required
+                  aria-label="Куда" />
+              </div>
+              <button type="submit" class="form-button">
+                <span class="button-text">Рассчитать</span>
               </button>
             </form>
-            <div class="nav-contact-info">
-              <div class="nav-location-info">
-                <div class="nav-location-icon" aria-hidden="true">
-                  <img class="nav-location-pin" src="img/svg/map-pin.svg" alt="" role="presentation" />
-                </div>
-                <div class="nav-city-selector">
-                  <button
-                    type="button"
-                    class="nav-city-btn"
-                    aria-label="Выбрать город: Норильск"
-                    aria-haspopup="listbox">
-                    Норильск
-                    <img class="nav-dropdown-icon" src="img/svg/drop.svg" alt="" role="presentation"/>
-                  </button>
-                </div>
+          </div>
+          <div class="form-section">
+            <h2 class="form-title">Отследить груз</h2>
+            <form class="track-form" action="#" method="post">
+              <div class="input-group">
+                <label for="tracking-number" class="visually-hidden">Номер накладной</label>
+                <input type="text" id="tracking-number" name="tracking-number" class="form-input"
+                  placeholder="Номер заказа" required aria-label="Номер заказа" />
               </div>
-              <a href="tel:+73919324249" class="nav-phone-link">+7 (3919) 32-42-49</a>
-              <p class="nav-address-text">ул. Вокзальная, 35а, стр. 4</p>
-            </div>
-          </div>
-          <div class="nav-main-menu">
-            <a href="/" class="nav-menu-link" aria-current="page">
-              <span class="nav-menu-text">Главная</span>
-            </a>
-            <a href="/about" class="nav-menu-link">
-              <span class="nav-menu-text">О компании</span>
-            </a>
-            <a href="/services" class="nav-menu-link">
-              <span class="nav-menu-text">Услуги</span>
-            </a>
-            <a href="/directions" class="nav-menu-link">
-              <span class="nav-menu-text">Направления</span>
-            </a>
-            <a href="/clients" class="nav-menu-link">
-              <span class="nav-menu-text">Клиентам</span>
-            </a>
-            <a href="/contacts" class="nav-menu-link">
-              <span class="nav-menu-text">Контакты</span>
-            </a>
+              <button type="submit" class="form-button">
+                <span class="button-text">Найти</span>
+              </button>
+            </form>
           </div>
         </div>
-      </nav>
-      <div class="hero-container">
-        <header class="hero-header">
-          <h1 class="hero-title">Эксперты в экстремальной<br /> логистике Севера.<br />25 лет доставляем груз в любой<br /> сезон</h1>
-          <p class="hero-subtitle">Авиа, море, река, зимник — 99% грузов без задержек</p>
-        </header>
-        <section class="hero-forms-section">
-          <div class="form-card">
-            <div class="form-section">
-              <h2 class="form-title">Рассчитать доставку</h2>
-              <form class="delivery-form" action="#" method="post">
-                <div class="input-group">
-                  <label for="from-location" class="visually-hidden">Откуда</label>
-                  <input
-                    type="text"
-                    id="from-location"
-                    name="from-location"
-                    class="form-input"
-                    placeholder="Откуда"
-                    required
-                    aria-label="Откуда"
-                  />
-                </div>
-                <div class="input-group">
-                  <label for="to-location" class="visually-hidden">Куда</label>
-                  <input
-                    type="text"
-                    id="to-location"
-                    name="to-location"
-                    class="form-input"
-                    placeholder="Куда"
-                    required
-                    aria-label="Куда"
-                  />
-                </div>
-                <button type="submit" class="form-button">
-                  <span class="button-text">Рассчитать</span>
-                </button>
-              </form>
-            </div>
-            <div class="form-section">
-              <h2 class="form-title">Отследить груз</h2>
-              <form class="track-form" action="#" method="post">
-                <div class="input-group">
-                  <label for="tracking-number" class="visually-hidden">Номер накладной</label>
-                  <input
-                    type="text"
-                    id="tracking-number"
-                    name="tracking-number"
-                    class="form-input"
-                    placeholder="Номер заказа"
-                    required
-                    aria-label="Номер заказа"
-                  />
-                </div>
-                <button type="submit" class="form-button">
-                  <span class="button-text">Найти</span>
-                </button>
-              </form>
-            </div>
-          </div>
-        </section>
-        <div class="calculator-button">
-          <button class="calc-btn" type="button" aria-label="Открыть калькулятор">
-            <img src="img/svg/calc.svg" alt="Калькулятор" class="calc-icon"/>
-          </button>
-        </div>
+      </section>
+      <div class="calculator-button">
+        <button class="calc-btn" type="button" aria-label="Открыть калькулятор">
+          <img src="img/svg/calc.svg" alt="Калькулятор" class="calc-icon" />
+        </button>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <div class="cont-out">
-      
-      <div class="cont-in"><!--Виды перевозок-->
-        <h2 class="title__h2">Виды перевозок</h2>
-        <div class="vidy-perevozok">
-          <div class="vidy-perevozok__item vidy-perevozok__item--avia">
-            <div class="vidy-perevozok__overlay">
-              <div class="vidy-perevozok__content">
-                <h3 class="vidy-perevozok__title">Авиаперевозки</h3>
-                <p class="vidy-perevozok__description">Срочные авиаперевози грузов и отправлений в Норильск и Дудинку</p>
-                <div class="vidy-perevozok__bottom-content">
-                  <p class="vidy-perevozok__days">от 3 до 10 дней</p>
-                  <a href="#" class="vidy-perevozok__popup-btn">
-                    Подробнее
-                    <img src="img/svg/arr-bl.svg" alt="Arrow right">
-                  </a>
-                </div>
+  <div class="cont-out">
+
+    <div class="cont-in"><!--Виды перевозок-->
+      <h2 class="title__h2">Виды перевозок</h2>
+      <div class="vidy-perevozok">
+        <div class="vidy-perevozok__item vidy-perevozok__item--avia">
+          <div class="vidy-perevozok__overlay">
+            <div class="vidy-perevozok__content">
+              <h3 class="vidy-perevozok__title">Авиаперевозки</h3>
+              <p class="vidy-perevozok__description">Срочные авиаперевози грузов и отправлений в Норильск и Дудинку</p>
+              <div class="vidy-perevozok__bottom-content">
+                <p class="vidy-perevozok__days">от 3 до 10 дней</p>
+                <a href="#" class="vidy-perevozok__popup-btn">
+                  Подробнее
+                  <img src="img/svg/arr-bl.svg" alt="Arrow right">
+                </a>
               </div>
             </div>
           </div>
-          <div class="vidy-perevozok__item vidy-perevozok__item--sea">
-            <div class="vidy-perevozok__overlay">
-              <div class="vidy-perevozok__content">
-                <h3 class="vidy-perevozok__title">Море</h3>
-                <p class="vidy-perevozok__description">Контейнерные и сборные грузы - наиболее экономичный вариант для межконтинентальных партий</p>
-                <div class="vidy-perevozok__bottom-content">
-                  <p class="vidy-perevozok__days">от 3 до 10 дней</p>
-                  <a href="#" class="vidy-perevozok__popup-btn">
-                    Подробнее
-                    <img src="img/svg/arr-bl.svg" alt="Arrow right">
-                  </a>
-                </div>
+        </div>
+        <div class="vidy-perevozok__item vidy-perevozok__item--sea">
+          <div class="vidy-perevozok__overlay">
+            <div class="vidy-perevozok__content">
+              <h3 class="vidy-perevozok__title">Море</h3>
+              <p class="vidy-perevozok__description">Контейнерные и сборные грузы - наиболее экономичный вариант для
+                межконтинентальных партий</p>
+              <div class="vidy-perevozok__bottom-content">
+                <p class="vidy-perevozok__days">от 3 до 10 дней</p>
+                <a href="#" class="vidy-perevozok__popup-btn">
+                  Подробнее
+                  <img src="img/svg/arr-bl.svg" alt="Arrow right">
+                </a>
               </div>
             </div>
           </div>
-          <div class="vidy-perevozok__item vidy-perevozok__item--river">
-            <div class="vidy-perevozok__overlay">
-              <div class="vidy-perevozok__content">
-                <h3 class="vidy-perevozok__title">Река</h3>
-                <p class="vidy-perevozok__description">Контейнерные и сборные грузы - сезонная экономическая логистика по Енисею с июня по сентябрь</p>
-                <div class="vidy-perevozok__bottom-content">
-                  <p class="vidy-perevozok__days">от 3 до 10 дней</p>
-                  <a href="#" class="vidy-perevozok__popup-btn">
-                    Подробнее
-                    <img src="img/svg/arr-bl.svg" alt="Arrow right">
-                  </a>
-                </div>
+        </div>
+        <div class="vidy-perevozok__item vidy-perevozok__item--river">
+          <div class="vidy-perevozok__overlay">
+            <div class="vidy-perevozok__content">
+              <h3 class="vidy-perevozok__title">Река</h3>
+              <p class="vidy-perevozok__description">Контейнерные и сборные грузы - сезонная экономическая логистика по
+                Енисею с июня по сентябрь</p>
+              <div class="vidy-perevozok__bottom-content">
+                <p class="vidy-perevozok__days">от 3 до 10 дней</p>
+                <a href="#" class="vidy-perevozok__popup-btn">
+                  Подробнее
+                  <img src="img/svg/arr-bl.svg" alt="Arrow right">
+                </a>
               </div>
             </div>
           </div>
-          <div class="vidy-perevozok__item vidy-perevozok__item--winter">
-            <div class="vidy-perevozok__overlay">
-              <div class="vidy-perevozok__content">
-                <h3 class="vidy-perevozok__title">Зимник</h3>
-                <p class="vidy-perevozok__description">Надёжная доставка по ледовым дорогам с декабря по апрель</p>
-                <div class="vidy-perevozok__bottom-content">
-                  <p class="vidy-perevozok__days">от 3 до 10 дней</p>
-                  <a href="#" class="vidy-perevozok__popup-btn">
-                    Подробнее
-                    <img src="img/svg/arr-bl.svg" alt="Arrow right">
-                  </a>
-                </div>
+        </div>
+        <div class="vidy-perevozok__item vidy-perevozok__item--winter">
+          <div class="vidy-perevozok__overlay">
+            <div class="vidy-perevozok__content">
+              <h3 class="vidy-perevozok__title">Зимник</h3>
+              <p class="vidy-perevozok__description">Надёжная доставка по ледовым дорогам с декабря по апрель</p>
+              <div class="vidy-perevozok__bottom-content">
+                <p class="vidy-perevozok__days">от 3 до 10 дней</p>
+                <a href="#" class="vidy-perevozok__popup-btn">
+                  Подробнее
+                  <img src="img/svg/arr-bl.svg" alt="Arrow right">
+                </a>
               </div>
             </div>
           </div>
-          <div class="vidy-perevozok__item vidy-perevozok__item--auto">
-            <div class="vidy-perevozok__overlay">
-              <div class="vidy-perevozok__content">
-                <h3 class="vidy-perevozok__title">Автодоставка по Сибири</h3>
-                <p class="vidy-perevozok__description">Региональные перевозки только по Сибири наземным транспортом</p>
-                <div class="vidy-perevozok__bottom-content">
-                  <p class="vidy-perevozok__days">от 3 до 10 дней</p>
-                  <a href="#" class="vidy-perevozok__popup-btn">
-                    Подробнее
-                    <img src="img/svg/arr-bl.svg" alt="Arrow right">
-                  </a>
-                </div>
+        </div>
+        <div class="vidy-perevozok__item vidy-perevozok__item--auto">
+          <div class="vidy-perevozok__overlay">
+            <div class="vidy-perevozok__content">
+              <h3 class="vidy-perevozok__title">Автодоставка по Сибири</h3>
+              <p class="vidy-perevozok__description">Региональные перевозки только по Сибири наземным транспортом</p>
+              <div class="vidy-perevozok__bottom-content">
+                <p class="vidy-perevozok__days">от 3 до 10 дней</p>
+                <a href="#" class="vidy-perevozok__popup-btn">
+                  Подробнее
+                  <img src="img/svg/arr-bl.svg" alt="Arrow right">
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-    <section class="cont-in"><!--Наши услугик-->
+    <section class="cont-in"><!--Наши услуги-->
       <div class="nashi-uslugi__grid">
         <div class="nashi-uslugi__item">
           <div class="nashi-uslugi__overlay"></div>
           <div class="nashi-uslugi__content">
             <h3 class="nashi-uslugi__title">Наши услуги</h3>
-            <p class="nashi-uslugi__description">Полный комплекс услуг для любой задачи — от простой посылки до сложной промышленной перевозки</p>
+            <p class="nashi-uslugi__description">Полный комплекс услуг для любой задачи — от простой посылки до сложной
+              промышленной перевозки</p>
           </div>
         </div>
         <div class="nashi-uslugi__item">
@@ -323,114 +307,148 @@
       </div>
     </section>
 
-    <section class="cont-in">
+    <section class="cont-in"><!--Что мы перевозим-->
       <div class="chto-vozim__container">
-        <h2 class="title__h2">Что мы перевозвозим</h2>
-        <p class="chto-vozim__info">Мы осуществляем перевозки любых грузов от документов и личных вещей, до продуктов питания и промышленного оборудования</p>
+        <h2 class="title__h2">Что мы перевозим</h2>
+        <p class="chto-vozim__info">Мы осуществляем перевозки любых грузов от документов и личных вещей, до продуктов
+          питания и промышленного оборудования</p>
         <div class="chto-vozim__grid">
           <div class="chto-vozim__item">
             <img src="img/svg/docs.svg" alt="documents icon" class="chto-vozim__icon" />
             <p class="chto-vozim__text">Документы и посылки</p>
+            <a href="#" class="chto-vozim__btn">
+              Подробнее
+              <img src="img/svg/arr-bl.svg" alt="Arrow right">
+            </a>
           </div>
           <div class="chto-vozim__item">
             <img src="img/svg/veschi.svg" alt="book icon" class="chto-vozim__icon" />
             <p class="chto-vozim__text">Личные вещи и переезды</p>
+            <a href="#" class="chto-vozim__btn">
+              Подробнее
+              <img src="img/svg/arr-bl.svg" alt="Arrow right">
+            </a>
           </div>
           <div class="chto-vozim__item">
             <img src="img/svg/car.svg" alt="car icon" class="chto-vozim__icon" />
             <p class="chto-vozim__text">Автомобили</p>
+            <a href="#" class="chto-vozim__btn">
+              Подробнее
+              <img src="img/svg/arr-bl.svg" alt="Arrow right">
+            </a>
           </div>
           <div class="chto-vozim__item">
             <img src="img/svg/spec-car.svg" alt="oversized cargo icon" class="chto-vozim__icon" />
             <p class="chto-vozim__text">Спецтехника и крупногабарит</p>
+            <a href="#" class="chto-vozim__btn">
+              Подробнее
+              <img src="img/svg/arr-bl.svg" alt="Arrow right">
+            </a>
           </div>
           <div class="chto-vozim__item">
             <img src="img/svg/danger.svg" alt="danger" class="chto-vozim__icon" />
             <p class="chto-vozim__text">Опасные грузы</p>
+            <a href="#" class="chto-vozim__btn">
+              Подробнее
+              <img src="img/svg/arr-bl.svg" alt="Arrow right">
+            </a>
           </div>
           <div class="chto-vozim__item">
             <img src="img/svg/food.svg" alt="food Icon" class="chto-vozim__icon" />
             <p class="chto-vozim__text">Продукты питания</p>
+            <a href="#" class="chto-vozim__btn">
+              Подробнее
+              <img src="img/svg/arr-bl.svg" alt="Arrow right">
+            </a>
           </div>
           <div class="chto-vozim__item">
             <img src="img/svg/medic.svg" alt="medicine icon" class="chto-vozim__icon" />
             <p class="chto-vozim__text">Медикаменты</p>
+            <a href="#" class="chto-vozim__btn">
+              Подробнее
+              <img src="img/svg/arr-bl.svg" alt="Arrow right">
+            </a>
           </div>
           <div class="chto-vozim__item">
             <img src="img/svg/refredgirator.svg" alt="temperature cargo icon" class="chto-vozim__icon" />
             <p class="chto-vozim__text">Грузы с температурным режимом</p>
+            <a href="#" class="chto-vozim__btn">
+              Подробнее
+              <img src="img/svg/arr-bl.svg" alt="Arrow right">
+            </a>
           </div>
         </div>
       </div>
     </section>
-    
-    </div>
 
-    <footer>
-      <div class="footer__container">
-        <div class="footer__column-1">
-          <img src="img/svg/Logo-footer.svg" alt="G-Line Logo" class="footer__logo" />
-          <ul class="footer__nav-list">
-            <li><a href="#" class="footer__nav-link">Главная</a></li>
-            <li><a href="#" class="footer__nav-link">О компании</a></li>
-            <li><a href="#" class="footer__nav-link">Направления</a></li>
-          </ul>
-        </div>
-        <div class="footer__column-2">
-          <h3 class="footer__title">Услуги</h3>
-          <h4 class="footer__subtitle">Виды перевозок</h4>
-          <ul class="footer__nav-list">
-            <li><a href="#" class="footer__nav-link">Авиаперевозки</a></li>
-            <li><a href="#" class="footer__nav-link">Море</a></li>
-            <li><a href="#" class="footer__nav-link">Река</a></li>
-            <li><a href="#" class="footer__nav-link">Зимник</a></li>
-            <li><a href="#" class="footer__nav-link">Автодоставка по Сибири</a></li>
-          </ul>
-          <h4 class="footer__subtitle">Услуги</h4>
-          <ul class="footer__nav-list">
-            <li><a href="#" class="footer__nav-link">Экспедирование груза</a></li>
-            <li><a href="#" class="footer__nav-link">Доставка от двери до двери</a></li>
-            <li><a href="#" class="footer__nav-link">Погрузо-разгрузочные работы</a></li>
-            <li><a href="#" class="footer__nav-link">Упаковка груза (жесткая и мягкая)</a></li>
-            <li><a href="#" class="footer__nav-link">Страхование груза</a></li>
-            <li><a href="#" class="footer__nav-link">Перевозка опасных грузов</a></li>
-            <li><a href="#" class="footer__nav-link">Перевозка грузов с температурным режимом</a></li>
-          </ul>
-        </div>
-        <div class="footer__column-3">
-          <h3 class="footer__title">Клиентам</h3>
-          <ul class="footer__nav-list">
-            <li><a href="#" class="footer__nav-link">Блог (статьи)</a></li>
-            <li><a href="#" class="footer__nav-link">Правила перевозок</a></li>
-            <li><a href="#" class="footer__nav-link">Документы</a></li>
-            <li><a href="#" class="footer__nav-link">Новости логистики</a></li>
-          </ul>
-          <h3 class="footer__title">Контакты</h3>
-          <p class="footer__contact-city">Норильск</p>
-          <p class="footer__contact-info">(3919) 32-42-49</p>
-          <p class="footer__contact-info">ул. Вокзальная, 35а, стр. 4</p>
+  </div>
 
-          <p class="footer__contact-city">Красноярск</p>
-          <p class="footer__contact-info">+7(391) 203-04-65</p>
-          <p class="footer__contact-info">ул. Северное шоссе, 35и</p>
+  <footer>
+    <div class="footer__container">
+      <div class="footer__column-1">
+        <img src="img/svg/Logo-footer.svg" alt="G-Line Logo" class="footer__logo" />
+        <ul class="footer__nav-list">
+          <li><a href="#" class="footer__nav-link">Главная</a></li>
+          <li><a href="#" class="footer__nav-link">О компании</a></li>
+          <li><a href="#" class="footer__nav-link">Направления</a></li>
+        </ul>
+      </div>
+      <div class="footer__column-2">
+        <h3 class="footer__title">Услуги</h3>
+        <h4 class="footer__subtitle">Виды перевозок</h4>
+        <ul class="footer__nav-list">
+          <li><a href="#" class="footer__nav-link">Авиаперевозки</a></li>
+          <li><a href="#" class="footer__nav-link">Море</a></li>
+          <li><a href="#" class="footer__nav-link">Река</a></li>
+          <li><a href="#" class="footer__nav-link">Зимник</a></li>
+          <li><a href="#" class="footer__nav-link">Автодоставка по Сибири</a></li>
+        </ul>
+        <h4 class="footer__subtitle">Услуги</h4>
+        <ul class="footer__nav-list">
+          <li><a href="#" class="footer__nav-link">Экспедирование груза</a></li>
+          <li><a href="#" class="footer__nav-link">Доставка от двери до двери</a></li>
+          <li><a href="#" class="footer__nav-link">Погрузо-разгрузочные работы</a></li>
+          <li><a href="#" class="footer__nav-link">Упаковка груза (жесткая и мягкая)</a></li>
+          <li><a href="#" class="footer__nav-link">Страхование груза</a></li>
+          <li><a href="#" class="footer__nav-link">Перевозка опасных грузов</a></li>
+          <li><a href="#" class="footer__nav-link">Перевозка грузов с температурным режимом</a></li>
+        </ul>
+      </div>
+      <div class="footer__column-3">
+        <h3 class="footer__title">Клиентам</h3>
+        <ul class="footer__nav-list">
+          <li><a href="#" class="footer__nav-link">Блог (статьи)</a></li>
+          <li><a href="#" class="footer__nav-link">Правила перевозок</a></li>
+          <li><a href="#" class="footer__nav-link">Документы</a></li>
+          <li><a href="#" class="footer__nav-link">Новости логистики</a></li>
+        </ul>
+        <h3 class="footer__title">Контакты</h3>
+        <p class="footer__contact-city">Норильск</p>
+        <p class="footer__contact-info">(3919) 32-42-49</p>
+        <p class="footer__contact-info">ул. Вокзальная, 35а, стр. 4</p>
 
-          <p class="footer__contact-city">Новосибирск</p>
-          <p class="footer__contact-info">+7(383) 363-22-06</p>
-          <p class="footer__contact-info">ул. Сухарная, 25</p>
-          <div class="footer__social">
-            <a href="#" class="footer__social-link">
-              <img src="img/max.png" alt="Max" class="footer__social-icon" />
-            </a>
-            <a href="#" class="footer__social-link">
-              <img src="img/tg.png" alt="Telegram" class="footer__social-icon" />
-            </a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p class="footer-bottom__text">© GreenLine 2025</p>
+        <p class="footer__contact-city">Красноярск</p>
+        <p class="footer__contact-info">+7(391) 203-04-65</p>
+        <p class="footer__contact-info">ул. Северное шоссе, 35и</p>
+
+        <p class="footer__contact-city">Новосибирск</p>
+        <p class="footer__contact-info">+7(383) 363-22-06</p>
+        <p class="footer__contact-info">ул. Сухарная, 25</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">
+            <img src="img/max.png" alt="Max" class="footer__social-icon" />
+          </a>
+          <a href="#" class="footer__social-link">
+            <img src="img/tg.png" alt="Telegram" class="footer__social-icon" />
+          </a>
         </div>
       </div>
-    </footer>
+      <div class="footer-bottom">
+        <p class="footer-bottom__text">© GreenLine 2025</p>
+      </div>
+    </div>
+  </footer>
 
-  </body>
+</body>
+
 </html>
