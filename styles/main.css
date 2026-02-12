@@ -1709,7 +1709,7 @@ margin: 0 ;
 }
 
 .footer__social-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.2);
 }
 
 .footer__social-icon {
@@ -1829,3 +1829,57 @@ font-size: var(--body);
   line-height: var(--lh-normal);
   max-width: 319px;
 }
+
+/* География */
+.geo {
+  margin: 80px 0;
+}
+
+.geo__map {
+  background-image: url('../img/map1.webp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 910px;
+}
+
+/* Интересное*/
+.interesting {
+  margin: 80px 0;
+}
+
+.interesting .title__h2 {
+  font-size: 28px;
+}
+
+.interesting__text {
+  font-family: var(--primary);
+  font-size: var(--body);
+  line-height: var(--lh-normal);
+  margin: 20px 0 40px 0;
+}
+
+.interesting__info {
+  margin-top: 40px;
+  border-left: 2px solid var(--green);
+  padding-left: 20px;
+}
+
+.interesting__info .title__h2 {
+  color: var(--green);
+  font-weight: var(--w-bold);
+}
+
+.interesting__case-item {
+  margin-bottom: 24px;
+  font-family: var(--primary);
+  font-size: var(--subtitle);
+  line-height: var(--lh-normal);
+}
+
+.interesting__case-title {
+  color: var(--green);
+  font-weight: 600;
+  margin-right: 8px;
+  font-size: var(--subtitle);
+}
+
