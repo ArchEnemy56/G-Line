@@ -103,3 +103,112 @@
         height: 14px;
     }
 }
+
+/* Reviews Slider Responsive */
+@media (max-width: 1024px) {
+  .review-card {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .review-card {
+    flex: 0 0 calc(80% - 12px);
+  }
+  
+  .reviews-slider {
+    margin-top: 24px;
+    padding: 0 12px;
+  }
+  
+  .reviews-nav {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-card {
+    flex: 0 0 calc(90% - 12px);
+    padding: 20px;
+  }
+  
+  .review-header {
+    margin-bottom: 12px;
+  }
+  
+  .review-avatar {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .review-name {
+    font-size: 14px;
+  }
+  
+  .review-text {
+    font-size: 13px;
+  }
+  
+  .reviews-nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .reviews-nav-btn img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Etapy Section Responsive */
+@media (max-width: 768px) {
+  .etapy {
+    padding: 0 20px;
+  }
+
+  .etapy__container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .etapy__left {
+    max-width: 100%;
+  }
+
+  .etapy__center {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .etapy__line {
+    display: none;
+  }
+
+  .etapy__steps {
+    gap: 40px;
+  }
+
+  .etapy__left .etapy__step::after,
+  .etapy__center .etapy__step::after {
+    display: none;
+  }
+
+  .etapy__right {
+    max-width: 100%;
+    min-height: 420px;
+  }
+
+  .faq__title {
+    font-size: 14px;
+  }
+
+  .faq__text {
+    font-size: 13px;
+  }
+
+  .faq__img {
+    width: 40px;
+    height: 40px;
+  }
+}
