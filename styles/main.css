@@ -54,7 +54,7 @@
   --body-lg: 20px;
   --subtitle: 24px;
   --title: 36px;
-  --hero: 64px;
+  --h1-title: 64px;
 
   /* Font Weights */
   --w-light: 300;
@@ -623,9 +623,11 @@ a {
   height: 44px;
 }
 
-/* hero-section */
 
-.hero-section {
+
+/* header-section */
+
+.header {
   display: flex;
   flex-direction: column;
   min-height: 1080px;
@@ -637,7 +639,18 @@ a {
   background-position: center center;
 }
 
-.hero-container {
+.header.o-kompanii {
+  background: url('../img/o-kompanii.webp');
+  background-size: cover;
+  background-position: center center;
+}
+
+.header.o-kompanii .header-title {
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.header-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -648,7 +661,7 @@ a {
   padding: 0 320px;
 }
 
-.hero-header {
+.header-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -656,16 +669,16 @@ a {
   width: 100%;
 }
 
-.hero-title {
+.header-title {
   color: var(--white);
   font-family: var(--secondary);
-  font-size: var(--hero);
+  font-size: var(--h1-title);
   line-height: var(--lh-normal);
   margin: 0;
   letter-spacing: 5px;
 }
 
-.hero-subtitle {
+.header-subtitle {
   color: var(--white);
   font-family: var(--primary);
   font-weight: var(--w-medium);
@@ -714,7 +727,7 @@ a {
   z-index: 1000;
 }
 
-.hero-section .site-navigation {
+.header .site-navigation {
   padding: 0px 320px;
 }
 
@@ -1035,7 +1048,7 @@ a {
   line-height: var(--lh-normal);
 }
 
-.hero-forms-section {
+.header-forms-section {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -1973,7 +1986,7 @@ a {
   position: relative;
 }
 
-.etapy__left .etapy__cta::after {
+.etapy__left .etapy__steps .etapy__cta::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1982,6 +1995,18 @@ a {
   border-radius: 50%;
   background-color: var(--accent-green, var(--green));
   left: calc(100% + var(--etapy-col-gap) + (var(--etapy-line-w) / 2));
+  transform: translate(-50%, -50%);
+}
+
+.etapy__center .etapy__steps .etapy__cta::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-green, var(--green));
+  left: calc(-1 * (var(--etapy-col-gap) + (var(--etapy-line-w) / 2)));
   transform: translate(-50%, -50%);
 }
 
