@@ -428,11 +428,6 @@ a {
   padding: 0 20px;
 }
 
-.useful_articles .title__h2 {
-  font-size: 32px;
-  color: var(--black);
-}
-
 .articles__container {
   display: flex;
   gap: 20px;
@@ -470,15 +465,11 @@ a {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-.article__info {
-  margin-bottom: 12px;
-}
-
 .article__image {
   width: 100%;
-  height: 160px;
+  height: 210px;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 20px;
   margin-bottom: 12px;
 }
 
@@ -518,8 +509,8 @@ a {
 .article__title {
   font-family: var(--primary);
   font-weight: var(--w-semibold);
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: var(--body-lg);
+  line-height: var(--lh-normal);
   color: var(--black);
   margin: 0 0 12px 0;
 }
@@ -527,8 +518,8 @@ a {
 .article__text {
   font-family: var(--primary);
   font-weight: var(--w-normal);
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: var(--body);
+  line-height: var(--lh-normal);
   color: var(--op-black);
   margin: 0;
   overflow: hidden;
