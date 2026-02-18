@@ -53,6 +53,7 @@
   --body: 17px;
   --body-lg: 20px;
   --subtitle: 24px;
+  --mid-title: 28px;
   --title: 36px;
   --h1-title: 64px;
 
@@ -762,6 +763,19 @@ a {
   flex: 0 0 auto;
 }
 
+.nav-main-menu .nav-menu-link {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-main-menu .nav-menu-link:hover {
+  color: var(--green);
+}
+
+.nav-main-menu .nav-menu-link[aria-current="page"] {
+  color: var(--green);
+}
 
 .site-logo {
   position: relative;
@@ -1514,7 +1528,7 @@ a {
 .nashi-uslugi__title {
   color: var(--white);
   font-family: var(--primary);
-  font-size: 28px;
+  font-size: var(--mid-title);
   line-height: var(--lh-normal);
   margin: 15px 0 65px 0;
   position: relative;
@@ -1576,6 +1590,40 @@ a {
   padding: 40px 0;
 }
 
+/* Modified grid layout for o-kompanii page */
+.vidy-perevozok--modified {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.vidy-perevozok--modified .vidy-perevozok__item--avia {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+.vidy-perevozok--modified .vidy-perevozok__item--sea {
+  grid-column: 4 / span 3;
+  grid-row: 1;
+}
+
+.vidy-perevozok--modified .vidy-perevozok__item--river {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.vidy-perevozok--modified .vidy-perevozok__item--winter {
+  grid-column: 3 / span 2;
+  grid-row: 2;
+}
+
+.vidy-perevozok--modified .vidy-perevozok__item--auto {
+  grid-column: 5 / span 2;
+  grid-row: 2;
+}
+
 .vidy-perevozok__item {
   background-position: center;
   background-size: cover;
@@ -1597,7 +1645,7 @@ a {
   left: 0;
   right: 0;
   background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.5));
-  padding: 10px 40px;
+  padding: 20px;
   z-index: 2;
   transform: translateY(calc(100% - 120px));
   transition: transform 0.4s ease;
@@ -1610,6 +1658,35 @@ a {
   transform: translateY(0);
   height: 100%;
   border-radius: 20px;
+}
+
+.vidy-perevozok__item:hover .vidy-perevozok__title,
+.vidy-perevozok__item:active .vidy-perevozok__title {
+  transform: translateY(100px);
+}
+
+.vidy-perevozok__item:hover .vidy-perevozok__description,
+.vidy-perevozok__item:active .vidy-perevozok__description {
+  transform: translateY(100px);
+}
+
+/* Special hover effect for bottom row items only */
+.vidy-perevozok--modified .vidy-perevozok__item--river:hover .vidy-perevozok__title,
+.vidy-perevozok--modified .vidy-perevozok__item--river:active .vidy-perevozok__title,
+.vidy-perevozok--modified .vidy-perevozok__item--winter:hover .vidy-perevozok__title,
+.vidy-perevozok--modified .vidy-perevozok__item--winter:active .vidy-perevozok__title,
+.vidy-perevozok--modified .vidy-perevozok__item--auto:hover .vidy-perevozok__title,
+.vidy-perevozok--modified .vidy-perevozok__item--auto:active .vidy-perevozok__title {
+  transform: translateY(80px);
+}
+
+.vidy-perevozok--modified .vidy-perevozok__item--river:hover .vidy-perevozok__description,
+.vidy-perevozok--modified .vidy-perevozok__item--river:active .vidy-perevozok__description,
+.vidy-perevozok--modified .vidy-perevozok__item--winter:hover .vidy-perevozok__description,
+.vidy-perevozok--modified .vidy-perevozok__item--winter:active .vidy-perevozok__description,
+.vidy-perevozok--modified .vidy-perevozok__item--auto:hover .vidy-perevozok__description,
+.vidy-perevozok--modified .vidy-perevozok__item--auto:active .vidy-perevozok__description {
+  transform: translateY(70px);
 }
 
 /* Content wrapper for better control */
@@ -1626,7 +1703,7 @@ a {
 .vidy-perevozok__bottom-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin-top: auto;
   width: 100%;
 }
@@ -1695,12 +1772,13 @@ a {
 
 .vidy-perevozok__title {
   color: var(--white);
-  font-family: var(--secondary);
+  font-family: var(--primary);
   font-weight: var(--w-bold);
-  font-size: var(--title);
-  margin: 0 0 15px 0;
+  font-size: var(--mid-title);
+  margin: 0 0 18px 0;
   position: relative;
   z-index: 2;
+  transition: transform 0.4s ease;
 }
 
 .vidy-perevozok__description {
@@ -1712,6 +1790,7 @@ a {
   margin: 0 0 32px 0;
   position: relative;
   z-index: 2;
+  transition: transform 0.4s ease;
 }
 
 .vidy-perevozok__days {
@@ -1719,7 +1798,7 @@ a {
   font-family: var(--secondary);
   font-weight: var(--w-bold);
   font-size: var(--body-lg);
-  margin: 0 0 20px 0;
+  margin: 0;
   position: relative;
   z-index: 2;
 }
@@ -2250,7 +2329,7 @@ font-size: var(--body);
 .why_me__feature-title {
   font-family: var(--primary);
   font-weight: var(--w-bold);
-  font-size: 28px;
+  font-size: var(--mid-title);
   color: var(--white);
   margin: 0 0 20px 0;
   line-height: var(--lh-normal);
@@ -2285,7 +2364,7 @@ font-size: var(--body);
 }
 
 .interesting .title__h2 {
-  font-size: 28px;
+  font-size: var(--mid-title);
 }
 
 .interesting__text {
@@ -2712,4 +2791,81 @@ overflow: hidden;
 
 .news-slider-btn:disabled:hover img {
   filter: brightness(0) invert(0.5);
+}
+
+/* Кто мы*/
+
+.kto-my__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.kto__img {
+  background-image: url('../img/kto.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 10%;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 345px;
+  width: 100%;
+}
+
+.green__text {
+  color: var(--green);
+  font-family: var(--primary);
+  font-weight: var(--w-bold);
+  font-size: var(--body-lg);
+  line-height: var(--lh-normal);
+}
+
+.kto__text p {
+  font-family: var(--primary);
+  font-size: var(--body);
+  line-height: var(--lh-normal);
+  margin: 0;
+  width: 100%;
+  max-width: 505px;
+}
+
+/* Кейсы */
+.keisy {
+  margin: 80px 0;
+}
+
+.keisy .title__h2 {
+  font-size: var(--mid-title);
+}
+
+.keisy__text {
+  font-family: var(--primary);
+  font-size: var(--body);
+  line-height: var(--lh-normal);
+  margin: 20px 0 40px 0;
+}
+
+.keisy__info {
+  margin-top: 40px;
+  border-left: 2px solid var(--green);
+  padding-left: 20px;
+}
+
+.keisy__info .title__h2 {
+  color: var(--green);
+  font-weight: var(--w-bold);
+}
+
+.keisy__case-item {
+  margin-bottom: 24px;
+  font-family: var(--primary);
+  font-size: var(--subtitle);
+  line-height: var(--lh-normal);
+  width: 100%;
+  max-width: 1230px;
+}
+
+.keisy__case-item .green__text {
+  font-size: var(--subtitle);
 }
