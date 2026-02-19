@@ -1,0 +1,13 @@
+<svg viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.000000" height="24.000000" fill="none" clip-path="url(#clipPath_0)" customFrame="url(#clipPath_0)">
+	<defs>
+		<linearGradient id="paint_linear_1" x1="1.92307806" x2="25.2779732" y1="14.8076048" y2="18.8919353" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(154,193,117)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(42,98,43)" offset="1" stop-opacity="1" />
+		</linearGradient>
+		<clipPath id="clipPath_0">
+			<rect width="25.000000" height="24.000000" x="0.000000" y="0.000000" rx="12.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+	</defs>
+	<rect id="lucide" width="25.000000" height="24.000000" x="0.000000" y="0.000000" rx="12.000000" fill="url(#paint_linear_1)" />
+	<path id="Vector" d="M21 6L9.3125 18L4 12.5455" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.000000" />
+</svg>
