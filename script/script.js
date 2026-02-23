@@ -1,4 +1,7 @@
-// Reviews Slider Functionality
+// =============================================================================
+// REVIEWS SLIDER FUNCTIONALITY
+// =============================================================================
+
 class ReviewsSlider {
   constructor() {
     this.container = document.querySelector('.reviews__container');
@@ -25,25 +28,20 @@ class ReviewsSlider {
   }
   
   init() {
-    // Button navigation
     this.prevBtn.addEventListener('click', () => this.slidePrev());
     this.nextBtn.addEventListener('click', () => this.slideNext());
     
-    // Touch/drag navigation
     this.container.addEventListener('mousedown', (e) => this.startDrag(e));
     this.container.addEventListener('mousemove', (e) => this.drag(e));
     this.container.addEventListener('mouseup', () => this.endDrag());
     this.container.addEventListener('mouseleave', () => this.endDrag());
     
-    // Touch events for mobile
     this.container.addEventListener('touchstart', (e) => this.startTouch(e), { passive: true });
     this.container.addEventListener('touchmove', (e) => this.moveTouch(e), { passive: true });
     this.container.addEventListener('touchend', () => this.endTouch());
     
-    // Scroll event for snap behavior
     this.container.addEventListener('scroll', () => this.updateButtonStates());
     
-    // Window resize
     window.addEventListener('resize', () => this.handleResize());
     
     this.updateButtonStates();
@@ -65,7 +63,7 @@ class ReviewsSlider {
   
   scrollToCard() {
     const cardWidth = this.cards[0].offsetWidth;
-    const gap = 20; // gap between cards
+    const gap = 20;
     const scrollPosition = this.currentIndex * (cardWidth + gap);
     
     this.container.scrollTo({
@@ -133,7 +131,10 @@ class ReviewsSlider {
   }
 }
 
-// FAQ Accordion Functionality
+// =============================================================================
+// FAQ ACCORDION FUNCTIONALITY
+// =============================================================================
+
 class FAQAccordion {
   constructor() {
     this.headers = document.querySelectorAll('.faq__accordion-header');
@@ -148,27 +149,51 @@ class FAQAccordion {
     this.headers.forEach((header, index) => {
       header.addEventListener('click', () => this.toggleItem(index));
     });
+    
+    // Добавляем обработчик клика на контейнеры иконок для сворачивания
+    this.iconContainers = document.querySelectorAll('.faq__accordion-icon');
+    this.iconContainers.forEach((iconContainer, index) => {
+      iconContainer.addEventListener('click', (e) => {
+        e.stopPropagation(); // Предотвращаем всплытие события на header
+        const item = this.items[index];
+        const isActive = item.classList.contains('active');
+        
+        // Если элемент активен, закрываем его
+        if (isActive) {
+          item.classList.remove('active');
+        } else {
+          // Если не активен, закрываем все остальные и открываем этот
+          this.items.forEach((item, itemIndex) => {
+            if (itemIndex !== index) {
+              item.classList.remove('active');
+            }
+          });
+          item.classList.add('active');
+        }
+      });
+    });
   }
   
   toggleItem(index) {
     const item = this.items[index];
     const isActive = item.classList.contains('active');
     
-    // Close all items except the clicked one
     this.items.forEach((item, itemIndex) => {
       if (itemIndex !== index) {
         item.classList.remove('active');
       }
     });
     
-    // Open clicked item if it wasn't active
     if (!isActive) {
       item.classList.add('active');
     }
   }
 }
 
-// News Slider Functionality
+// =============================================================================
+// NEWS SLIDER FUNCTIONALITY
+// =============================================================================
+
 class NewsSlider {
   constructor() {
     this.container = document.querySelector('.news-slider-container');
@@ -214,7 +239,10 @@ class NewsSlider {
   }
 }
 
-// Articles Slider Functionality
+// =============================================================================
+// ARTICLES SLIDER FUNCTIONALITY
+// =============================================================================
+
 class ArticlesSlider {
   constructor() {
     this.container = document.querySelector('.articles__container');
@@ -241,25 +269,20 @@ class ArticlesSlider {
   }
   
   init() {
-    // Button navigation
     this.prevBtn.addEventListener('click', () => this.slidePrev());
     this.nextBtn.addEventListener('click', () => this.slideNext());
     
-    // Touch/drag navigation
     this.container.addEventListener('mousedown', (e) => this.startDrag(e));
     this.container.addEventListener('mousemove', (e) => this.drag(e));
     this.container.addEventListener('mouseup', () => this.endDrag());
     this.container.addEventListener('mouseleave', () => this.endDrag());
     
-    // Touch events for mobile
     this.container.addEventListener('touchstart', (e) => this.startTouch(e), { passive: true });
     this.container.addEventListener('touchmove', (e) => this.moveTouch(e), { passive: true });
     this.container.addEventListener('touchend', () => this.endTouch());
     
-    // Scroll event for snap behavior
     this.container.addEventListener('scroll', () => this.updateButtonStates());
     
-    // Window resize
     window.addEventListener('resize', () => this.handleResize());
     
     this.updateButtonStates();
@@ -281,7 +304,7 @@ class ArticlesSlider {
   
   scrollToCard() {
     const cardWidth = this.cards[0].offsetWidth;
-    const gap = 20; // gap between cards
+    const gap = 20;
     const scrollPosition = this.currentIndex * (cardWidth + gap);
     
     this.container.scrollTo({
@@ -349,10 +372,42 @@ class ArticlesSlider {
   }
 }
 
-// Initialize all components
+// =============================================================================
+// GRID INTERACTIVITY FUNCTIONALITY
+// =============================================================================
+
+class GridInteractivity {
+  constructor() {
+    this.gridItems = document.querySelectorAll('.left__grid-item');
+    
+    if (!this.gridItems.length) return;
+    
+    this.init();
+  }
+  
+  init() {
+    this.gridItems.forEach(item => {
+      item.addEventListener('click', () => this.toggleActiveItem(item));
+    });
+  }
+  
+  toggleActiveItem(clickedItem) {
+    this.gridItems.forEach(item => {
+      item.classList.remove('left__grid-item--active');
+    });
+    
+    clickedItem.classList.add('left__grid-item--active');
+  }
+}
+
+// =============================================================================
+// INITIALIZATION
+// =============================================================================
+
 document.addEventListener('DOMContentLoaded', () => {
   new ReviewsSlider();
   new ArticlesSlider();
   new FAQAccordion();
   new NewsSlider();
+  new GridInteractivity();
 });

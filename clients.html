@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Клиентам - G-Line</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@700&family=Futura:wght@700&family=Mulish:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/adaptiv.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="site-navigation" role="navigation" aria-label="Основная навигация">
+            <div class="nav-wrapper">
+                <div class="nav-top-bar">
+                    <a href="/" class="site-logo" aria-label="G-Line - Главная страница">
+                        <img src="img/svg/logo-1.svg" alt="G-Line логотип" />
+                    </a>
+                    <div class="nav-actions-group" role="group" aria-label="Основные действия">
+                        <button class="nav-action-btn" type="button" aria-label="Рассчитать стоимость груза">
+                            Рассчитать стоимость груза
+                        </button>
+                        <button class="nav-action-btn" type="button" aria-label="Отследить груз">
+                            Отследить груз
+                        </button>
+                    </div>
+                    <form class="nav-search-form" role="search" aria-label="Поиск по сайту">
+                        <label for="search-input" class="visually-hidden">Поиск</label>
+                        <input type="search" id="search-input" class="nav-search-input" placeholder="Поиск"
+                            aria-label="Поле поиска" />
+                        <button type="submit" class="nav-search-btn" aria-label="Выполнить поиск">
+                            <img class="nav-search-icon" src="img/svg/search.svg" alt="" role="presentation" />
+                        </button>
+                    </form>
+                    <div class="nav-contact-info">
+                        <div class="nav-location-info">
+                            <div class="nav-location-icon" aria-hidden="true">
+                                <img class="nav-location-pin" src="img/svg/map-pin.svg" alt="" role="presentation" />
+                            </div>
+                            <div class="nav-city-selector">
+                                <button type="button" class="nav-city-btn" aria-label="Выбрать город: Норильск"
+                                    aria-haspopup="listbox">
+                                    Норильск
+                                    <img class="nav-dropdown-icon" src="img/svg/drop.svg" alt="" role="presentation" />
+                                </button>
+                            </div>
+                        </div>
+                        <a href="tel:+73919324249" class="nav-phone-link">+7 (3919) 32-42-49</a>
+                        <p class="nav-address-text">ул. Вокзальная, 35а, стр. 4</p>
+                    </div>
+                </div>
+                <main class="nav-main-menu">
+                    <a href="/" class="nav-menu-link">
+                        <span class="nav-menu-text">Главная</span>
+                    </a>
+                    <a href="o-kompanii.html" class="nav-menu-link">
+                        <span class="nav-menu-text">О компании</span>
+                    </a>
+                    <a href="uslugi.html" class="nav-menu-link">
+                        <span class="nav-menu-text">Услуги</span>
+                    </a>
+                    <a href="napravleniya.html" class="nav-menu-link">
+                        <span class="nav-menu-text">Направления</span>
+                    </a>
+                    <a href="clients.html" class="nav-menu-link" aria-current="page">
+                        <span class="nav-menu-text">Клиентам</span>
+                    </a>
+                    <a href="contacts.html" class="nav-menu-link">
+                        <span class="nav-menu-text">Контакты</span>
+                    </a>
+                </main>
+            </div>
+        </nav>
+        <div class="header-container">
+            <div class="header-info">
+                <h1 class="header-title">Эксперты в экстремальной<br /> логистике Севера.<br />25 лет доставляем груз в
+                    любой<br /> сезон</h1>
+                <p class="header-subtitle">Авиа, море, река, зимник — 99% грузов без задержек</p>
+            </div>
+            <section class="header-forms-section">
+                <div class="form-card">
+                    <div class="form-section">
+                        <h2 class="form-title">Рассчитать доставку</h2>
+                        <form class="delivery-form" action="#" method="post">
+                            <div class="input-group">
+                                <label for="from-location" class="visually-hidden">Откуда</label>
+                                <input type="text" id="from-location" name="from-location" class="form-input"
+                                    placeholder="Откуда" required aria-label="Откуда" />
+                            </div>
+                            <div class="input-group">
+                                <label for="to-location" class="visually-hidden">Куда</label>
+                                <input type="text" id="to-location" name="to-location" class="form-input"
+                                    placeholder="Куда" required aria-label="Куда" />
+                            </div>
+                            <button type="submit" class="form-button">
+                                <span class="button-text">Рассчитать</span>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="form-section">
+                        <h2 class="form-title">Отследить груз</h2>
+                        <form class="track-form" action="#" method="post">
+                            <div class="input-group">
+                                <label for="tracking-number" class="visually-hidden">Номер накладной</label>
+                                <input type="text" id="tracking-number" name="tracking-number" class="form-input"
+                                    placeholder="Номер заказа" required aria-label="Номер заказа" />
+                            </div>
+                            <button type="submit" class="form-button">
+                                <span class="button-text">Найти</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <div class="calculator-button">
+                <button class="calc-btn" type="button" aria-label="Открыть калькулятор">
+                    <img src="img/svg/calc.svg" alt="Калькулятор" class="calc-icon" />
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="cont-out">
+        <div class="cont-in">
+            <h2 class="title__h2">Информация для клиентов</h2>
+            <p>Страница для клиентов находится в разработке</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__column-1">
+                <img src="img/svg/Logo-footer.svg" alt="G-Line Logo" class="footer__logo" />
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Главная</a></li>
+                    <li><a href="#" class="footer__nav-link">О компании</a></li>
+                    <li><a href="#" class="footer__nav-link">Направления</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-2">
+                <h3 class="footer__title">Услуги</h3>
+                <h4 class="footer__subtitle">Виды перевозок</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Авиаперевозки</a></li>
+                    <li><a href="#" class="footer__nav-link">Море</a></li>
+                    <li><a href="#" class="footer__nav-link">Река</a></li>
+                    <li><a href="#" class="footer__nav-link">Зимник</a></li>
+                    <li><a href="#" class="footer__nav-link">Автодоставка по Сибири</a></li>
+                </ul>
+                <h4 class="footer__subtitle">Услуги</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Экспедирование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Доставка от двери до двери</a></li>
+                    <li><a href="#" class="footer__nav-link">Погрузо-разгрузочные работы</a></li>
+                    <li><a href="#" class="footer__nav-link">Упаковка груза (жесткая и мягкая)</a></li>
+                    <li><a href="#" class="footer__nav-link">Страхование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка опасных грузов</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка грузов с температурным режимом</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-3">
+                <h3 class="footer__title">Клиентам</h3>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Блог (статьи)</a></li>
+                    <li><a href="#" class="footer__nav-link">Правила перевозок</a></li>
+                    <li><a href="#" class="footer__nav-link">Документы</a></li>
+                    <li><a href="#" class="footer__nav-link">Новости логистики</a></li>
+                </ul>
+                <h3 class="footer__title">Контакты</h3>
+                <p class="footer__contact-city">Норильск</p>
+                <p class="footer__contact-info">(3919) 32-42-49</p>
+                <p class="footer__contact-info">ул. Вокзальная, 35а, стр. 4</p>
+
+                <p class="footer__contact-city">Красноярск</p>
+                <p class="footer__contact-info">+7(391) 203-04-65</p>
+                <p class="footer__contact-info">ул. Северное шоссе, 35и</p>
+
+                <p class="footer__contact-city">Новосибирск</p>
+                <p class="footer__contact-info">+7(383) 363-22-06</p>
+                <p class="footer__contact-info">ул. Сухарная, 25</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/max.png" alt="Max" class="footer__social-icon" />
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/tg.png" alt="Telegram" class="footer__social-icon" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__text"> GreenLine 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>

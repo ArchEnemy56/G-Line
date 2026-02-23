@@ -33,7 +33,6 @@
   font-style: normal;
 }
 
-
 :root {
   /* Colors */
   --black: rgba(27, 29, 31, 1);
@@ -1810,7 +1809,7 @@ a {
 /*Что мы перевозим*/
 .chto-vozim__container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 0 80px 0;
 }
 
 .chto-vozim__grid {
@@ -2404,6 +2403,12 @@ font-size: var(--body);
 }
 
 /* FAQ */
+
+.faq__items--grid {
+    display: grid !important;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
 
 .faq__block {
   display: flex;
@@ -3171,7 +3176,7 @@ margin-bottom: 100px;
   font-size: var(--mid-title);
   line-height: var(--lh-normal);
   color: var(--black);
-  margin: 40px 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 .btn--logist {
@@ -3208,4 +3213,114 @@ margin-bottom: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Left Grid Styles */
+.left__grid {
+  display: grid;
+  grid-template-rows: column;
+  gap: 20px;
+}
+
+.left__grid-item {
+  border: 1px solid var(--green);
+  border-radius: 20px;
+  padding: 20px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.left__grid-item p {
+  color: var(--black);
+  font-family: var(--primary);
+  font-size: var(--body-lg);
+  font-weight: var(--w-bold);
+  margin: 0;
+  transition: color 0.3s ease;
+  text-align: start;
+}
+
+.left__grid-item--active {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+.left__grid-item--active p {
+  color: var(--white);
+}
+
+/* finansy */
+
+.finansy {
+  margin: 80px 0;
+}
+
+.finansy__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.finansy__top,
+.finansy__bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+.finansy__bottom-right {
+  border: 1px solid var(--green);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.finansy__top-left,
+.finansy__top-right,
+.finansy__bottom-left,
+.finansy__bottom-right {
+  display: flex;
+  gap: 20px;
+}
+.finansy__bottom-right {
+  flex-direction: column;
+}
+
+.finansy__text {
+  margin: 0;
+  }
+
+.finansy__title {
+  font-family: var(--primary);
+  font-weight: var(--w-bold);
+  font-size: var(--body);
+  line-height: var(--lh-normal);
+  color: var(--black);
+  margin: 0;
+}
+
+.finansy__bottom-left img {
+  width: 50px;
+  height: 60px;
+}
+
+.finansy__list {
+  margin: 0;
+  padding-inline-start: 30px;
+}
+
+.finansy__list li {
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body);
+  line-height: var(--lh-normal);
+  color: var(--black);
+}
+
+.finansy__bottom-left-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
