@@ -401,6 +401,107 @@ class GridInteractivity {
 }
 
 // =============================================================================
+// DOCS GRID INTERACTIVITY FUNCTIONALITY
+// =============================================================================
+
+class DocsGridInteractivity {
+  constructor() {
+    this.docsItems = document.querySelectorAll('.docs__left-item');
+    
+    if (!this.docsItems.length) return;
+    
+    this.init();
+  }
+  
+  init() {
+    this.docsItems.forEach(item => {
+      item.addEventListener('click', () => this.toggleActiveItem(item));
+    });
+  }
+  
+  toggleActiveItem(clickedItem) {
+    this.docsItems.forEach(item => {
+      item.classList.remove('docs__left-item--active');
+    });
+    
+    clickedItem.classList.add('docs__left-item--active');
+  }
+}
+
+class DocsAccordion {
+  constructor() {
+    this.accordionItems = document.querySelectorAll('.docs__accordion-item');
+    this.downloadBtns = document.querySelectorAll('.docs__download-btn');
+    
+    if (!this.accordionItems.length) return;
+    
+    this.init();
+  }
+  
+  init() {
+    // Accordion functionality
+    this.accordionItems.forEach(item => {
+      const header = item.querySelector('.docs__accordion-header');
+      if (header) {
+        header.addEventListener('click', () => this.toggleAccordion(item));
+      }
+    });
+    
+    // Download functionality
+    this.downloadBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent accordion toggle when clicking download
+        this.downloadDocument(btn);
+      });
+    });
+  }
+  
+  toggleAccordion(item) {
+    const isActive = item.classList.contains('active');
+    
+    // Close all items
+    this.accordionItems.forEach(accordionItem => {
+      accordionItem.classList.remove('active');
+    });
+    
+    // Open clicked item if it wasn't active
+    if (!isActive) {
+      item.classList.add('active');
+    }
+  }
+  
+  downloadDocument(btn) {
+    // Get document title from the accordion
+    const accordionItem = btn.closest('.docs__accordion-item');
+    const title = accordionItem.querySelector('.docs__accordion-title').textContent;
+    
+    // For now, create a placeholder download
+    // Later you can replace this with actual file paths
+    const fileName = title.toLowerCase().replace(/\s+/g, '_') + '.pdf';
+    
+    // Create a temporary download link
+    const link = document.createElement('a');
+    link.href = '#'; // Placeholder - replace with actual file path
+    link.download = fileName;
+    link.style.display = 'none';
+    
+    // For demo purposes, just log the download action
+    console.log(`Downloading: ${fileName}`);
+    
+    // When you have actual files, uncomment this:
+    // document.body.appendChild(link);
+    // link.click();
+    // document.body.removeChild(link);
+    
+    // Visual feedback
+    btn.style.transform = 'scale(0.9)';
+    setTimeout(() => {
+      btn.style.transform = 'scale(1)';
+    }, 200);
+  }
+}
+
+// =============================================================================
 // INITIALIZATION
 // =============================================================================
 
@@ -410,4 +511,6 @@ document.addEventListener('DOMContentLoaded', () => {
   new FAQAccordion();
   new NewsSlider();
   new GridInteractivity();
+  new DocsGridInteractivity();
+  new DocsAccordion();
 });
