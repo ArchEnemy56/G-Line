@@ -4,7 +4,7 @@
 
 class ReviewsSlider {
   constructor() {
-    this.container = document.querySelector('.reviews__container');
+    this.container = document.querySelector('.reviews .slider-container');
     this.prevBtn = document.querySelector('.reviews__prev');
     this.nextBtn = document.querySelector('.reviews__next');
     this.cards = document.querySelectorAll('.reviews__slide');
@@ -245,7 +245,7 @@ class NewsSlider {
 
 class ArticlesSlider {
   constructor() {
-    this.container = document.querySelector('.articles__container');
+    this.container = document.querySelector('.useful_articles .slider-container');
     this.prevBtn = document.querySelector('.articles__prev');
     this.nextBtn = document.querySelector('.articles__next');
     this.cards = document.querySelectorAll('.articles__slide');
