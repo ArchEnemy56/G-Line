@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>G-Line</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@700&family=Futura:wght@700&family=Mulish:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/adaptiv.css" />
+</head>
+
+<body>
+    <header class="header white__header">
+        <nav class="site-navigation" role="navigation" aria-label="Основная навигация">
+            <div class="nav-wrapper">
+                <div class="nav-top-bar">
+                    <a href="/" class="site-logo" aria-label="G-Line - Главная страница">
+                        <img src="img/svg/logo-1.svg" alt="G-Line логотип" />
+                    </a>
+                    <div class="nav-actions-group" role="group" aria-label="Основные действия">
+                        <button class="nav-action-btn" type="button" aria-label="Рассчитать стоимость груза">
+                            Рассчитать стоимость груза
+                        </button>
+                        <button class="nav-action-btn" type="button" aria-label="Отследить груз">
+                            Отследить груз
+                        </button>
+                    </div>
+                    <form class="gray__search-form" role="search" aria-label="Поиск по сайту">
+                        <label for="search-input" class="visually-hidden">Поиск</label>
+                        <input type="search" id="search-input" class="nav-search-input" placeholder=""
+                            aria-label="Поле поиска" />
+                        <button type="submit" class="nav-search-btn" aria-label="Выполнить поиск">
+                            <img class="nav-search-icon" src="img/svg/search.svg" alt="" role="presentation" />
+                        </button>
+                    </form>
+                    <div class="nav-contact-info">
+                        <div class="nav-location-info">
+                            <div class="nav-location-icon" aria-hidden="true">
+                                <img class="nav-location-pin " src="img/icon-location.png" alt="" role="presentation" />
+                            </div>
+                            <div class="nav-city-selector">
+                                <button type="button" class="nav-city-btn black__text" aria-label="Выбрать город: Норильск"
+                                    aria-haspopup="listbox">
+                                    Норильск
+                                    <img class="nav-dropdown-icon" src="img/svg/drop-bl.svg" alt="" role="presentation" />
+                                </button>
+                            </div>
+                        </div>
+                        <a href="tel:+73919324249" class="nav-phone-link black__text">+7 (3919) 32-42-49</a>
+                        <p class="nav-address-text black__text">ул. Вокзальная, 35а, стр. 4</p>
+                    </div>
+                </div>
+                <main class="nav-main-menu">
+                    <a href="/" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Главная</span>
+                    </a>
+                    <a href="o-kompanii.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">О компании</span>
+                    </a>
+                    <a href="uslugi.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Услуги</span>
+                    </a>
+                    <a href="directions.html" class="nav-menu-link" aria-current="page">
+                        <span class="nav-menu-text nav-menu-text--black">Направления</span>
+                    </a>
+                    <a href="clients.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Клиентам</span>
+                    </a>
+                    <a href="contacts.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Контакты</span>
+                    </a>
+                </main>
+            </div>
+        </nav>
+        <div class="header-container">
+            <div class="header-info">
+                <h1 class="header-title black__text">Стоимость грузоперевозок — тарифы на основные направления</h1>
+                <div class="header-directions">
+                    <p class="header-subtitle black__text">Доставка из Норильска — в любой город России и СНГ</p>
+                    <p class="header-subtitle black__text">Доставка в Норильск — из Новосибирска и Красноярска</p>
+                    <p class="header-subtitle black__text">Автоперевозки по Сибири</p>
+                </div>
+                <p class="green__line-text" style="max-width: 1232px;">Тарифы на перевозку грузов регулярно обновляются, поэтому представленная в данном разделе информация является актуальной. Для того, чтобы уточнить стоимость перевозки груза для направления, не указанного в тарифах или для негабаритных грузов, необходимо обратиться в соответствующий филиал компании.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="cont-in">
+
+        <div class="novosib"></div>
+        <div class="directions_grid">
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/fly.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Новосибирск → Норильск</div>
+                    <p class="black__text">Авиадоставка</p>
+                </div>
+                </div>
+            </div>
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/fly-2.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Новосибирск → Норильск</div>
+                    <p class="black__text">Авиаперевозка производственных грузов</p>
+                </div>
+                </div>
+            </div>
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/icon_more.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Новосибирск → Норильск</div>
+                    <p class="black__text">Морская навигация не социальных грузов</p>
+                </div>
+                </div>
+            </div>
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/icon_more-2.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Новосибирск → Норильск</div>
+                    <p class="black__text">Морская навигация социальных грузов</p>
+                </div>
+                </div>
+            </div>
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/icon_more-3.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Новосибирск → Норильск</div>
+                    <p class="black__text">Речная навигация</p>
+                </div>
+                </div>
+            </div>
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/icon_cont.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Новосибирск → Норильск</div>
+                    <p class="black__text">Контейнерные перевозки авто</p>
+                </div>
+                </div>
+            </div>
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/builder.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Экспедирование по Новосибирску</div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="krasnoyarsk"></div>
+        <div class="directions_grid">
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/fly.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Новосибирск → Норильск</div>
+                    <p class="black__text">Авиадоставка</p>
+                </div>
+                </div>
+            </div>
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/fly-2.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Новосибирск → Норильск</div>
+                    <p class="black__text">Авиаперевозка производственных грузов</p>
+                </div>
+                </div>
+            </div>
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/icon_more.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Новосибирск → Норильск</div>
+                    <p class="black__text">Морская навигация не социальных грузов</p>
+                </div>
+                </div>
+            </div>
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/icon_more-2.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Новосибирск → Норильск</div>
+                    <p class="black__text">Морская навигация социальных грузов</p>
+                </div>
+                </div>
+            </div>
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/icon-river.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Новосибирск → Норильск</div>
+                    <p class="black__text">Речная навигация - цельные</p>
+                </div>
+                </div>
+            </div>
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/icon_more-3.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Новосибирск → Норильск</div>
+                    <p class="black__text">Речная навигация - сборные</p>
+                </div>
+                </div>
+            </div>
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/icon_cont.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Новосибирск → Норильск</div>
+                    <p class="black__text">Контейнерные перевозки авто</p>
+                </div>
+                </div>
+            </div>
+            <div class="directions_grid-item">
+                <div class="directions_grid-cont">
+                <img src="../img/svg/builder.svg" alt="">
+                <div class="directions_grid-info">
+                    <div class="directions_grid-title">Экспедирование по Новосибирску</div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__column-1">
+                <img src="img/svg/Logo-footer.svg" alt="G-Line Logo" class="footer__logo" />
+                <ul class="footer__nav-list">
+                    <li><a href="/" class="footer__nav-link" aria-current="page">Главная</a></li>
+                    <li><a href="o-kompanii.html" class="footer__nav-link">О компании</a></li>
+                    <li><a href="directions.html" class="footer__nav-link">Направления</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-2">
+                <h3 class="footer__title">Услуги</h3>
+                <h4 class="footer__subtitle">Виды перевозок</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Авиаперевозки</a></li>
+                    <li><a href="#" class="footer__nav-link">Море</a></li>
+                    <li><a href="#" class="footer__nav-link">Река</a></li>
+                    <li><a href="#" class="footer__nav-link">Зимник</a></li>
+                    <li><a href="#" class="footer__nav-link">Автодоставка по Сибири</a></li>
+                </ul>
+                <h4 class="footer__subtitle">Услуги</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Экспедирование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Доставка от двери до двери</a></li>
+                    <li><a href="#" class="footer__nav-link">Погрузо-разгрузочные работы</a></li>
+                    <li><a href="#" class="footer__nav-link">Упаковка груза (жесткая и мягкая)</a></li>
+                    <li><a href="#" class="footer__nav-link">Страхование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка опасных грузов</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка грузов с температурным режимом</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-3">
+                <h3 class="footer__title">Клиентам</h3>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Блог (статьи)</a></li>
+                    <li><a href="#" class="footer__nav-link">Правила перевозок</a></li>
+                    <li><a href="#" class="footer__nav-link">Документы</a></li>
+                    <li><a href="#" class="footer__nav-link">Новости логистики</a></li>
+                </ul>
+                <h3 class="footer__title">Контакты</h3>
+                <p class="footer__contact-city">Норильск</p>
+                <p class="footer__contact-info">(3919) 32-42-49</p>
+                <p class="footer__contact-info">ул. Вокзальная, 35а, стр. 4</p>
+
+                <p class="footer__contact-city">Красноярск</p>
+                <p class="footer__contact-info">+7(391) 203-04-65</p>
+                <p class="footer__contact-info">ул. Северное шоссе, 35и</p>
+
+                <p class="footer__contact-city">Новосибирск</p>
+                <p class="footer__contact-info">+7(383) 363-22-06</p>
+                <p class="footer__contact-info">ул. Сухарная, 25</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/max.png" alt="Max" class="footer__social-icon" />
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/tg.png" alt="Telegram" class="footer__social-icon" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__text"> GreenLine 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
