@@ -4242,13 +4242,16 @@ gap: 20px;
   margin-bottom: 100px;
 }
 
-.novosib {
-  background-image: url('../img/svg/novosib.svg');
+.goroda {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 117px;
+}
+
+.novosib {
+  background-image: url('../img/svg/novosib.svg');
 }
 
 .directions_grid {
@@ -4293,9 +4296,28 @@ gap: 20px;
 
 .krasnoyarsk {
   background-image: url('../img/svg/krasnoyarsk.svg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 117px;
+}
+
+.norilsk {
+  background-image: url('../img/svg/norilsk.svg');
+}
+
+.sibir {
+  background-image: url('../img/svg/sibir.svg');
+  margin-top: 80px;
+}
+
+.norilsk_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: -35px;
+  margin-bottom: 20px;
+}
+
+h3.green__line-text {
+  font-family: var(--primary);
+  font-size: var(--mid-title);
+  font-weight: var(--w-bold);
+  line-height: var(--lh-normal);
 }
