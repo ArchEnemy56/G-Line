@@ -667,8 +667,6 @@ a {
   height: 44px;
 }
 
-
-
 /* header-section */
 
 .header {
@@ -2231,10 +2229,6 @@ padding-left: 80px;
 
 .footer__column-3 .footer__nav-list {
 margin-bottom: 40px;
-}
-
-.footer__column-3 .footer__contact-info {
-margin: 0 ;
 }
 
 .footer__logo {

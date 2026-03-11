@@ -245,7 +245,7 @@ class NewsSlider {
 
 class ArticlesSlider {
   constructor() {
-    this.container = document.querySelector('.useful_articles .slider-container');
+    this.container = document.querySelector('.polezno .slider-container');
     this.prevBtn = document.querySelector('.articles__prev');
     this.nextBtn = document.querySelector('.articles__next');
     this.cards = document.querySelectorAll('.articles__slide');
@@ -502,6 +502,112 @@ class DocsAccordion {
 }
 
 // =============================================================================
+// NAVIGATION ACTIVE STATE FUNCTIONALITY
+// =============================================================================
+
+class NavigationActiveState {
+  constructor() {
+    // WordPress wp_nav_menu generates different structure, try multiple selectors
+    this.menuLinks = document.querySelectorAll('.nav-menu-link, .menu-item a, .nav-main-menu a, .nav-main-menu .menu-item a');
+    
+    console.log('Found menu links:', this.menuLinks.length);
+    console.log('Menu links:', this.menuLinks);
+    
+    if (!this.menuLinks.length) return;
+    
+    this.init();
+  }
+  
+  init() {
+    console.log('NavigationActiveState init() called');
+    this.setActivePage();
+  }
+  
+  setActivePage() {
+    const currentPath = window.location.pathname;
+    const currentHash = window.location.hash;
+    
+    // Debug logging
+    console.log('Current path:', currentPath);
+    console.log('Current hash:', currentHash);
+    
+    // Remove existing aria-current attributes
+    this.menuLinks.forEach(link => {
+      link.removeAttribute('aria-current');
+    });
+    
+    // Find and set active link based on current URL
+    this.menuLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      console.log('Checking href:', href);
+      
+      // Handle different URL patterns
+      if (this.isCurrentPage(href, currentPath, currentHash)) {
+        link.setAttribute('aria-current', 'page');
+        console.log('Set aria-current for:', href);
+      }
+    });
+  }
+  
+  isCurrentPage(href, currentPath, currentHash) {
+    // Extract only the path from currentPath if it's a full URL
+    let pathOnly = currentPath;
+    try {
+      const url = new URL(currentPath);
+      pathOnly = url.pathname;
+    } catch (e) {
+      // currentPath is likely already a path, not a full URL
+    }
+
+    // Extract only the path from href if it's a full URL
+    let hrefOnly = href;
+    try {
+      const hrefUrl = new URL(href);
+      hrefOnly = hrefUrl.pathname;
+    } catch (e) {
+      // href is likely already a path, not a full URL
+    }
+
+    console.log('Checking:', hrefOnly, 'vs', pathOnly);
+    
+    // Home page - ONLY match if it's exactly the home page
+    if ((hrefOnly === '/' || hrefOnly === '/index.html' || hrefOnly === './') && 
+        (pathOnly === '/' || pathOnly === '/index.html' || pathOnly === '/')) {
+      console.log('Home page match');
+      return true;
+    }
+    
+    // Other pages - check if href matches current path
+    if (hrefOnly && hrefOnly !== '/') {
+      // Remove leading slash and .html for comparison
+      const cleanHref = hrefOnly.replace(/^\//, '').replace('.html', '');
+      const cleanPath = pathOnly.replace(/^\//, '').replace('.html', '');
+      
+      console.log('Comparing:', cleanHref, 'vs', cleanPath);
+      
+      // Handle WordPress pretty URLs and .html extensions
+      if (cleanPath === cleanHref || 
+          cleanPath.startsWith(cleanHref + '/') || 
+          pathOnly.includes(hrefOnly)) {
+        console.log('Page match:', hrefOnly);
+        return true;
+      }
+      
+      // Additional WordPress-specific checks
+      // Check if path ends with page name (WordPress permalinks)
+      if (pathOnly.endsWith('/' + cleanHref) || 
+          pathOnly === '/' + cleanHref ||
+          pathOnly.includes('/' + cleanHref + '/')) {
+        console.log('WordPress permalink match:', hrefOnly);
+        return true;
+      }
+    }
+    
+    return false;
+  }
+}
+
+// =============================================================================
 // INITIALIZATION
 // =============================================================================
 
@@ -513,4 +619,5 @@ document.addEventListener('DOMContentLoaded', () => {
   new GridInteractivity();
   new DocsGridInteractivity();
   new DocsAccordion();
+  new NavigationActiveState();
 });
