@@ -799,12 +799,11 @@ a {
 .nav-main-menu {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   padding: 20px 0px;
   position: relative;
   align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
+  gap: 60px;
+  justify-content: center;
 }
 
 .nav-main-menu .nav-menu-link {
@@ -3145,7 +3144,7 @@ overflow: hidden;
   background-color: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  padding: 30px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4314,4 +4313,89 @@ h3.green__line-text {
   font-size: var(--mid-title);
   font-weight: var(--w-bold);
   line-height: var(--lh-normal);
+}
+
+/* new page more */
+.more__head {
+  background-image: url('../img/more-head.webp');
+}
+
+.more-subtitle {
+  font-family: var(--primary);
+  font-size: var(--font-32);
+  font-weight: var(--w-normal);
+  line-height: var(--lh-normal);
+}
+
+.vygoda__morem {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.vygoda__morem p{
+  margin: 0;
+}
+
+.vygoda__morem .green__line-text {
+  max-width: 1225px;
+}
+
+.vygoda__morem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.morem-grid-item {
+  display: flex;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.morem-grid-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.morem-grid-text p,
+.morem-grid-text h3 {
+  margin: 0;
+}
+
+.morem-grid-text h3 {
+  font-family: var(--primary);
+  font-size: var(--mid-title);
+  font-weight: var(--w-bold);
+  line-height: var(--lh-normal);
+}
+
+.morem-grid-text p {
+  font-family: var(--primary);
+  font-size: var(--body);
+  font-weight: var(--w-normal);
+  line-height: var(--lh-normal);
+  max-width: 487px;
+}
+
+.ready__right-more {
+  background-image: url('../img/more__gruz.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 560px;
+  border-radius: 20px;
+}
+
+.ready__left_info ul {
+  max-width: 475px;
+}
+
+.rli__more-text {
+  font-size: var(--body) !important;
 }
