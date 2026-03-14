@@ -68,7 +68,7 @@
 
   /* Line Heights */
   --lh-tight: 1;
-  --lh-normal: 1.2;
+  --w-normal: 1.2;
   --lh-relaxed: 1.4;
   --tr: 0.3s;
 }
@@ -97,6 +97,14 @@ a {
   font-size: var(--title);
   line-height: var(--lh-normal);
   margin: 0;
+}
+
+.title__h3 {
+  font-family: var(--primary);
+  font-weight: var(--w-bold);
+  font-size: var(--mid-title);
+  margin: 0;
+  line-height: var(--lh-normal);
 }
 
 .nav-menu-text--black {
@@ -1421,7 +1429,7 @@ a {
 /* First row: 2 items - first spans 2 columns, second spans 1 column */
 .nashi-uslugi__grid .nashi-uslugi__item:nth-child(1) {
   grid-column: 1 / span 2;
-  background-image: url('../img/Frame-16.webp');
+  background-image: url('../img/frame-16.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -4345,6 +4353,7 @@ h3.green__line-text {
 .vygoda__morem-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .morem-grid-item {
@@ -4398,4 +4407,83 @@ h3.green__line-text {
 
 .rli__more-text {
   font-size: var(--body) !important;
+}
+
+.sroki,
+.sroki__info,
+.sroki__info-block {
+  display: flex;
+  flex-direction: column;
+}
+.sroki {
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.sroki__info {
+  gap: 20px;
+}
+
+.sroki__info-block {
+  gap: 10px;
+  max-width: 1235px;
+}
+
+.sroki__info-block p {
+  font-family: var(--primary);
+  font-size: var(--subtitle);
+  font-weight: var(--w-normal);
+  line-height: var(--w-normal);
+  margin: 0;
+}
+
+.morem-grid-icon img {
+  width: 87px;
+}
+
+.vozim__morem {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.chto__vhodit {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.chto__vhodit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.chto__vhodit-blok {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.chto__vhodit-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chto__vhodit-text {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.chto__vhodit-text .black__text {
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  line-height: var(--w-normal);
+  font-size: var(--subtitle);
 }
