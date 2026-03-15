@@ -4487,3 +4487,203 @@ h3.green__line-text {
   line-height: var(--w-normal);
   font-size: var(--subtitle);
 }
+
+/* new page contacts */
+
+.filial {
+  font-family: var(--secondary);
+  font-size: var(--h1-title);
+  font-weight: var(--w-bold);
+  line-height: var(--w-normal);
+  margin-bottom: 100px;
+}
+
+/* Навигационное меню филиалов */
+.filial__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.filial__nav-buttons {
+  display: flex;
+  background-color: var(--green);
+  border-radius: 50px;
+  padding: 8px;
+  gap: 8px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.filial__nav-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 32px;
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body-lg);
+  color: var(--white);
+  cursor: pointer;
+  transition: var(--tr);
+  white-space: nowrap;
+}
+
+.filial__nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: var(--tr);
+}
+
+.filial__nav-btn.active {
+  background-color: var(--white);
+  color: var(--green);
+  transition: var(--tr);
+}
+
+.filial__nav-btn:focus {
+  outline: 2px solid var(--accent-green);
+  outline-offset: 2px;
+}
+
+/* Контентная часть филиалов */
+.filial__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.filial__info-block {
+  display: none;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.filial__info-block.active {
+  display: flex;
+}
+
+/* Два блока для Норильска в горизонтальном положении */
+.filial__info-block.active[id^="norilsk"] {
+  display: flex;
+}
+
+.filial__info-block.active[id="norilsk"] ~ .filial__info-block.active[id="norilsk-2"] {
+  display: flex;
+  margin-top: 0;
+}
+
+.filial__info-container {
+  flex: 1;
+  max-width: 350px;
+}
+
+.filial__info-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.filial__info-group:last-child {
+  margin-bottom: 0;
+}
+
+.filial__info-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filial__info-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.filial__info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.filial__info-title {
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body-lg);
+  color: var(--black);
+  line-height: var(--w-normal);
+  margin: 0;
+}
+
+.filial__address {
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body);
+  color: var(--black);
+  margin: 0;
+  line-height: var(--w-normal);
+}
+
+.filial__contact {
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body);
+  color: var(--black);
+  text-decoration: none;
+  transition: var(--tr);
+}
+
+.filial__contact:hover {
+  color: var(--hover-green);
+  text-decoration: underline;
+  transition: var(--tr);
+}
+
+.filial__schedule {
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body);
+  color: var(--black);
+  margin: 0;
+  line-height: var(--lh-relaxed);
+}
+
+/* Карта */
+.filial__map {
+  flex: 1;
+  min-height: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.filial__map iframe {
+  width: 100%;
+  height: 320px;
+  border: none;
+  border-radius: 20px;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8f5e8;
+  border: 2px dashed var(--green);
+  border-radius: 20px;
+}
+
+.map-placeholder p {
+  font-family: var(--primary);
+  font-weight: var(--w-medium);
+  font-size: var(--subtitle);
+  color: var(--green);
+  margin: 0;
+}

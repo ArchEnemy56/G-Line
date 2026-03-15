@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header white__header">
         <nav class="site-navigation" role="navigation" aria-label="Основная навигация">
             <div class="nav-wrapper">
                 <div class="nav-top-bar">
@@ -30,7 +30,7 @@
                             Отследить груз
                         </button>
                     </div>
-                    <form class="nav-search-form" role="search" aria-label="Поиск по сайту">
+                    <form class="gray__search-form" role="search" aria-label="Поиск по сайту">
                         <label for="search-input" class="visually-hidden">Поиск</label>
                         <input type="search" id="search-input" class="nav-search-input" placeholder=""
                             aria-label="Поле поиска" />
@@ -41,97 +41,352 @@
                     <div class="nav-contact-info">
                         <div class="nav-location-info">
                             <div class="nav-location-icon" aria-hidden="true">
-                                <img class="nav-location-pin" src="img/svg/map-pin.svg" alt="" role="presentation" />
+                                <img class="nav-location-pin " src="img/icon-location.png" alt="" role="presentation" />
                             </div>
                             <div class="nav-city-selector">
-                                <button type="button" class="nav-city-btn" aria-label="Выбрать город: Норильск"
+                                <button type="button" class="nav-city-btn black__text" aria-label="Выбрать город: Норильск"
                                     aria-haspopup="listbox">
                                     Норильск
-                                    <img class="nav-dropdown-icon" src="img/svg/drop.svg" alt="" role="presentation" />
+                                    <img class="nav-dropdown-icon" src="img/svg/drop-bl.svg" alt="" role="presentation" />
                                 </button>
                             </div>
                         </div>
-                        <a href="tel:+73919324249" class="nav-phone-link">+7 (3919) 32-42-49</a>
-                        <p class="nav-address-text">ул. Вокзальная, 35а, стр. 4</p>
+                        <a href="tel:+73919324249" class="nav-phone-link black__text">+7 (3919) 32-42-49</a>
+                        <p class="nav-address-text black__text">ул. Вокзальная, 35а, стр. 4</p>
                     </div>
                 </div>
                 <main class="nav-main-menu">
                     <a href="/" class="nav-menu-link">
-                        <span class="nav-menu-text">Главная</span>
+                        <span class="nav-menu-text nav-menu-text--black">Главная</span>
                     </a>
                     <a href="o-kompanii.html" class="nav-menu-link">
-                        <span class="nav-menu-text">О компании</span>
+                        <span class="nav-menu-text nav-menu-text--black">О компании</span>
                     </a>
                     <a href="uslugi.html" class="nav-menu-link">
-                        <span class="nav-menu-text">Услуги</span>
+                        <span class="nav-menu-text nav-menu-text--black">Услуги</span>
                     </a>
-                    <a href="directions.html" class="nav-menu-link">
-                        <span class="nav-menu-text">Направления</span>
+                    <a href="directions.html" class="nav-menu-link" aria-current="page">
+                        <span class="nav-menu-text nav-menu-text--black">Направления</span>
                     </a>
                     <a href="clients.html" class="nav-menu-link">
-                        <span class="nav-menu-text">Клиентам</span>
+                        <span class="nav-menu-text nav-menu-text--black">Клиентам</span>
                     </a>
-                    <a href="contacts.html" class="nav-menu-link" aria-current="page">
-                        <span class="nav-menu-text">Контакты</span>
+                    <a href="contacts.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Контакты</span>
                     </a>
                 </main>
             </div>
         </nav>
-        <div class="header-container">
-            <div class="header-info">
-                <h1 class="header-title">Эксперты в экстремальной<br /> логистике Севера.<br />25 лет доставляем груз в
-                    любой<br /> сезон</h1>
-                <p class="header-subtitle">Авиа, море, река, зимник — 99% грузов без задержек</p>
-            </div>
-            <section class="header-forms-section">
-                <div class="form-card">
-                    <div class="form-section">
-                        <h2 class="form-title">Рассчитать доставку</h2>
-                        <form class="delivery-form" action="#" method="post">
-                            <div class="input-group">
-                                <label for="from-location" class="visually-hidden">Откуда</label>
-                                <input type="text" id="from-location" name="from-location" class="form-input"
-                                    placeholder="Откуда" required aria-label="Откуда" />
-                            </div>
-                            <div class="input-group">
-                                <label for="to-location" class="visually-hidden">Куда</label>
-                                <input type="text" id="to-location" name="to-location" class="form-input"
-                                    placeholder="Куда" required aria-label="Куда" />
-                            </div>
-                            <button type="submit" class="form-button">
-                                <span class="button-text">Рассчитать</span>
-                            </button>
-                        </form>
-                    </div>
-                    <div class="form-section">
-                        <h2 class="form-title">Отследить груз</h2>
-                        <form class="track-form" action="#" method="post">
-                            <div class="input-group">
-                                <label for="tracking-number" class="visually-hidden">Номер накладной</label>
-                                <input type="text" id="tracking-number" name="tracking-number" class="form-input"
-                                    placeholder="Номер заказа" required aria-label="Номер заказа" />
-                            </div>
-                            <button type="submit" class="form-button">
-                                <span class="button-text">Найти</span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="calculator-button">
-            <button class="calc-btn" type="button" aria-label="Открыть калькулятор">
-                <img src="img/svg/calc.svg" alt="Калькулятор" class="calc-icon" />
-            </button>
-        </div>
     </header>
 
-    <div class="cont-out">
         <div class="cont-in">
-            <h2 class="title__h2">Наши контакты</h2>
-            <p>Страница контактов находится в разработке</p>
+
+            <h1 class="filial">Филиалы компании Greenline</h1>
+
+            <main class="filial__nav">
+                <div class="filial__nav-buttons">
+                    <button class="filial__nav-btn active" data-city="norilsk">Норильск</button>
+                    <button class="filial__nav-btn" data-city="novosibirsk">Новосибирск</button>
+                    <button class="filial__nav-btn" data-city="krasnoyarsk">Красноярск</button>
+                    <button class="filial__nav-btn" data-city="kemerovo">Кемерово</button>
+                    <button class="filial__nav-btn" data-city="barnaul">Барнаул</button>
+                </div>
+
+                <div class="filial__content">
+                    <!-- Блок для Норильска -->
+                    <div class="filial__info-block active" id="norilsk">
+                        <div class="filial__info-container">
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/map-pin-green.svg" alt="Офис">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Офис/Склад:</p>
+                                    <p class="filial__address">ул. Вокзальная, 35а, стр. 4</p>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/phone-icon.svg" alt="Телефон">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Телефон:</p>
+                                    <a href="tel:+73919324249" class="filial__contact">+7 (3919) 33-80-55</a>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/email-icon.svg" alt="Почта">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Почта:</p>
+                                    <a href="mailto:info@g-line.ru" class="filial__contact">sibaeroline@mail.ru</a>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/clock-icon.svg" alt="Режим работы">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Режим работы:</p>
+                                    <p class="filial__schedule">ПН-ПТ с 10:00 до 17:00 (без обеда)<br>СБ с 11:00 до 14:00 (без обеда)<br>ВС - выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filial__map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=88.098112%2C69.363379&pt=88.098112%2C69.363379,pm2rdl&z=16" width="100%" height="320" allowfullscreen="true"></iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- Второй блок для Норильска -->
+                    <div class="filial__info-block active" id="norilsk-2">
+                        <div class="filial__info-container">
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/map-pin-green.svg" alt="Офис">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Офис/Склад:</p>
+                                    <p class="filial__address"> ул. Красноярская, 4 «ТД Меридиан»</p>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/phone-icon.svg" alt="Телефон">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Телефон:</p>
+                                    <a href="tel:+73919456789" class="filial__contact">+7 (3919) 32-42-49</a>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/email-icon.svg" alt="Почта">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Почта:</p>
+                                    <a href="mailto:talnah@g-line.ru" class="filial__contact">talnah@g-line.ru</a>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/clock-icon.svg" alt="Режим работы">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Режим работы:</p>
+                                    <p class="filial__schedule">ПН-ПТ с 12:00 до 19:00 (без обеда)<br>СБ с 11:00 до 14:00 (без обеда)<br>ВС - выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filial__map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=88.171693%2C69.356502&pt=88.171693%2C69.356502,pm2rdl&z=16" width="100%" height="320" frameborder="1" allowfullscreen="true"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Блок для Новосибирска -->
+                    <div class="filial__info-block" id="novosibirsk">
+                        <div class="filial__info-container">
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/map-pin-green.svg" alt="Офис">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Офис/Склад:</p>
+                                    <p class="filial__address">ул. Сухарная, 25</p>
+                                </div>
+                            </div>
+                            
+                                                        
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/phone-icon.svg" alt="Телефон">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Телефон:</p>
+                                    <a href="tel:+73833632206" class="filial__contact">+7 (383) 363-22-06</a>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/email-icon.svg" alt="Почта">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Почта:</p>
+                                    <a href="mailto:novosibirsk@g-line.ru" class="filial__contact">sibaeroline@mail.ru</a>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/clock-icon.svg" alt="Режим работы">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Режим работы:</p>
+                                    <p class="filial__schedule">ПН-ПТ с 9:00 до 17:00<br>СБ-ВС - выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filial__map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=82.875163%2C55.046367&pt=82.875163%2C55.046367,pm2rdl&z=16" width="100%" height="320" frameborder="1" allowfullscreen="true"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Блок для Красноярска -->
+                    <div class="filial__info-block" id="krasnoyarsk">
+                        <div class="filial__info-container">
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/map-pin-green.svg" alt="Офис">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Офис/Склад:</p>
+                                    <p class="filial__address">ул. Северное шоссе, 35и</p>
+                                </div>
+                            </div>
+                                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/phone-icon.svg" alt="Телефон">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Телефон:</p>
+                                    <a href="tel:+73912030465" class="filial__contact">+7 (391) 278-72-76</a>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/email-icon.svg" alt="Почта">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Почта:</p>
+                                    <a href="mailto:krasnoyarsk@g-line.ru" class="filial__contact">sibaeroline@mail.ru</a>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/clock-icon.svg" alt="Режим работы">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Режим работы:</p>
+                                    <p class="filial__schedule">ПН-ПТ с 10:00 до 17:00<br>СБ-ВС - выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filial__map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=92.889681%2C56.064228&pt=92.889681%2C56.064228,pm2rdl&z=16" width="100%" height="320" frameborder="1" allowfullscreen="true"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Блок для Кемерово -->
+                    <div class="filial__info-block" id="kemerovo">
+                        <div class="filial__info-container">
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/map-pin-green.svg" alt="Офис">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Офис/Склад:</p>
+                                    <p class="filial__address">ул. Тухачевского, 58а, литера А</p>
+                                </div>
+                            </div>
+                            
+                                                        
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/phone-icon.svg" alt="Телефон">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Телефон:</p>
+                                    <a href="tel:+73842223344" class="filial__contact">+7-913-720-10-27</a>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/email-icon.svg" alt="Почта">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Почта:</p>
+                                    <a href="mailto:kemerovo@g-line.ru" class="filial__contact">nsk-grltd@bk.ru</a>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/clock-icon.svg" alt="Режим работы">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Режим работы:</p>
+                                    <p class="filial__schedule">ПН-ПТ с 10:00 до 17:00<br>СБ-ВС - выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filial__map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=86.142633%2C55.311144&pt=86.142633%2C55.311144,pm2rdl&z=16" width="100%" height="320" frameborder="1" allowfullscreen="true"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Блок для Барнаула -->
+                    <div class="filial__info-block" id="barnaul">
+                        <div class="filial__info-container">
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/map-pin-green.svg" alt="Офис">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Офис/Склад:</p>
+                                    <p class="filial__address">ул. Власихинская, 141а, корпус 2</p>
+                                </div>
+                            </div>
+                                
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/phone-icon.svg" alt="Телефон">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Телефон:</p>
+                                    <a href="tel:+73852223344" class="filial__contact">+7-913-720-10-27</a>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/email-icon.svg" alt="Почта">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Почта:</p>
+                                    <a href="mailto:barnaul@g-line.ru" class="filial__contact">nsk-grltd@bk.ru</a>
+                                </div>
+                            </div>
+                            
+                            <div class="filial__info-group">
+                                <div class="filial__info-icon">
+                                    <img src="img/svg/clock-icon.svg" alt="Режим работы">
+                                </div>
+                                <div class="filial__info-item">
+                                    <p class="filial__info-title">Режим работы:</p>
+                                    <p class="filial__schedule">ПН-ПТ с 10:00 до 17:00<br>СБ-ВС - выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filial__map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=83.645711%2C53.332220&pt=83.645711%2C53.332220,pm2rdl&z=16" width="100%" height="320" frameborder="1" allowfullscreen="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
         </div>
-    </div>
+    
 
     <footer>
         <div class="footer__container">

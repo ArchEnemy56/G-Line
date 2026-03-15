@@ -608,6 +608,58 @@ class NavigationActiveState {
 }
 
 // =============================================================================
+// FILIAL NAVIGATION FUNCTIONALITY
+// =============================================================================
+
+class FilialNavigation {
+  constructor() {
+    this.navButtons = document.querySelectorAll('.filial__nav-btn');
+    this.infoBlocks = document.querySelectorAll('.filial__info-block');
+    
+    if (!this.navButtons.length || !this.infoBlocks.length) return;
+    
+    this.init();
+  }
+  
+  init() {
+    this.navButtons.forEach(button => {
+      button.addEventListener('click', () => this.switchFilial(button));
+    });
+  }
+  
+  switchFilial(clickedButton) {
+    const targetCity = clickedButton.getAttribute('data-city');
+    
+    // Удаляем активный класс у всех кнопок
+    this.navButtons.forEach(btn => {
+      btn.classList.remove('active');
+    });
+    
+    // Добавляем активный класс нажатой кнопке
+    clickedButton.classList.add('active');
+    
+    // Скрываем все блоки информации
+    this.infoBlocks.forEach(block => {
+      block.classList.remove('active');
+    });
+    
+    // Показываем соответствующий блок информации
+    const targetBlock = document.getElementById(targetCity);
+    if (targetBlock) {
+      targetBlock.classList.add('active');
+      
+      // Если выбран Норильск, показываем оба блока
+      if (targetCity === 'norilsk') {
+        const secondNorilskBlock = document.getElementById('norilsk-2');
+        if (secondNorilskBlock) {
+          secondNorilskBlock.classList.add('active');
+        }
+      }
+    }
+  }
+}
+
+// =============================================================================
 // INITIALIZATION
 // =============================================================================
 
@@ -620,4 +672,5 @@ document.addEventListener('DOMContentLoaded', () => {
   new DocsGridInteractivity();
   new DocsAccordion();
   new NavigationActiveState();
+  new FilialNavigation();
 });
