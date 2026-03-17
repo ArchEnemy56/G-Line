@@ -4392,13 +4392,17 @@ h3.green__line-text {
   max-width: 487px;
 }
 
-.ready__right-more {
-  background-image: url('../img/more__gruz.webp');
+.ready__right-more,
+.ready__right-rechnaya {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 560px;
   border-radius: 20px;
+}
+
+.ready__right-more {
+  background-image: url('../img/more__gruz.webp');
 }
 
 .ready__left_info ul {
@@ -4686,4 +4690,17 @@ h3.green__line-text {
   font-size: var(--subtitle);
   color: var(--green);
   margin: 0;
+}
+
+/* new page reka */
+
+.reka__head {
+  background-image: url('../img/river-nav.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ready__right-rechnaya {
+  background-image: url('../img/rechnaya__gruz.webp');
 }
