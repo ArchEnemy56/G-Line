@@ -4704,3 +4704,69 @@ h3.green__line-text {
 .ready__right-rechnaya {
   background-image: url('../img/rechnaya__gruz.webp');
 }
+
+/* new page zimnik */
+
+.zimnik__head {
+  background-image: url('../img/zimnik-header.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.zimnik__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.zimnik__info li {
+  font-family: var(--primary);
+  font-weight: var(--w-bold);
+  font-size: var(--mid-title);
+  margin: 0;
+  line-height: var(--lh-normal);
+}
+
+.zimnik__text {
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--subtitle);
+  color: var(--black);
+  margin: 0;
+  line-height: var(--lh-normal);
+}
+.ready__right-zimnik {
+  background-image: url('../img/zimnik-gruz.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+/* new page autosib */
+
+.autosib__head {
+  background-image: url('../img/autosib.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.reisy__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.reisy__grid .nasha__geo-item {
+  border: none;
+}
+.ready__right-autosib {
+  background-image: url('../img/fura.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  min-height: 630px;
+}
