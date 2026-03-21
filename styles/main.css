@@ -4770,3 +4770,50 @@ h3.green__line-text {
   border-radius: 20px;
   min-height: 630px;
 }
+
+/* new page expedition */
+
+.exped__head {
+  background-image: url('../img/expedir.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.exp__blok {
+  display: flex;
+  gap: 20px;
+}
+
+.exp__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  padding: 20px 40px;
+  border-radius: 20px;
+  border: 1px solid var(--black);
+}
+
+.exp__right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #5a8a4e, #4a7541);
+  padding: 20px 40px;
+  color: var(--white);
+}
+
+.exp__left h3,
+.exp__right h3 {
+  margin: 0 auto;
+}
