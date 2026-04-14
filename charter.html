@@ -1,0 +1,719 @@
+<?php
+/**
+ * Template Name: Чартерные рейсы
+ * Template Post Type: page
+ * 
+ * Шаблон страницы "Чартерные рейсы" для темы G-Line
+ * 
+ * @package G-Line
+ */
+
+// Защита от прямого доступа
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+get_header(); 
+?>
+
+<!-- Сопровождение -->
+<div class="optim__put">
+    <h1 class="header-title">Чартерные рейсы — доставка грузов по вашему графику</h1>
+    <p>Индивидуальный маршрут, любые объемы и категории груза, полное сопровождение</p>
+</div>
+
+<p class="green__line-text">Грузовой чартерный рейс — это доставка на заказ с использованием воздушного судна по согласованному маршруту и расписанию. Это оптимальный вариант для бизнеса — перевозим крупногабаритные, ценные, опасные грузы, партии нестандартного объема, без ограничений стандартных авиарейсов. Расчет стоимости и сроков — онлайн за 30 минут</p>
+
+<!-- Рейсы -->
+<div class="reisy">
+    <h2 class="title__h2">Наши рейсы и направления</h2>
+    <div class="nasha__geo-grid">
+        <div class="nasha__geo-item">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/icon-route.svg" alt="route icon" class="nasha__geo-icon" />
+            <p class="nasha__geo-text">Норильск → вся Россия и СНГ</p>
+        </div>
+        <div class="nasha__geo-item">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/icon-route.svg" alt="route icon" class="nasha__geo-icon" />
+            <p class="nasha__geo-text">Красноярск → Норильск</p>
+        </div>
+        <div class="nasha__geo-item">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/icon-route.svg" alt="route icon" class="nasha__geo-icon" />
+            <p class="nasha__geo-text">Новосибирск → Норильск</p>
+        </div>
+    </div>
+</div>
+
+<!-- Преимущества авиадоставки -->
+<div class="preim">
+    <h2 class="title__h2">В чем преимущества чартерных рейсов</h2>
+    <div class="preim__grid">
+        <div class="preim__grid-item">
+            <div class="preim__grid-top">
+                <h3 class="title__h3">Любой объем и вес</h3>
+            </div>
+            <div class="preim__grid-bot">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/icon_time.svg" alt="время">
+                <p>Перевозим партии от нескольких тонн до 45 тонн и более, включая крупногабаритные и нестандартные грузы</p>
+            </div>
+        </div>
+
+        <div class="preim__grid-item">
+            <div class="preim__grid-top">
+                <h3 class="title__h3">Индивидуальный маршрут и график</h3>
+            </div>
+            <div class="preim__grid-bot">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/opacity-korob.svg" alt="коробка">
+                <p>Рейс организуется по вашему маршруту и расписанию, без привязки к стандартным рейсам</p>
+            </div>
+        </div>
+
+        <div class="preim__grid-item">
+            <div class="preim__grid-top">
+                <h3 class="title__h3">Подбор подходящего самолета</h3>
+            </div>
+            <div class="preim__grid-bot">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/icon_temperature.svg" alt="снежинка">
+                <p>Мы подбираем воздушное судно с учетом габаритов, категории груза и особенностей перевозки: Ан-24, Ан-74, Ан-12, ИЛ-76, BOEING737, BOEING757</p>
+            </div>
+        </div>
+
+        <div class="preim__grid-item">
+            <div class="preim__grid-top">
+                <h3 class="title__h3">Доступны круглый год</h3>
+            </div>
+            <div class="preim__grid-bot">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/icon_plane.svg" alt="самолёт">
+                <p>Чартерные рейсы доступны в любое время, независимо от сезона и погодных условий</p>
+            </div>
+        </div>
+
+        <div class="preim__grid-item">
+            <div class="preim__grid-top">
+                <h3 class="title__h3">Полное сопровождение</h3>
+            </div>
+            <div class="preim__grid-bot">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/opacity-finance.svg" alt="монеты">
+                <p>Берем на себя оформление документов, обработку груза, координацию с аэропортами и контроль погрузки</p>
+            </div>
+        </div>
+
+        <div class="preim__grid-item">
+            <div class="preim__grid-top">
+                <h3 class="title__h3">От 3 дней</h3>
+            </div>
+            <div class="preim__grid-bot">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/icon_risk.svg" alt="щит">
+                <p>Оптимальный вариант, когда груз нужно срочно доставить на большое расстояние</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <a href="<?php echo esc_url(home_url('/contacts')); ?>" class="btn-primary">
+        Связаться с менеджером
+        <span class="etapy__cta-icon">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+        </span>
+    </a>
+
+</div>
+
+<!-- Сроки авианавигации -->
+<div class="sroki__nav">
+    <h2 class="title__h2">Сроки и особенности авианавигации</h2>
+    <div class="sroki__nav-grid">
+        <div class="sroki__nav-left">
+            <h2>От 1 дня</h2>
+            <p>Сроки доставки</p>
+        </div>
+        <div class="sroki__nav-right">
+            <h2>Круглый год</h2>
+            <p>Без сезонных ограничений</p>
+        </div>
+    </div>
+</div>
+
+<!-- Когда выбрать -->
+<div class="kogda">
+    <h2 class="title__h2">Когда лучше выбрать чартерный рейс</h2>
+    <div class="kogda__info">
+        <div class="kogda__info-item">
+            <div class="kogda__info-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/lucide.svg" alt="галочка">
+            </div>
+            <div class="kogda__info-text">
+                <h3 class="title__h3">Нужно доставить груз в точное время</h3>
+                <p>Проект на производстве стартует через неделю, и оборудование должно быть на месте к запуску линии — доставка под конкретный срок решает задачу</p>
+            </div>
+        </div>
+        <div class="kogda__info-item">
+            <div class="kogda__info-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/lucide.svg" alt="галочка">
+            </div>
+            <div class="kogda__info-text">
+                <h3 class="title__h3">Регулярные рейсы не подходят по маршруту</h3>
+                <p>Нужен объект в удаленном регионе или аэропорт с ограничениями по приему грузов — мы организуем оптимальный маршрут без промежуточных задержек</p>
+            </div>
+        </div>
+        <div class="kogda__info-item">
+            <div class="kogda__info-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/lucide.svg" alt="галочка">
+            </div>
+            <div class="kogda__info-text">
+                <h3 class="title__h3">Нужен максимальный контроль и безопасность</h3>
+                <p>При перевозке важного проекта или материалов, которые нельзя держать в пути долго, чартер позволяет контролировать каждый этап от склада до выгрузки</p>
+            </div>
+        </div>
+        <div class="kogda__info-item">
+            <div class="kogda__info-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/lucide.svg" alt="галочка">
+            </div>
+            <div class="kogda__info-text">
+                <h3 class="title__h3">Перевозите негабаритные и длинномерные грузы</h3>
+                <p>Доставляем оборудование, длинномерные конструкции и спецтехнику, которые невозможно отправить стандартными авиарейсами</p>
+            </div>
+        </div>
+        <div class="kogda__info-item">
+            <div class="kogda__info-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/lucide.svg" alt="галочка">
+            </div>
+            <div class="kogda__info-text">
+                <h3 class="title__h3">Отправляете груз в труднодоступные районы</h3>
+                <p>Доставляем грузы в регионы с ограниченной транспортной доступностью, где нет регулярных рейсов и невозможно отправить другим транспортом</p>
+            </div>
+        </div>
+    </div>
+    <a href="<?php echo esc_url(home_url('/contacts')); ?>" class="btn-primary">
+        Рассчитать стоимость
+        <span class="etapy__cta-icon">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+        </span>
+    </a>
+</div>
+
+<!-- Что мы перевозим -->
+<section>
+    <div class="chto-vozim__container">
+        <h2 class="title__h2">Какие грузы можно отправлять авиадоставкой</h2>
+        <p class="chto-vozim__info">Мы осуществляем перевозки любых грузов от документов и личных вещей, до продуктов питания и промышленного оборудования</p>
+        <div class="chto-vozim__grid">
+            <div class="chto-vozim__item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/docs.svg" alt="documents icon" class="chto-vozim__icon" />
+                <p class="chto-vozim__text">Документы и посылки</p>
+                <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="chto-vozim__btn">
+                    <span>Подробнее</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                </a>
+            </div>
+            <div class="chto-vozim__item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/veschi.svg" alt="book icon" class="chto-vozim__icon" />
+                <p class="chto-vozim__text">Личные вещи и переезды</p>
+                <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="chto-vozim__btn">
+                    <span>Подробнее</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                </a>
+            </div>
+            <div class="chto-vozim__item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/car.svg" alt="car icon" class="chto-vozim__icon" />
+                <p class="chto-vozim__text">Автомобили</p>
+                <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="chto-vozim__btn">
+                    <span>Подробнее</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                </a>
+            </div>
+            <div class="chto-vozim__item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/spec-car.svg" alt="oversized cargo icon" class="chto-vozim__icon" />
+                <p class="chto-vozim__text">Спецтехника и крупногабарит</p>
+                <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="chto-vozim__btn">
+                    <span>Подробнее</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                </a>
+            </div>
+            <div class="chto-vozim__item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/danger.svg" alt="danger" class="chto-vozim__icon" />
+                <p class="chto-vozim__text">Опасные грузы</p>
+                <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="chto-vozim__btn">
+                    <span>Подробнее</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                </a>
+            </div>
+            <div class="chto-vozim__item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/food.svg" alt="food Icon" class="chto-vozim__icon" />
+                <p class="chto-vozim__text">Продукты питания</p>
+                <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="chto-vozim__btn">
+                    <span>Подробнее</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                </a>
+            </div>
+            <div class="chto-vozim__item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/medic.svg" alt="medicine icon" class="chto-vozim__icon" />
+                <p class="chto-vozim__text">Медикаменты</p>
+                <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="chto-vozim__btn">
+                    <span>Подробнее</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                </a>
+            </div>
+            <div class="chto-vozim__item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/refredgirator.svg" alt="temperature cargo icon" class="chto-vozim__icon" />
+                <p class="chto-vozim__text">Грузы с температурным режимом</p>
+                <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="chto-vozim__btn">
+                    <span>Подробнее</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Этапы работы -->
+<div class="etapy">
+    <h2 class="title__h2">Как мы работаем</h2>
+    <p class="etapy__info">Сроки и маршрут рассчитываются с учётом сезонных ограничений Севера</p>
+    <div class="etapy__container">
+        <div class="etapy__left">
+            <div class="etapy__steps">
+                <div class="etapy__step">
+                    <div class="etapy__step-badge">1</div>
+                    <h3 class="etapy__step-title">Расчет стоимости</h3>
+                    <p class="etapy__step-text">Оставьте заявку на сайте или позвоните. Мы рассчитаем стоимость с учетом всех параметров и оптимального маршрута в течение 30 минут</p>
+                </div>
+                <div class="etapy__step">
+                    <div class="etapy__step-badge">3</div>
+                    <h3 class="etapy__step-title">Забор груза</h3>
+                    <p class="etapy__step-text">Грузчики заберут ваш груз с нужного адреса, либо примем ваш груз в нашем терминале</p>
+                </div>
+                <div class="etapy__step">
+                    <div class="etapy__step-badge">5</div>
+                    <h3 class="etapy__step-title">Оплата</h3>
+                    <p class="etapy__step-text">Оплачиваете любым удобным способом: наличными, картой или безналичным переводом по счету</p>
+                </div>
+                <div class="etapy__step">
+                    <div class="etapy__step-badge">7</div>
+                    <h3 class="etapy__step-title">Уведомление</h3>
+                    <p class="etapy__step-text">Вы можете отслеживать передвижение груза на сайте по трек номеру. Так же уведомляем о прибытии и готовности к выдаче</p>
+                </div>
+                <div class="etapy__step">
+                    <a href="<?php echo esc_url(home_url('/contacts')); ?>" class="btn-primary">
+                        Связаться с менеджером
+                        <span class="etapy__cta-icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="etapy__line" aria-hidden="true"></div>
+        <div class="etapy__center">
+            <div class="etapy__steps">
+                <div class="etapy__step">
+                    <div class="etapy__step-badge">2</div>
+                    <h3 class="etapy__step-title">Заключение договора</h3>
+                    <p class="etapy__step-text">Оформляем договор с необходимыми доп услугами, фиксированной ценой, сроками и условиями</p>
+                </div>
+                <div class="etapy__step">
+                    <div class="etapy__step-badge">4</div>
+                    <h3 class="etapy__step-title">Упаковка</h3>
+                    <p class="etapy__step-text">Профессионально упаковываем и маркируем ваш груз с учетом способа доставки</p>
+                </div>
+                <div class="etapy__step">
+                    <div class="etapy__step-badge">6</div>
+                    <h3 class="etapy__step-title">Транспортировка</h3>
+                    <p class="etapy__step-text">Отправляем груз с оптимально подобранным маршрутом: авиа, море, река, зимник или авто по Сибири</p>
+                </div>
+                <div class="etapy__step">
+                    <div class="etapy__step-badge">8</div>
+                    <h3 class="etapy__step-title">Получение</h3>
+                    <p class="etapy__step-text">Доставляем по указанному адресу или получаете груз в терминале. Подписываете закрывающие документы</p>
+                </div>
+            </div>
+        </div>
+        <div class="etapy__right"></div>
+    </div>
+</div>
+
+<!-- Наши услуги -->
+<section>
+    <div class="nashi-uslugi__grid nashi-uslugi__grid--o-kompanii">
+        <div class="nashi-uslugi__item">
+            <div class="nashi-uslugi__overlay"></div>
+            <div class="nashi-uslugi__content">
+                <h3 class="nashi-uslugi__title">Оказываем полный комплекс услуг по организации чартерных рейсов</h3>
+                <p class="nashi-uslugi__description">Мы берем на себя все задачи, связанные с перевозкой по индивидуальному маршруту. Вместе с организацией рейса вы можете выбрать дополнительные услуги</p>
+            </div>
+        </div>
+        <div class="nashi-uslugi__item">
+            <div class="nashi-uslugi__overlay">
+                <div class="nashi-uslugi__content">
+                    <h3 class="nashi-uslugi__title">Страхование груза</h3>
+                    <div class="nashi-uslugi__bottom-content">
+                        <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="nashi-uslugi__popup-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nashi-uslugi__item">
+            <div class="nashi-uslugi__overlay">
+                <div class="nashi-uslugi__content">
+                    <h3 class="nashi-uslugi__title">Доставка от двери до двери</h3>
+                    <div class="nashi-uslugi__bottom-content">
+                        <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="nashi-uslugi__popup-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nashi-uslugi__item">
+            <div class="nashi-uslugi__overlay">
+                <div class="nashi-uslugi__content">
+                    <h3 class="nashi-uslugi__title">Погрузо-разгрузочные работы</h3>
+                    <div class="nashi-uslugi__bottom-content">
+                        <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="nashi-uslugi__popup-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nashi-uslugi__item">
+            <div class="nashi-uslugi__overlay">
+                <div class="nashi-uslugi__content">
+                    <h3 class="nashi-uslugi__title">Упаковка (жесткая и мягкая)</h3>
+                    <div class="nashi-uslugi__bottom-content">
+                        <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="nashi-uslugi__popup-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nashi-uslugi__item">
+            <div class="nashi-uslugi__overlay">
+                <div class="nashi-uslugi__content">
+                    <h3 class="nashi-uslugi__title">Перевозка грузов с температурным режимом</h3>
+                    <div class="nashi-uslugi__bottom-content">
+                        <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="nashi-uslugi__popup-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nashi-uslugi__item">
+            <div class="nashi-uslugi__overlay">
+                <div class="nashi-uslugi__content">
+                    <h3 class="nashi-uslugi__title">Перевозка опасных грузов</h3>
+                    <div class="nashi-uslugi__bottom-content">
+                        <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="nashi-uslugi__popup-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nashi-uslugi__item">
+            <div class="nashi-uslugi__overlay">
+                <div class="nashi-uslugi__content">
+                    <h3 class="nashi-uslugi__title">Экспедирование груза</h3>
+                    <div class="nashi-uslugi__bottom-content">
+                        <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="nashi-uslugi__popup-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Эксперты -->
+<div class="experty">
+    <h2 class="title__h2">Профессиональная организация чартерных рейсов</h2>
+    <p class="green__line-text">За годы работы мы зарекомендовали себя как компания, которая берет на себя всю ответственность за груз. Мы тщательно планируем рейсы, согласовываем все нюансы с аэропортами и контролируем каждый этап перевозки. Решаем задачи любой сложности и доставляем грузы чартерными рейсами точно в срок</p>
+    <div class="experty__num">
+        <div class="experty__item-1">
+            <h2>25 лет</h2>
+            <p>Опыта в экстремальных условиях Севера</p>
+        </div>
+        <div class="experty__item-2">
+            <h2>99%</h2>
+            <p>Доставок без задержек</p>
+        </div>
+        <div class="experty__item-3">
+            <h2>4,5 млн кг</h2>
+            <p>Перевезли груза</p>
+        </div>
+    </div>
+</div>
+
+<!-- Интересное -->
+<div class="interesting">
+    <h2 class="title__h2">Делимся самыми интересными кейсами</h2>
+    <p class="interesting__text">Каждый сложный груз — это отдельная история, которая требует экспертизы, нестандартного подхода и внимания к деталям. Мы гордимся тем, что справляемся с задачами, от которых отказываются другие.</p>
+    <div class="geo__office">
+        <h2 class="title__h2 geo__office-title">Когда офис геолога — это тундра, а вес одной детали — тонна</h2>
+        <div class="geo__nav">
+            <button id="geo-prev" aria-label="Предыдущий">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arrow-left.svg" alt="Previous">
+            </button>
+            <button id="geo-next" aria-label="Следующий">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Next">
+            </button>
+        </div>
+    </div>
+    <div class="interesting__info active">
+        <div class="interesting__left">
+            <div class="interesting__left-item">
+                <h3>Задача</h3>
+                <p>Обеспечить годовой логистический контракт для геологоразведочной экспедиции крупной нефтяной компании в Таймырском округе.</p>
+            </div>
+            <div class="interesting__left-item">
+                <h3>Сложность</h3>
+                <p>Удаленная локация в тундре, экстремальные погодные условия, перевозка людей, личного оборудования и тяжелой спецтехники. Глубинные забойные двигатели для бурения скважин весят около тонны каждый и требуют особых условий транспортировки.</p>
+            </div>
+            <div class="interesting__left-item">
+                <h3>Наше решение</h3>
+                <p>Greenline организовала поэтапную логистику на весь год:</p>
+                <ul class="interesting__left-ul">
+                    <li class="interesting__left-item-list">
+                        <h4 class="interesting__left-item-title">Этап 1:</h4>
+                        <p class="interesting__left-item-text">Доставка геологов из Калыма к месту разведки с личным снаряжением и снегоходами. Команда работала вахтовым методом — месяц в тундре.</p>
+                    </li>
+                    <li class="interesting__left-item-list">
+                        <h4 class="interesting__left-item-title">Этап 2:</h4>
+                        <p class="interesting__left-item-text">Обратная перевозка геологов после завершения вахты.</p>
+                    </li>
+                    <li class="interesting__left-item-list">
+                        <h4 class="interesting__left-item-title">Этап 3:</h4>
+                        <p class="interesting__left-item-text">Транспортировка тяжелой спецтехники и бурильного оборудования, включая глубинные забойные двигатели весом до тонны каждый.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="interesting__right">
+            <h3>Результат</h3>
+            <p>Годовой контракт выполнен без срывов графика. Геологоразведка проведена в срок, всё оборудование доставлено в сохранности,<br>несмотря на суровые условия Заполярья.</p>
+            <div class="interesting__right-top"></div>
+            <div class="interesting__right-bottom"></div>
+            <h3>От геологов до тонных двигателей — Greenline перевозит всё, что нужно для работы в самых отдаленных точках России.</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Готовы отправить груз? -->
+<div class="ready">
+    <div class="ready__left">
+        <h2 class="title__h2">Отправляйте грузы с нами</h2>
+        <div class="ready__left_info">
+            <p>Самолёт — ваш лучший выбор, когда:</p>
+            <ul>
+                <li class="ready__left_info-item">
+                    <p>Авиасообщение — основной способ быстрой доставки грузов в северных регионах.</p>
+                </li>
+                <li class="ready__left_info-item">
+                    <p>Выбирайте Greenline — надежного перевозчика с многолетним опытом работы в экстремальных условиях.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="ready__left-button">
+            <a href="<?php echo esc_url(home_url('/contacts')); ?>" class="we__open-btn">
+                Рассчитать
+                <div class="we__open-btn-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow icon" />
+                </div>
+            </a>
+            <a href="<?php echo esc_url(home_url('/uslugi')); ?>" class="btn-primary">
+                Узнать тарифы
+                <span class="etapy__cta-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="charter__right"></div>
+</div>
+
+<!-- Отзывы (полный код, без get_template_part) -->
+<div class="reviews">
+    <h2 class="title__h2">Отзывы наших клиентов</h2>
+    <div class="reviews__nav">
+        <button class="reviews__prev" aria-label="Предыдущий отзыв">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arrow-left.svg" alt="Previous">
+        </button>
+        <button class="reviews__next" aria-label="Следующий отзыв">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Next">
+        </button>
+    </div>
+    <div class="slider-container">
+        <div class="reviews__slide">
+            <div class="review__info">
+                <div class="review__rating">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+            </div>
+            <div class="review__content">
+                <p class="review__text">Переезжала из Норильска в Сочи, и казалось, что перевезти целую жизнь в цитадели — это катастрофа. Но ваша команда сделала всё волшебным образом! Менеджер Мария вела меня буквально за руку. Не разбилась ни одна тарелка, а мой огромный шкаф доехал в идеальном состоянии. Спасибо!</p>
+            </div>
+            <h4 class="review__name">Мария</h4>
+        </div>
+        <div class="reviews__slide">
+            <div class="review__info">
+                <div class="review__rating">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+            </div>
+            <div class="review__content">
+                <p class="review__text">Работаем с G-Line уже третий год. За это время ни одной задержки! Квалифицированные специалисты и всегда вежливое общение.</p>
+            </div>
+            <h4 class="review__name">Мария Сидорова</h4>
+        </div>
+        <div class="reviews__slide">
+            <div class="review__info">
+                <div class="review__rating">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+            </div>
+            <div class="review__content">
+                <p class="review__text">Перевозили крупногабаритное оборудование. Все сделали профессионально, груз застрахован, доставка в точно оговоренное время.</p>
+            </div>
+            <h4 class="review__name">Алексей Николаев</h4>
+        </div>
+        <div class="reviews__slide">
+            <div class="review__info">
+                <div class="review__rating">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+            </div>
+            <div class="review__content">
+                <p class="review__text">Отличная компания! Доставили груз из Красноярска в Норильск за 5 дней. Все цело, упаковано качественно.</p>
+            </div>
+            <h4 class="review__name">Елена Петрова</h4>
+        </div>
+        <div class="reviews__slide">
+            <div class="review__info">
+                <div class="review__rating">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+            </div>
+            <div class="review__content">
+                <p class="review__text">Рекомендую G-Line! Профессиональный подход к работе, всегда на связи, отслеживание груза в реальном времени.</p>
+            </div>
+            <h4 class="review__name">Иван Кузнецов</h4>
+        </div>
+        <div class="reviews__slide">
+            <div class="review__info">
+                <div class="review__rating">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+            </div>
+            <div class="review__content">
+                <p class="review__text">Доставляли медикаменты. Соблюдены все температурные режимы, документы в порядке. Спасибо за надежность!</p>
+            </div>
+            <h4 class="review__name">Ольга Смирнова</h4>
+        </div>
+        <div class="reviews__slide">
+            <div class="review__info">
+                <div class="review__rating">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+            </div>
+            <div class="review__content">
+                <p class="review__text">Многолетний партнер G-Line. Всегда выдерживают сроки, грузы приходят в целости. Команда профессионалов!</p>
+            </div>
+            <h4 class="review__name">Дмитрий Волков</h4>
+        </div>
+        <div class="reviews__slide">
+            <div class="review__info">
+                <div class="review__rating">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+            </div>
+            <div class="review__content">
+                <p class="review__text">Перевозили хрупкие товары. Упаковали очень тщательно, все доставили без повреждений. Отличная работа!</p>
+            </div>
+            <h4 class="review__name">Анна Морозова</h4>
+        </div>
+        <div class="reviews__slide">
+            <div class="review__info">
+                <div class="review__rating">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+            </div>
+            <div class="review__content">
+                <p class="review__text">Быстрая доставка из Новосибирска. Менеджеры помогли с документами, всё оформили быстро. Рекомендую!</p>
+            </div>
+            <h4 class="review__name">Сергей Белов</h4>
+        </div>
+    </div>
+</div>
+
+<!-- Частые вопросы (полный код, без get_template_part) -->
+<h2 class="title__h2">Частые вопросы</h2>
+<div class="faq__block">
+    <div class="faq__items faq__items--grid">
+        <div class="faq__left">
+            <div class="left__grid">
+                <div class="left__grid-item left__grid-item--active">
+                    <p>Расчет стоимости и тарифы</p>
+                </div>
+                <div class="left__grid-item">
+                    <p>Способы доставки</p>
+                </div>
+                <div class="left__grid-item">
+                    <p>Об оплате и документах</p>
+                </div>
+                <div class="left__grid-item">
+                    <p>Что и как отправить</p>
+                </div>
+                <div class="left__grid-item">
+                    <p>Дополнительные услуги</p>
+                </div>
+                <div class="left__grid-item">
+                    <p>Общие вопросы</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq__right">
+            <div class="faq__accordion">
+                <div class="faq__accordion-item">
+                    <div class="faq__accordion-header">
+                        <span class="faq__accordion-title">Какие есть способы и сроки доставки – в Норильск и из Норильска?</span>
+                        <span class="faq__accordion-icon">+</span>
+                    </div>
+                    <div class="faq__accordion-content">
+                        <p>Мы предлагаем несколько способов доставки: авиатранспорт (3-10 дней), морской путь через порт Дудинка (навигация с мая по октябрь), речной транспорт (июнь-сентябрь) и зимник (декабрь-апрель). Сроки зависят от выбранного способа и погодных условий.</p>
+                    </div>
+                </div>
+                <div class="faq__accordion-item">
+                    <div class="faq__accordion-header">
+                        <span class="faq__accordion-title">Как я могу зимой отправить груз в Норильск и из Норильска?</span>
+                        <span class="faq__accordion-icon">+</span>
+                    </div>
+                    <div class="faq__accordion-content">
+                        <p>Зимой доставка осуществляется по зимнику через Красноярский край и Игарку. Также доступна авиадоставка через Норильск (Алыкель). Зимник работает при температуре до -40°C, груз доставляется специальным транспортом с усиленной подготовкой.</p>
+                    </div>
+                </div>
+                <div class="faq__accordion-item">
+                    <div class="faq__accordion-header">
+                        <span class="faq__accordion-title">Когда открывается и закрывается навигация (морская и речная)?</span>
+                        <span class="faq__accordion-icon">+</span>
+                    </div>
+                    <div class="faq__accordion-content">
+                        <p>Морская навигация через порт Дудинка обычно открывается в мае и закрывается в октябре. Речная навигация по Енисею начинается в июне и заканчивается в сентябре. Точные даты зависят от ледовой обстановки и объявляются ежегодно.</p>
+                    </div>
+                </div>
+                <div class="faq__accordion-item">
+                    <div class="faq__accordion-header">
+                        <span class="faq__accordion-title">Как мне выбрать способ доставки?</span>
+                        <span class="faq__accordion-icon">+</span>
+                    </div>
+                    <div class="faq__accordion-content">
+                        <p>Выбор зависит от сроков, веса груза, бюджета и времени года. Авиа — самое быстрое (3-10 дней), но дорого. Море и река — экономичнее, но сезонные. Зимник — выгодная альтернатива зимой. При обращении к нам в компанию, менеджер поможет выбрать самый выгодный и оптимальный способ доставки под вашу задачу.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Напиши нам (полный код, без get_template_part) -->
+<div class="napishi">
+    <p>Не нашли ответа на свой вопрос?</p>
+    <p>Напишите нам, ответим в рабочее время</p>
+    <a href="<?php echo esc_url(home_url('/contacts')); ?>" class="btn-primary">
+        Написать
+        <span class="etapy__cta-icon">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+        </span>
+    </a>
+</div>
+
+<?php get_footer(); ?>

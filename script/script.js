@@ -607,6 +607,61 @@ class NavigationActiveState {
   }
 }
 
+class InterestingSlider {
+  constructor() {
+    this.container = document.querySelector('.interesting');
+    this.slides = document.querySelectorAll('.interesting__info');
+    this.prevBtn = document.getElementById('geo-prev');
+    this.nextBtn = document.getElementById('geo-next');
+    this.currentIndex = 0;
+    
+    if (this.container && this.slides.length > 0 && this.prevBtn && this.nextBtn) {
+      this.init();
+    }
+  }
+  
+  init() {
+    this.prevBtn.addEventListener('click', () => this.prevSlide());
+    this.nextBtn.addEventListener('click', () => this.nextSlide());
+    this.updateButtons();
+    this.updateSlideVisibility();
+  }
+  
+  prevSlide() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+      this.updateSlider();
+    }
+  }
+  
+  nextSlide() {
+    if (this.currentIndex < this.slides.length - 1) {
+      this.currentIndex++;
+      this.updateSlider();
+    }
+  }
+  
+  updateSlider() {
+    this.updateSlideVisibility();
+    this.updateButtons();
+  }
+  
+  updateSlideVisibility() {
+    this.slides.forEach((slide, index) => {
+      if (index === this.currentIndex) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+  }
+  
+  updateButtons() {
+    this.prevBtn.disabled = this.currentIndex === 0;
+    this.nextBtn.disabled = this.currentIndex === this.slides.length - 1;
+  }
+}
+
 // =============================================================================
 // FILIAL NAVIGATION FUNCTIONALITY
 // =============================================================================
@@ -660,6 +715,172 @@ class FilialNavigation {
 }
 
 // =============================================================================
+// TRACKING FORM FUNCTIONALITY
+// =============================================================================
+
+class TrackingForm {
+  constructor() {
+    this.trackForms = document.querySelectorAll('.track-form');
+    
+    if (!this.trackForms.length) return;
+    
+    this.init();
+  }
+  
+  init() {
+    this.trackForms.forEach(form => {
+      form.addEventListener('submit', (e) => this.handleFormSubmit(e, form));
+    });
+  }
+  
+  handleFormSubmit(e, form) {
+    // Find the form card to get "From/To" values
+    const card = form.closest('.form-card');
+    if (card) {
+      const fromInput = card.querySelector('input[name="from-location"]');
+      const toInput = card.querySelector('input[name="to-location"]');
+      
+      // Find hidden fields in tracking form
+      const hiddenFrom = form.querySelector('input.track-from');
+      const hiddenTo = form.querySelector('input.track-to');
+      
+      // Fill with values if fields found
+      if (fromInput && hiddenFrom) hiddenFrom.value = fromInput.value;
+      if (toInput && hiddenTo) hiddenTo.value = toInput.value;
+    }
+  }
+}
+
+// =============================================================================
+// HERO CONTENT ROTATION FUNCTIONALITY
+// =============================================================================
+
+class HeroContentRotation {
+  constructor() {
+    // Only run on homepage
+    if (!document.body.classList.contains('home') && !document.body.classList.contains('front-page')) {
+      return;
+    }
+    
+    // Get template directory URL from WordPress global variable
+    const templateUrl = window.themeUrl || '/wp-content/themes/g-line';
+    
+    this.heroData = [
+      {
+        background: `url('${templateUrl}/assets/img/hero-block.webp')`,
+        title: "Эксперты в экстремальной логистике Севера.<br>25 лет доставляем груз в любой сезон",
+        subtitle: "Авиа, море, река, зимник — 99% грузов без задержек"
+      },
+      {
+        background: `url('${templateUrl}/assets/img/hero-block-1.webp')`,
+        title: "Переезд из Норильска на материк - под ключ.<br>Быстро, просто и без стресса",
+        subtitle: "Заберем груз из дома, упакуем, застрахуем и доставим вовремя"
+      },
+      {
+        background: `url('${templateUrl}/assets/img/hero-block-2.webp')`,
+        title: "Доставляем для бизнеса: промышленные грузы, спецтехника, опасные грузы, температурный режим",
+        subtitle: "Решим любую сложную задачу! Лицензии, опыт, гарании",
+        rotateBackground: true,
+        rotationClass: 'header-rotate-180'
+      },
+            {
+        background: `url('${templateUrl}/assets/img/hero-block-3.webp')`,
+        title: "Автодоставка по всей Сибири. <br>Без посредников и задержек",
+        subtitle: "Ежедневные рейсы. От документов до спецтехники",
+        overlay: 'rgba(0, 0, 0, 0.3)'
+      }
+    ];
+    
+    this.currentIndex = 0;
+    this.header = document.querySelector('.header');
+    this.titleElement = document.querySelector('.header-title');
+    this.subtitleElement = document.querySelector('.header-subtitle');
+    
+    if (!this.header || !this.titleElement || !this.subtitleElement) {
+      return;
+    }
+    
+    this.init();
+  }
+  
+  init() {
+    // Set initial transition styles
+    this.header.style.transition = 'opacity 0.5s ease-in-out, background-image 0.5s ease-in-out';
+    this.titleElement.style.transition = 'opacity 0.5s ease-in-out';
+    this.subtitleElement.style.transition = 'opacity 0.5s ease-in-out';
+    
+    // Start rotation
+    this.rotationInterval = setInterval(() => {
+      this.currentIndex = (this.currentIndex + 1) % this.heroData.length;
+      this.updateHeroContent(this.currentIndex);
+    }, 10000);
+  }
+  
+  updateHeroContent(index) {
+    const data = this.heroData[index];
+    
+    // Fade out effect
+    this.header.style.opacity = '0.8';
+    this.titleElement.style.opacity = '0';
+    this.subtitleElement.style.opacity = '0';
+    
+    setTimeout(() => {
+      // Update background
+      this.header.style.backgroundImage = data.background;
+      this.header.style.backgroundSize = 'cover';
+      this.header.style.backgroundPosition = 'center';
+      this.header.style.backgroundRepeat = 'no-repeat';
+      
+      // Apply overlay if exists (for hero-block-3)
+      if (data.overlay) {
+        this.header.style.backgroundColor = data.overlay;
+        this.header.style.backgroundBlendMode = 'overlay';
+      } else {
+        this.header.style.backgroundColor = 'transparent';
+        this.header.style.backgroundBlendMode = 'normal';
+      }
+      
+      // Apply background rotation if exists (for hero-block-1 and hero-block-2)
+      if (data.rotateBackground) {
+        // Remove all rotation classes first
+        this.header.classList.remove('header-rotate-90', 'header-rotate-180');
+        // Add specific rotation class
+        this.header.classList.add(data.rotationClass);
+        // Set CSS custom property for background image
+        this.header.style.setProperty('--hero-bg-image', data.background);
+        // Hide main background
+        this.header.style.background = 'none';
+      } else {
+        // Remove all rotation classes
+        this.header.classList.remove('header-rotate-90', 'header-rotate-180');
+        // Clear CSS custom property
+        this.header.style.removeProperty('--hero-bg-image');
+        // Restore main background for other blocks
+        this.header.style.backgroundImage = data.background;
+        this.header.style.backgroundSize = 'cover';
+        this.header.style.backgroundPosition = 'center';
+        this.header.style.backgroundRepeat = 'no-repeat';
+      }
+      
+      // Update text
+      this.titleElement.innerHTML = data.title;
+      this.subtitleElement.innerHTML = data.subtitle;
+      
+      // Fade in effect
+      this.header.style.opacity = '1';
+      this.titleElement.style.opacity = '1';
+      this.subtitleElement.style.opacity = '1';
+    }, 300);
+  }
+  
+  destroy() {
+    if (this.rotationInterval) {
+      clearInterval(this.rotationInterval);
+    }
+  }
+}
+
+// =============================================================================
 // INITIALIZATION
 // =============================================================================
 
@@ -673,4 +894,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new DocsAccordion();
   new NavigationActiveState();
   new FilialNavigation();
+  new InterestingSlider();
+  new TrackingForm();
+  new HeroContentRotation();
 });

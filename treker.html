@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>G-Line</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@700&family=Futura:wght@700&family=Mulish:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/adaptiv.css" />
+</head>
+
+<body class="gl-tracking-page">
+    <header class="header white__header">
+        <nav class="site-navigation" role="navigation" aria-label="Основная навигация">
+            <div class="nav-wrapper">
+                <div class="nav-top-bar">
+                    <a href="/" class="site-logo" aria-label="G-Line - Главная страница">
+                        <img src="img/svg/logo-1.svg" alt="G-Line логотип" />
+                    </a>
+                    <div class="nav-actions-group" role="group" aria-label="Основные действия">
+                        <button class="nav-action-btn" type="button" aria-label="Рассчитать стоимость груза">
+                            Рассчитать стоимость груза
+                        </button>
+                        <button class="nav-action-btn" type="button" aria-label="Отследить груз">
+                            Отследить груз
+                        </button>
+                    </div>
+                    <form class="gray__search-form" role="search" aria-label="Поиск по сайту">
+                        <label for="search-input" class="visually-hidden">Поиск</label>
+                        <input type="search" id="search-input" class="nav-search-input" placeholder=""
+                            aria-label="Поле поиска" />
+                        <button type="submit" class="nav-search-btn" aria-label="Выполнить поиск">
+                            <img class="nav-search-icon" src="img/svg/search.svg" alt="" role="presentation" />
+                        </button>
+                    </form>
+                    <div class="nav-contact-info">
+                        <div class="nav-location-info">
+                            <div class="nav-location-icon" aria-hidden="true">
+                                <img class="nav-location-pin " src="img/icon-location.png" alt="" role="presentation" />
+                            </div>
+                            <div class="nav-city-selector">
+                                <button type="button" class="nav-city-btn black__text" aria-label="Выбрать город: Норильск"
+                                    aria-haspopup="listbox">
+                                    Норильск
+                                    <img class="nav-dropdown-icon" src="img/svg/drop-bl.svg" alt="" role="presentation" />
+                                </button>
+                            </div>
+                        </div>
+                        <a href="tel:+73919324249" class="nav-phone-link black__text">+7 (3919) 32-42-49</a>
+                        <p class="nav-address-text black__text">ул. Вокзальная, 35а, стр. 4</p>
+                    </div>
+                </div>
+                <main class="nav-main-menu">
+                    <a href="/" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Главная</span>
+                    </a>
+                    <a href="o-kompanii.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">О компании</span>
+                    </a>
+                    <a href="uslugi.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Услуги</span>
+                    </a>
+                    <a href="directions.html" class="nav-menu-link" aria-current="page">
+                        <span class="nav-menu-text nav-menu-text--black">Направления</span>
+                    </a>
+                    <a href="clients.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Клиентам</span>
+                    </a>
+                    <a href="contacts.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Контакты</span>
+                    </a>
+                </main>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cont-in">
+
+        <a href="/" class="gl-back">
+            Назад
+        </a>
+
+        <div class="gl-tracking-info">
+            <p class="gl-tracking-title">Ваш трек-номер: 123456789</p>
+            <p class="gl-tracking-title">Направление: Норильск-Красноярск</p>
+        </div>
+        <div class="treker">
+            <div class="gl-tracking-container">
+                <!-- Timeline Section -->
+                <div class="gl-tracking-timeline">
+                    <div class="gl-timeline">
+                        <div class="gl-timeline-item">
+                            <div class="gl-timeline-marker gl-timeline-marker--completed">1</div>
+                            <div class="gl-timeline-content">
+                                <h3 class="title__h3">Оформлен новый заказ по инициативе клиента</h3>
+                                <p class="gl-timeline-date">15.03.2025 14:30</p>
+                            </div>
+                        </div>
+                        <div class="gl-timeline-item">
+                            <div class="gl-timeline-marker gl-timeline-marker--completed">2</div>
+                            <div class="gl-timeline-content">
+                                <h3 class="title__h3">Посылка находится на терминале приема отправления</h3>
+                                <p class="gl-timeline-date">15.03.2025 16:45</p>
+                            </div>
+                        </div>
+                        <div class="gl-timeline-item">
+                            <div class="gl-timeline-marker gl-timeline-marker--completed">3</div>
+                            <div class="gl-timeline-content">
+                                <h3 class="title__h3">Посылка находится в пути</h3>
+                                <p class="gl-timeline-date">16.03.2025 09:00</p>
+                            </div>
+                        </div>
+                        <div class="gl-timeline-item">
+                                <div class="gl-timeline-marker gl-timeline-marker--completed">4</div>
+                            <div class="gl-timeline-content">
+                                <h3 class="title__h3">Посылка находится на терминале доставки</h3>
+                                <p class="gl-timeline-date">18.03.2025 11:20</p>
+                            </div>
+                        </div>
+                        <div class="gl-timeline-item">
+                            <div class="gl-timeline-marker gl-timeline-marker--completed">5</div>
+                            <div class="gl-timeline-content">
+                                <h3 class="title__h3">Посылка выведена на доставку</h3>
+                                <p class="gl-timeline-date">18.03.2025 12:00</p>
+                            </div>
+                        </div>
+                        <div class="gl-timeline-item">
+                            <div class="gl-timeline-marker gl-timeline-marker--active">6</div>
+                            <div class="gl-timeline-content">
+                                <h3 class="title__h3">Посылка доставлена получателю</h3>
+                                <p class="gl-timeline-date">18.03.2025 14:30</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orders History Section -->
+                <div class="gl-tracking-orders">
+                    <div class="gl-orders-card">
+                        <h3 class="gl-orders-title">Ваши заказы</h3>
+                        <div class="gl-orders-list">
+                            <div class="gl-order-item">
+                                <div class="gl-order-info">
+                                    <p class="gl-order-date"><span class="gl-order-label">Дата:</span> 10.03.2025</p>
+                                    <p class="gl-order-track"><span class="gl-order-label">Трек номер:</span> GL2025031001</p>
+                                </div>
+                                <span class="gl-order-status gl-order-status--progress">В процессе</span>
+                            </div>
+                            <div class="gl-order-item">
+                                <div class="gl-order-info">
+                                    <p class="gl-order-date"><span class="gl-order-label">Дата:</span> 05.03.2025</p>
+                                    <p class="gl-order-track"><span class="gl-order-label">Трек номер:</span> GL2025030502</p>
+                                </div>
+                                <span class="gl-order-status gl-order-status--cancelled">Заказ отменен</span>
+                            </div>
+                            <div class="gl-order-item">
+                                <div class="gl-order-info">
+                                    <p class="gl-order-date"><span class="gl-order-label">Дата:</span> 28.02.2025</p>
+                                    <p class="gl-order-track"><span class="gl-order-label">Трек номер:</span> GL2025022803</p>
+                                </div>
+                                <span class="gl-order-status gl-order-status--delivered">Доставлен</span>
+                            </div>
+                        </div>
+                        <a href="#" class="gl-show-more">Показать ещё</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--Частые вопросы-->
+<h2 class="title__h2">Частые вопросы</h2>
+<div class="faq__block">
+    <div class="faq__items faq__items--grid">
+        <div class="faq__left">
+            <div class="left__grid">
+                <div class="left__grid-item left__grid-item--active">
+                    <p>Расчет стоимости и тарифы</p>
+                </div>
+                <div class="left__grid-item">
+                    <p>Способы доставки</p>
+                </div>
+                <div class="left__grid-item">
+                    <p>Об оплате и документах</p>
+                </div>
+                <div class="left__grid-item">
+                    <p>Что и как отправить</p>
+                </div>
+                <div class="left__grid-item">
+                    <p>Дополнительные услуги</p>
+                </div>
+                <div class="left__grid-item">
+                    <p>Общие вопросы</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq__right">
+            <div class="faq__accordion">
+                <div class="faq__accordion-item">
+                    <div class="faq__accordion-header">
+                        <span class="faq__accordion-title">Какие есть способы и сроки доставки – в Норильск и из Норильска?</span>
+                        <span class="faq__accordion-icon">+</span>
+                    </div>
+                    <div class="faq__accordion-content">
+                        <p>Мы предлагаем несколько способов доставки: авиатранспорт (3-10 дней), морской путь через порт Дудинка (навигация с мая по октябрь), речной транспорт (июнь-сентябрь) и зимник (декабрь-апрель). Сроки зависят от выбранного способа и погодных условий.</p>
+                    </div>
+                </div>
+                <div class="faq__accordion-item">
+                    <div class="faq__accordion-header">
+                        <span class="faq__accordion-title">Как я могу зимой отправить груз в Норильск и из Норильска?</span>
+                        <span class="faq__accordion-icon">+</span>
+                    </div>
+                    <div class="faq__accordion-content">
+                        <p>Зимой доставка осуществляется по зимнику через Красноярский край и Игарку. Также доступна авиадоставка через Норильск (Алыкель). Зимник работает при температуре до -40°C, груз доставляется специальным транспортом с усиленной подготовкой.</p>
+                    </div>
+                </div>
+                <div class="faq__accordion-item">
+                    <div class="faq__accordion-header">
+                        <span class="faq__accordion-title">Когда открывается и закрывается навигация (морская и речная)?</span>
+                        <span class="faq__accordion-icon">+</span>
+                    </div>
+                    <div class="faq__accordion-content">
+                        <p>Морская навигация через порт Дудинка обычно открывается в мае и закрывается в октябре. Речная навигация по Енисею начинается в июне и заканчивается в сентябре. Точные даты зависят от ледовой обстановки и объявляются ежегодно.</p>
+                    </div>
+                </div>
+                <div class="faq__accordion-item">
+                    <div class="faq__accordion-header">
+                        <span class="faq__accordion-title">Как мне выбрать способ доставки?</span>
+                        <span class="faq__accordion-icon">+</span>
+                    </div>
+                    <div class="faq__accordion-content">
+                        <p>Выбор зависит от сроков, веса груза, бюджета и времени года. Авиа — самое быстрое (3-10 дней), но дорого. Море и река — экономичнее, но сезонные. Зимник — выгодная альтернатива зимой. При обращении к нам в компанию, менеджер поможет выбрать самый выгодный и оптимальный способ доставки под вашу задачу.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Напиши нам-->
+<div class="napishi">
+    <p>Не нашли ответа на свой вопрос?</p>
+    <p>Напишите нам, ответим в рабочее время</p>
+    <a href="<?php echo esc_url(home_url('/contacts')); ?>" class="btn-primary">
+        Написать
+        <span class="etapy__cta-icon">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+        </span>
+    </a>
+</div>
+
+    </div>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__column-1">
+                <img src="img/svg/Logo-footer.svg" alt="G-Line Logo" class="footer__logo" />
+                <ul class="footer__nav-list">
+                    <li><a href="/" class="footer__nav-link" aria-current="page">Главная</a></li>
+                    <li><a href="o-kompanii.html" class="footer__nav-link">О компании</a></li>
+                    <li><a href="directions.html" class="footer__nav-link">Направления</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-2">
+                <h3 class="footer__title">Услуги</h3>
+                <h4 class="footer__subtitle">Виды перевозок</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Авиаперевозки</a></li>
+                    <li><a href="#" class="footer__nav-link">Море</a></li>
+                    <li><a href="#" class="footer__nav-link">Река</a></li>
+                    <li><a href="#" class="footer__nav-link">Зимник</a></li>
+                    <li><a href="#" class="footer__nav-link">Автодоставка по Сибири</a></li>
+                </ul>
+                <h4 class="footer__subtitle">Услуги</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Экспедирование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Доставка от двери до двери</a></li>
+                    <li><a href="#" class="footer__nav-link">Погрузо-разгрузочные работы</a></li>
+                    <li><a href="#" class="footer__nav-link">Упаковка груза (жесткая и мягкая)</a></li>
+                    <li><a href="#" class="footer__nav-link">Страхование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка опасных грузов</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка грузов с температурным режимом</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-3">
+                <h3 class="footer__title">Клиентам</h3>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Блог (статьи)</a></li>
+                    <li><a href="#" class="footer__nav-link">Правила перевозок</a></li>
+                    <li><a href="#" class="footer__nav-link">Документы</a></li>
+                    <li><a href="#" class="footer__nav-link">Новости логистики</a></li>
+                </ul>
+                <h3 class="footer__title">Контакты</h3>
+                <p class="footer__contact-city">Норильск</p>
+                <p class="footer__contact-info">(3919) 32-42-49</p>
+                <p class="footer__contact-info">ул. Вокзальная, 35а, стр. 4</p>
+
+                <p class="footer__contact-city">Красноярск</p>
+                <p class="footer__contact-info">+7(391) 203-04-65</p>
+                <p class="footer__contact-info">ул. Северное шоссе, 35и</p>
+
+                <p class="footer__contact-city">Новосибирск</p>
+                <p class="footer__contact-info">+7(383) 363-22-06</p>
+                <p class="footer__contact-info">ул. Сухарная, 25</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/max.png" alt="Max" class="footer__social-icon" />
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/tg.png" alt="Telegram" class="footer__social-icon" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__text"> GreenLine 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
