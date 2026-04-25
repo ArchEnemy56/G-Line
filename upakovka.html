@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>G-Line</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@700&family=Futura:wght@700&family=Mulish:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/adaptiv.css" />
+</head>
+
+<body>
+    <header class="header upakovka__head">
+        <nav class="site-navigation" role="navigation" aria-label="Основная навигация">
+            <div class="nav-wrapper">
+                <div class="nav-top-bar">
+                    <a href="/" class="site-logo" aria-label="G-Line - Главная страница">
+                        <img src="img/svg/logo-1.svg" alt="G-Line логотип" />
+                    </a>
+                    <div class="nav-actions-group" role="group" aria-label="Основные действия">
+                        <button class="nav-action-btn" type="button" aria-label="Рассчитать стоимость груза">
+                            Рассчитать стоимость груза
+                        </button>
+                        <button class="nav-action-btn" type="button" aria-label="Отследить груз">
+                            Отследить груз
+                        </button>
+                    </div>
+                    <form class="nav-search-form" role="search" aria-label="Поиск по сайту">
+                        <label for="search-input" class="visually-hidden">Поиск</label>
+                        <input type="search" id="search-input" class="nav-search-input" placeholder=""
+                            aria-label="Поле поиска" />
+                        <button type="submit" class="nav-search-btn" aria-label="Выполнить поиск">
+                            <img class="nav-search-icon" src="img/svg/search.svg" alt="" role="presentation" />
+                        </button>
+                    </form>
+                    <div class="nav-contact-info">
+                        <div class="nav-location-info">
+                            <div class="nav-location-icon" aria-hidden="true">
+                                <img class="nav-location-pin" src="img/svg/map-pin.svg" alt="" role="presentation" />
+                            </div>
+                            <div class="nav-city-selector">
+                                <button type="button" class="nav-city-btn" aria-label="Выбрать город: Норильск"
+                                    aria-haspopup="listbox">
+                                    Норильск
+                                    <img class="nav-dropdown-icon" src="img/svg/drop.svg" alt="" role="presentation" />
+                                </button>
+                            </div>
+                        </div>
+                        <a href="tel:+73919324249" class="nav-phone-link">+7 (3919) 32-42-49</a>
+                        <p class="nav-address-text">ул. Вокзальная, 35а, стр. 4</p>
+                    </div>
+                </div>
+                <main class="nav-main-menu">
+                    <a href="/" class="nav-menu-link">
+                        <span class="nav-menu-text">Главная</span>
+                    </a>
+                    <a href="o-kompanii.html" class="nav-menu-link">
+                        <span class="nav-menu-text">О компании</span>
+                    </a>
+                    <a href="uslugi.html" class="nav-menu-link">
+                        <span class="nav-menu-text">Услуги</span>
+                    </a>
+                    <a href="directions.html" class="nav-menu-link">
+                        <span class="nav-menu-text">Направления</span>
+                    </a>
+                    <a href="clients.html" class="nav-menu-link">
+                        <span class="nav-menu-text">Клиентам</span>
+                    </a>
+                    <a href="contacts.html" class="nav-menu-link">
+                        <span class="nav-menu-text">Контакты</span>
+                    </a>
+                </main>
+            </div>
+        </nav>
+        <div class="header-container">
+            <div class="header-info">
+                <h1 class="header-title">Профессиональная упаковка<br> грузов</h1>
+                <p class="header-subtitle more-subtitle">Жёсткая и мягкая упаковка для безопасной доставки любым<br> транспортом</p>
+            </div>
+            <section class="header-forms-section">
+                <div class="form-card">
+                    <div class="form-section">
+                        <h2 class="form-title">Рассчитать доставку</h2>
+                        <form class="delivery-form" action="#" method="post">
+                            <div class="input-group">
+                                <label for="from-location" class="visually-hidden">Откуда</label>
+                                <input type="text" id="from-location" name="from-location" class="form-input"
+                                    placeholder="Откуда" required aria-label="Откуда" />
+                            </div>
+                            <div class="input-group">
+                                <label for="to-location" class="visually-hidden">Куда</label>
+                                <input type="text" id="to-location" name="to-location" class="form-input"
+                                    placeholder="Куда" required aria-label="Куда" />
+                            </div>
+                            <button type="submit" class="form-button">
+                                <span class="button-text">Рассчитать</span>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="form-section">
+                        <h2 class="form-title">Отследить груз</h2>
+                        <form class="track-form" action="#" method="post">
+                            <div class="input-group">
+                                <label for="tracking-number" class="visually-hidden">Номер накладной</label>
+                                <input type="text" id="tracking-number" name="tracking-number" class="form-input"
+                                    placeholder="Номер заказа" required aria-label="Номер заказа" />
+                            </div>
+                            <button type="submit" class="form-button">
+                                <span class="button-text">Найти</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="calculator-button">
+            <button class="calc-btn" type="button" aria-label="Открыть калькулятор">
+                <img src="img/svg/calc.svg" alt="Калькулятор" class="calc-icon" />
+            </button>
+        </div>
+    </header>
+
+    <div class="cont-out">
+
+        <div class="cont-in">
+
+            <p class="green__line-text">
+                Правильная упаковка обеспечивает сохранность груза при транспортировке. Неподходящая тара может привести к повреждениям, смещению, потерям, особенно на сложных маршрутах и при дальних перевозках. Мы подбираем упаковку под тип груза, способ доставки и условия маршрута, обеспечиваем целостность на всех этапах перевозки.
+            </p>
+
+            <!--преимущества упаковки-->
+            <div class="pogruz__usluga">
+                <h2 class="title__h2">В чем преимущества профессиональной упаковки грузов</h2>
+                <div class="pogruz__usluga-grid">
+                    <div class="pogruz__usluga-item">
+                        <div class="pogruz__usluga-info">
+                            <h3 class="title__h3">Защита от повреждений</h3>
+                            <p class="pogruz__usluga-text">Мы подбираем упаковку с учетом веса, формы, хрупкости и способа перевозки. Груз будет надежно зафиксирован и защищен от ударов, давления и смещения</p>
+                        </div>
+                        <img src="./img/svg/korob.svg" alt="короб">
+                    </div>
+                    <div class="pogruz__usluga-item">
+                        <div class="pogruz__usluga-info">
+                            <h3 class="title__h3">Снижение риска вскрытия</h3>
+                            <p class="pogruz__usluga-text">Ценные и высоколиквидные грузы перед отправкой опечатываются пломбой. Исключается несанкционированный доступ, партия защищена от потерь.</p>
+                        </div>
+                        <img src="./img/svg/save_icon.svg" alt="щит">
+                    </div>
+                    <div class="pogruz__usluga-item">
+                        <div class="pogruz__usluga-info">
+                            <h3 class="title__h3">Соответствие требованиям<br> договора</h3>
+                            <p class="pogruz__usluga-text">Груз передается в исправной таре с обязательной маркировкой. Вы не тратите время на доупаковку или исправление ошибок — отправление принимается к перевозке без замечаний и дополнительных процедур</p>
+                        </div>
+                        <img src="./img/svg/icon_documents.svg" alt="документ">
+                    </div>
+                    <div class="pogruz__usluga-item">
+                        <div class="pogruz__usluga-info">
+                            <h3 class="title__h3">Учет северных условий</h3>
+                            <p class="pogruz__usluga-text">Мы хорошо знаем особенности северной погоды и нюансы правильной упаковки. Используем усиленные материалы и влагозащиту. Ваш груз будет надежно защищен даже в экстремальных погодных условиях</p>
+                        </div>
+                        <img src="./img/svg/risk.svg" alt="щит">
+                    </div>
+                </div>
+                <a href="#" class="btn-primary">
+                    Заказать упаковку груза
+                    <span class="etapy__cta-icon">
+                        <img src="../img/svg/arr-bl.svg" alt="Arrow right">
+                    </span>
+                </a>
+            </div>
+
+            <!--важно страховать-->
+            <div class="upakovka__vazhno">
+                <h2 class="title__h2">Почему важно страховать груз</h2>
+                <p class="green__line-text">По договору груз должен быть передан в таре, обеспечивающей его сохранность при транспортировке.<br> Если упаковка отсутствует или не соответствует требованиям, Greenline вправе доупаковать груз.<br> Стоимость дополнительных работ оплачивает клиент.</p>
+                <div class="upakovka__vazhno-info">
+                    <div class="upakovka__vazhno-left">
+                        <h3 class="title__h3">С упаковкой</h3>
+                        <ul class="gruz__usluga-list">
+                            <li class="upakovka__usluga-text">
+                                <img src="./img/svg/lucide.svg" alt="">
+                                <p>Груз доедет целым, без царапин и повреждений</p>
+                            </li>
+                            <li class="upakovka__usluga-text">
+                                <img src="./img/svg/lucide.svg" alt="">
+                                <p>Ценные товары защищены от вскрытия и потерь</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="upakovka__vazhno-right">
+                        <h3 class="title__h3">Без упаковки</h3>
+                        <ul class="gruz__usluga-list">
+                            <li class="upakovka__usluga-text">
+                                <img src="./img/svg/x.svg" alt="">
+                                <p>Риск повреждения груза</p>
+                            </li>
+                            <li class="upakovka__usluga-text">
+                                <img src="./img/svg/x.svg" alt="">
+                                <p>Ценные товары подвержены риску вскрытия</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Подбираем защиту-->
+            <div class="podbor__zashity">
+                <h2 class="title__h2">Подбираем защиту под ваш груз</h2>
+                
+                <div class="podbor__zashity-grid">
+                    <div class="podbor__zashity-item">
+                        <h3 class="title__h3">Мягкая упаковка</h3>
+                        <p class="black__text">Стрейч-пленка, пузырчатая пленка, картон. Подходит для<br> прочных и легких грузов, мебели без стекла, товаров,<br> которым нужна защита от пыли и царапин.</p>
+                        <h3 class="title__h3 h3-green">Стоимость — 1000 руб/место</h3>
+                        <img src="./img/svg/rulon.svg" alt="рулон">
+                    </div>
+                    <div class="podbor__zashity-item">
+                        <h3 class="title__h3">Полипропиленовый мешок под<br> пломбу</h3>
+                        <p class="black__text">Решение для компактных и высоколиквидных грузов:<br> электроника, комплектующие, аксессуары, дорогостоящие<br> позиции небольшого размера.</p>
+                        <h3 class="title__h3 h3-green">Стоимость — 50–200 руб/шт.</h3>
+                        <img src="./img/svg/meshok.svg" alt="мешок">
+                    </div>
+                    <div class="podbor__zashity-item">
+                        <h3 class="title__h3">Паллетирование</h3>
+                        <p class="black__text">Укладка на европоддон с фиксацией стрейч-пленкой.<br>
+                        Подходит для канистр, грузов в таре, большого количества<br> мелких мест. Удобно при массовых отправках.</p>
+                        <h3 class="title__h3">Паллетирование под пломбу</h3>
+                        <p class="black__text">Для крупных партий в адрес одного получателя и ценных<br> грузов. Исключает несанкционированный доступ.</p>
+                        <h3 class="title__h3 h3-green">Стоимость — 4 000 руб/м3</h3>
+                        <img src="./img/svg/korobki.svg" alt="коробки">
+                    </div>
+                    <div class="podbor__zashity-item">
+                        <h3 class="title__h3">Жесткая упаковка — обрешетка</h3>
+                        <p class="black__text">Изготавливаем деревянную конструкцию под размер груза.<br>
+                        Обязательна для стекла, керамики, сантехники, мебели со<br> стеклянными элементами, оборудования с хрупкими<br> деталями, металлоконструкций сложной формы, жидких и<br> текучих грузов.</p>
+                        <p class="black__text">Обрешетка защищает при перевозке по зимнику, морем и<br> рекой.</p>
+                        <h3 class="title__h3 h3-green">Доска — от 5500 руб/м3<br>
+                        Доска + пенопласт — 10 000<br> руб/м3</h3>
+                        <img src="./img/svg/yashik.svg" alt="ящик">
+                    </div>
+                </div>
+
+                <a href="<?php echo esc_url(home_url('/contacts')); ?>" class="btn-primary">
+                    Рассчитать стоимость
+                    <span class="etapy__cta-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                    </span>
+                </a>
+
+            </div>
+
+            <!-- Как мы работаем -->
+            <div class="etapy">
+            <h2 class="title__h2">Как мы работаем</h2>
+            <p>Сроки и маршрут рассчитываются с учётом сезонных ограничений Севера</p>
+            <div class="etapy__container">
+                <div class="etapy__left">
+                    <div class="etapy__steps">
+                        <div class="etapy__step">
+                            <div class="etapy__step-badge">1</div>
+                            <h3 class="etapy__step-title">Оцениваем груз</h3>
+                            <p class="etapy__step-text">Смотрим на размеры, вес, форму, хрупкость и требования к перевозке</p>
+                        </div>
+                        <div class="etapy__step">
+                            <div class="etapy__step-badge">3</div>
+                            <h3 class="etapy__step-title">Упаковываем</h3>
+                            <p class="etapy__step-text">Фиксируем груз, амортизируем, защищаем от ударов, влаги и холода</p>
+                        </div>
+                        <div class="etapy__step etapy__step-2">
+                            <div class="etapy__step-badge">5</div>
+                            <h3 class="etapy__step-title">Передаем в перевозку</h3>
+                            <p class="etapy__step-text">Груз готов к отправке, полностью защищен и соответствует требованиям договора</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="etapy__line" aria-hidden="true"></div>
+                <div class="etapy__center">
+                    <div class="etapy__steps">
+                        <div class="etapy__step">
+                            <div class="etapy__step-badge">2</div>
+                            <h3 class="etapy__step-title">Подбираем упаковку</h3>
+                            <p class="etapy__step-text">Выбираем подходящий вариант: мягкая, жесткая, паллетирование или специальная защита</p>
+                        </div>
+                        <div class="etapy__step">
+                            <div class="etapy__step-badge">4</div>
+                            <h3 class="etapy__step-title">Маркируем и пломбируем</h3>
+                            <p class="etapy__step-text">Ставим необходимые отметки и пломбы для сохранности и безопасности</p>
+                        </div>
+                        <div class="etapy__step etapy__step-sib">
+                            <a href="<?php echo esc_url(home_url('/contacts')); ?>" class="btn-primary">
+                                Рассчитать стоимость груза
+                                <span class="etapy__cta-icon">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="etapy__right etapy__right-sib"></div>
+            </div>
+            </div>
+
+            <section><!--Наши услуги-->
+                <div class="nashi-uslugi__grid">
+                    <div class="nashi-uslugi__item">
+                        <div class="nashi-uslugi__overlay"></div>
+                        <div class="nashi-uslugi__content">
+                            <h3 class="nashi-uslugi__title">Какие еще дополнительные услуги можно выбрать</h3>
+                            <p class="nashi-uslugi__description">Сделайте перевозку еще более удобной и безопасной с нашими дополнительными услугами:</p>
+                        </div>
+                    </div>
+                    <div class="nashi-uslugi__item">
+                        <div class="nashi-uslugi__overlay">
+                            <div class="nashi-uslugi__content">
+                                <h3 class="nashi-uslugi__title">Страхование груза</h3>
+                                <div class="nashi-uslugi__bottom-content">
+                                    <a href="#" class="nashi-uslugi__popup-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nashi-uslugi__item">
+                        <div class="nashi-uslugi__overlay">
+                            <div class="nashi-uslugi__content">
+                                <h3 class="nashi-uslugi__title">Доставка от двери до двери</h3>
+                                <div class="nashi-uslugi__bottom-content">
+                                    <a href="#" class="nashi-uslugi__popup-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nashi-uslugi__item">
+                        <div class="nashi-uslugi__overlay">
+                            <div class="nashi-uslugi__content">
+                                <h3 class="nashi-uslugi__title">Погрузо-разгрузочные работы</h3>
+                                <div class="nashi-uslugi__bottom-content">
+                                    <a href="#" class="nashi-uslugi__popup-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nashi-uslugi__item">
+                        <div class="nashi-uslugi__overlay">
+                            <div class="nashi-uslugi__content">
+                                <h3 class="nashi-uslugi__title">Упаковка (жесткая и мягкая)</h3>
+                                <div class="nashi-uslugi__bottom-content">
+                                    <a href="#" class="nashi-uslugi__popup-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nashi-uslugi__item">
+                        <div class="nashi-uslugi__overlay">
+                            <div class="nashi-uslugi__content">
+                                <h3 class="nashi-uslugi__title">Перевозка грузов с температурным режимом</h3>
+                                <div class="nashi-uslugi__bottom-content">
+                                    <a href="#" class="nashi-uslugi__popup-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nashi-uslugi__item">
+                        <div class="nashi-uslugi__overlay">
+                            <div class="nashi-uslugi__content">
+                                <h3 class="nashi-uslugi__title">Перевозка опасных грузов</h3>
+                                <div class="nashi-uslugi__bottom-content">
+                                    <a href="#" class="nashi-uslugi__popup-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nashi-uslugi__item">
+                        <div class="nashi-uslugi__overlay">
+                            <div class="nashi-uslugi__content">
+                                <h3 class="nashi-uslugi__title">Экспедирование груза</h3>
+                                <div class="nashi-uslugi__bottom-content">
+                                    <a href="#" class="nashi-uslugi__popup-btn">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <a href="<?php echo esc_url(home_url('/contacts')); ?>" class="btn-primary">
+                Связаться с менеджером
+                <span class="etapy__cta-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                </span>
+            </a>
+
+            <div class="why__gl"><!--Эксперты в логистике-->
+                <div class="why__gl-num">
+                    <div class="why__gl-item-1">
+                        <h2>25 лет</h2>
+                        <p>доставляем грузы по северным маршрутам</p>
+                    </div>
+                    <div class="why__gl-item-2">
+                        <h2>99%</h2>
+                        <p>грузов доставляются без задержек</p>
+                    </div>
+                    <div class="why__gl-item-3">
+                        <h2>4,5 млн кг</h2>
+                        <p>перевезли за время<br> работы</p>
+                    </div>
+                    <div class="why__gl-item-4">
+                        <h2>5 городов</h2>
+                        <p>присутствия наших филиалов</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="strahovanie__banner"><!--упаковка баннер-->
+                <div class="strahovanie__banner-left">
+                    <h2 class="title__h2">Эта услуга необходима вам, если:</h2>
+                    <ul class="gruz__usluga-list">
+                            <li class="upakovka__usluga-text">
+                                <img src="./img/svg/lucide.svg" alt="">
+                                <p>У вас нет собственных специалистов и материалов для<br> правильной упаковки</p>
+                            </li>
+                            <li class="upakovka__usluga-text">
+                                <img src="./img/svg/lucide.svg" alt="">
+                                <p>Груз хрупкий, ценный или требует особых условий<br> (техника, стекло, мебель)</p>
+                            </li>
+                            <li class="upakovka__usluga-text">
+                                <img src="./img/svg/lucide.svg" alt="">
+                                <p>Нужно подготовить большое количество мелких<br> коробок к отправке</p>
+                            </li>
+                            <li class="upakovka__usluga-text">
+                                <img src="./img/svg/lucide.svg" alt="">
+                                <p>Требуется соответствие стандартам перевозчика</p>
+                            </li>
+                        </ul>
+                    <div class="strahovanie__banner-buttons">
+                        <a href="#" class="form-button">Обсудить мой груз</a>
+                        <a href="#" class="gl-back">Скачать договор экспедирования<img src="img/svg/symbol_download.svg" alt="Arrow"></a>
+                    </div>
+
+                </div>
+                <div class="upakovka__banner-right"></div>
+            </section>
+
+            <div class="reviews"><!--Отзывы-->
+                <h2 class="title__h2">Отзывы наших клиентов</h2>
+                <div class="reviews__nav">
+                    <button class="reviews__prev">
+                        <img src="img/svg/arrow-left.svg" alt="Previous">
+                    </button>
+                    <button class="reviews__next">
+                        <img src="img/svg/arr-bl.svg" alt="Next">
+                    </button>
+                </div>
+                <div class="slider-container">
+                    <div class="reviews__slide">
+                        <div class="review__info">
+                            <div class="review__rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                        <div class="review__content">
+                            <p class="review__text">Переезжала из Норильска в Сочи, и казалось, что перевезти целую
+                                жизнь в цитадели —
+                                это катастрофа. Но ваша команда сделала всё волшебным образом! Менеджер Мария вела меня
+                                буквально за
+                                руку: что, как пакуем, когда заберут. Не разбилась ни одна тарелка, а мой огромный шкаф
+                                доехал в
+                                идеальном состоянии. Самое ценное — это спокойствие, которое вы мне подарили. Теперь
+                                всем знакомым, кто
+                                «с Севера», рекомендую только вас! Спасибо!</p>
+                        </div>
+                        <h4 class="review__name">Мария</h4>
+                    </div>
+
+                    <div class="reviews__slide">
+                        <div class="review__info">
+                            <div class="review__rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                        <div class="review__content">
+                            <p class="review__text">Работаем с G-Line уже третий год. За это время ни одной задержки!
+                                Квалифицированные специалисты и всегда вежливое общение.</p>
+                        </div>
+                        <h4 class="review__name">Мария Сидорова</h4>
+                    </div>
+
+                    <div class="reviews__slide">
+                        <div class="review__info">
+                            <div class="review__rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                        <div class="review__content">
+                            <p class="review__text">Перевозили крупногабаритное оборудование. Все сделали
+                                профессионально, груз
+                                застрахован, доставка в точно оговоренное время.</p>
+                        </div>
+                        <h4 class="review__name">Алексей Николаев</h4>
+                    </div>
+
+                    <div class="reviews__slide">
+                        <div class="review__info">
+                            <div class="review__rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                        <div class="review__content">
+                            <p class="review__text">Отличная компания! Доставили груз из Красноярска в Норильск за 5
+                                дней. Все цело,
+                                упаковано качественно.</p>
+                        </div>
+                        <h4 class="review__name">Елена Петрова</h4>
+                    </div>
+
+                    <div class="reviews__slide">
+                        <div class="review__info">
+                            <div class="review__rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                        <div class="review__content">
+                            <p class="review__text">Рекомендую G-Line! Профессиональный подход к работе, всегда на
+                                связи,
+                                отслеживание груза в реальном времени.</p>
+                        </div>
+                        <h4 class="review__name">Иван Кузнецов</h4>
+                    </div>
+
+                    <div class="reviews__slide">
+                        <div class="review__info">
+                            <div class="review__rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                        <div class="review__content">
+                            <p class="review__text">Доставляли медикаменты. Соблюдены все температурные режимы,
+                                документы в порядке.
+                                Спасибо за надежность!</p>
+                        </div>
+                        <h4 class="review__name">Ольга Смирнова</h4>
+                    </div>
+
+                    <div class="reviews__slide">
+                        <div class="review__info">
+                            <div class="review__rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                        <div class="review__content">
+                            <p class="review__text">Многолетний партнер G-Line. Всегда выдерживают сроки, грузы приходят
+                                в целости.
+                                Команда профессионалов!</p>
+                        </div>
+                        <h4 class="review__name">Дмитрий Волков</h4>
+                    </div>
+
+                    <div class="reviews__slide">
+                        <div class="review__info">
+                            <div class="review__rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                        <div class="review__content">
+                            <p class="review__text">Перевозили хрупкие товары. Упаковали очень тщательно, все доставили
+                                без
+                                повреждений. Отличная работа!</p>
+                        </div>
+                        <h4 class="review__name">Анна Морозова</h4>
+                    </div>
+
+                    <div class="reviews__slide">
+                        <div class="review__info">
+                            <div class="review__rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                        <div class="review__content">
+                            <p class="review__text">Быстрая доставка из Новосибирска. Менеджеры помогли с документами,
+                                всё оформили
+                                быстро. Рекомендую!</p>
+                        </div>
+                        <h4 class="review__name">Сергей Белов</h4>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h2 class="title__h2">Частые вопросы</h2>
+            <div class="faq__block"><!--Частые вопросы-->
+
+                <div class="faq__items faq__items--grid">
+                    <div class="faq__left">
+                        <div class="left__grid">
+                            <div class="left__grid-item left__grid-item--active">
+                                <p>Расчет стоимости и тарифы</p>
+                            </div>
+                            <div class="left__grid-item">
+                                <p>Способы доставки</p>
+                            </div>
+                            <div class="left__grid-item">
+                                <p>Об оплате и документах</p>
+                            </div>
+                            <div class="left__grid-item">
+                                <p>Что и как отправить</p>
+                            </div>
+                            <div class="left__grid-item">
+                                <p>Дополнительные услуги</p>
+                            </div>
+                            <div class="left__grid-item">
+                                <p>Общие вопросы</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__right">
+                        <div class="faq__accordion">
+                            <div class="faq__accordion-item">
+                                <div class="faq__accordion-header">
+                                    <span class="faq__accordion-title">Какие есть способы и сроки доставки – в Норильск
+                                        и из Норильска?</span>
+                                    <span class="faq__accordion-icon">+</span>
+                                </div>
+                                <div class="faq__accordion-content">
+                                    <p>Мы предлагаем несколько способов доставки: авиатранспорт (3-10 дней), морской путь через порт Дудинка (навигация с мая по октябрь), речной транспорт (июнь-сентябрь) и зимник (декабрь-апрель). Сроки зависят от выбранного способа и погодных условий.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq__accordion-item">
+                                <div class="faq__accordion-header">
+                                    <span class="faq__accordion-title">Как я могу зимой отправить груз в Норильск и из
+                                        Норильска?</span>
+                                    <span class="faq__accordion-icon">+</span>
+                                </div>
+                                <div class="faq__accordion-content">
+                                    <p>Зимой доставка осуществляется по зимнику через Красноярский край и Игарку. Также доступна авиадоставка через Норильск (Алыкель). Зимник работает при температуре до -40°C, груз доставляется специальным транспортом с усиленной подготовкой.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq__accordion-item">
+                                <div class="faq__accordion-header">
+                                    <span class="faq__accordion-title">Когда открывается и закрывается навигация
+                                        (морская и речная)?</span>
+                                    <span class="faq__accordion-icon">+</span>
+                                </div>
+                                <div class="faq__accordion-content">
+                                    <p>Морская навигация через порт Дудинка обычно открывается в мае и закрывается в октябре. Речная навигация по Енисею начинается в июне и заканчивается в сентябре. Точные даты зависят от ледовой обстановки и объявляются ежегодно.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq__accordion-item">
+                                <div class="faq__accordion-header">
+                                    <span class="faq__accordion-title">Как мне выбрать способ доставки?</span>
+                                    <span class="faq__accordion-icon">+</span>
+                                </div>
+                                <div class="faq__accordion-content">
+                                    <p>Выбор зависит от сроков, веса груза, бюджета и времени года.
+                                        Авиа — самое быстрое (3-10 дней), но дорого.
+                                        Море и река — экономичнее, но сезонные.
+                                        Зимник — выгодная альтернатива зимой.
+                                        При обращении к нам в компанию, менеджер поможет выбрать самый выгодный и
+                                        оптимальный способ доставки под вашу задачу.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="napishi"><!--Напиши-->
+                <p>Не нашли ответа на свой вопрос?</p>
+                <p>Напишите нам, ответим в рабочее время</p>
+                <a href="#" class="btn-primary">
+                    Написать
+                    <span class="etapy__cta-icon">
+                        <img src="../img/svg/arr-bl.svg" alt="Arrow right">
+                    </span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__column-1">
+                <img src="img/svg/Logo-footer.svg" alt="G-Line Logo" class="footer__logo" />
+                <ul class="footer__nav-list">
+                    <li><a href="/" class="footer__nav-link" aria-current="page">Главная</a></li>
+                    <li><a href="o-kompanii.html" class="footer__nav-link">О компании</a></li>
+                    <li><a href="directions.html" class="footer__nav-link">Направления</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-2">
+                <h3 class="footer__title">Услуги</h3>
+                <h4 class="footer__subtitle">Виды перевозок</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Авиаперевозки</a></li>
+                    <li><a href="#" class="footer__nav-link">Море</a></li>
+                    <li><a href="#" class="footer__nav-link">Река</a></li>
+                    <li><a href="#" class="footer__nav-link">Зимник</a></li>
+                    <li><a href="#" class="footer__nav-link">Автодоставка по Сибири</a></li>
+                </ul>
+                <h4 class="footer__subtitle">Услуги</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Экспедирование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Доставка от двери до двери</a></li>
+                    <li><a href="#" class="footer__nav-link">Погрузо-разгрузочные работы</a></li>
+                    <li><a href="#" class="footer__nav-link">Упаковка груза (жесткая и мягкая)</a></li>
+                    <li><a href="#" class="footer__nav-link">Страхование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка опасных грузов</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка грузов с температурным режимом</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-3">
+                <h3 class="footer__title">Клиентам</h3>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Блог (статьи)</a></li>
+                    <li><a href="#" class="footer__nav-link">Правила перевозок</a></li>
+                    <li><a href="#" class="footer__nav-link">Документы</a></li>
+                    <li><a href="#" class="footer__nav-link">Новости логистики</a></li>
+                </ul>
+                <h3 class="footer__title">Контакты</h3>
+                <p class="footer__contact-city">Норильск</p>
+                <p class="footer__contact-info">(3919) 32-42-49</p>
+                <p class="footer__contact-info">ул. Вокзальная, 35а, стр. 4</p>
+
+                <p class="footer__contact-city">Красноярск</p>
+                <p class="footer__contact-info">+7(391) 203-04-65</p>
+                <p class="footer__contact-info">ул. Северное шоссе, 35и</p>
+
+                <p class="footer__contact-city">Новосибирск</p>
+                <p class="footer__contact-info">+7(383) 363-22-06</p>
+                <p class="footer__contact-info">ул. Сухарная, 25</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/max.png" alt="Max" class="footer__social-icon" />
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/tg.png" alt="Telegram" class="footer__social-icon" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__text"> GreenLine 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>

@@ -1,17 +1,56 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200.000000" height="200.000000" fill="none">
+<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80.000000" height="80.000000" fill="none">
+	<mask id="mask_0" width="29.999912" height="29.999912" x="0.000000" y="0.000000" maskUnits="objectBoundingBox">
+		<g filter="url(#pixso_custom_mask_type_outline)">
+			<g id="a">
+				<path id="Vector" d="M0 29.9999L29.9999 29.9999L29.9999 0L0 0L0 29.9999Z" fill="rgb(255,255,255)" fill-rule="nonzero" transform="matrix(1,0,0,-1,25,53)" />
+				<path id="Vector" d="M29.9999 29.9999L0 29.9999L0 0L29.9999 0L29.9999 29.9999ZM28.9999 1L1 1L1 28.9999L28.9999 28.9999L28.9999 1Z" fill="rgb(255,255,255)" fill-rule="evenodd" transform="matrix(1,0,0,-1,25,53)" />
+			</g>
+		</g>
+	</mask>
 	<defs>
-		<linearGradient id="paint_linear_13" x1="55.9803543" x2="154.148285" y1="114.600693" y2="128.637955" gradientUnits="userSpaceOnUse">
+		<linearGradient id="paint_linear_0" x1="22.6569157" x2="61.3291435" y1="45.7518387" y2="51.2816734" gradientUnits="userSpaceOnUse">
 			<stop stop-color="rgb(154,193,117)" offset="0" stop-opacity="1" />
 			<stop stop-color="rgb(42,98,43)" offset="1" stop-opacity="1" />
 		</linearGradient>
-		<linearGradient id="paint_linear_14" x1="26.0146351" x2="190.758789" y1="123.162727" y2="147.591034" gradientUnits="userSpaceOnUse">
+		<filter id="pixso_custom_mask_type_outline">
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 " />
+		</filter>
+		<linearGradient id="paint_linear_1" x1="10.8540154" x2="75.7532501" y1="49.1247215" y2="58.7480011" gradientUnits="userSpaceOnUse">
 			<stop stop-color="rgb(154,193,117)" offset="0" stop-opacity="1" />
 			<stop stop-color="rgb(42,98,43)" offset="1" stop-opacity="1" />
 		</linearGradient>
 	</defs>
-	<rect id="icon/risk" width="200.000000" height="200.000000" x="0.000000" y="0.000000" />
+	<rect id="icon/risk" width="80.000000" height="80.000000" x="0.000000" y="0.000000" />
 	<g id="Group">
-		<path id="Vector" d="M47.9766 65.2403C48.7593 74.604 50.5568 87.4303 54.6239 100.898C63.2617 129.498 78.5208 149.834 100.001 161.391C121.482 149.834 136.741 129.498 145.378 100.898C149.445 87.4315 151.242 74.6048 152.026 65.2403L100.001 39.228L47.9766 65.2403Z" fill="url(#paint_linear_13)" fill-opacity="0.200000003" fill-rule="nonzero" />
-		<path id="Vector" d="M187.344 47.2738C187.29 46.2492 186.966 45.257 186.404 44.3985C185.842 43.54 185.063 42.846 184.145 42.3872L102.595 1.61228C101.79 1.20962 100.902 1 100.001 1C99.1008 1 98.2127 1.20962 97.4072 1.61228L15.8577 42.3872C14.94 42.846 14.1604 43.54 13.5985 44.3985C13.0365 45.257 12.7124 46.2492 12.6592 47.2738C12.5973 48.461 11.2562 76.7295 20.8859 109.549C26.5838 128.968 34.9648 145.928 45.796 159.96C59.4453 177.641 76.9884 190.649 97.9382 198.621C99.2672 199.126 100.735 199.126 102.064 198.621C123.014 190.649 140.557 177.641 154.207 159.96C165.038 145.928 173.419 128.968 179.117 109.549C188.747 76.7295 187.405 48.461 187.344 47.2738ZM102.572 173.118C101.773 173.513 100.893 173.719 100.001 173.719C99.1095 173.719 98.2298 173.513 97.4304 173.118C71.6006 160.347 53.462 137.177 43.5186 104.252C38.5454 87.7846 36.7499 72.2671 36.1195 62.1497C36.0486 61.0133 36.3138 59.8811 36.8821 58.8943C37.4503 57.9075 38.2964 57.1098 39.315 56.6007L97.4076 27.5546C98.2131 27.152 99.1012 26.9424 100.002 26.9424C100.902 26.9424 101.79 27.152 102.596 27.5546L160.689 56.6007C161.707 57.1099 162.554 57.9077 163.122 58.8945C163.69 59.8813 163.955 61.0136 163.884 62.1501C163.254 72.2683 161.458 87.7862 156.485 104.252C146.541 137.176 128.402 160.346 102.572 173.118Z" fill="url(#paint_linear_14)" fill-opacity="0.200000003" fill-rule="nonzero" />
+		<path id="Vector" d="M19.5039 26.3068C19.8123 29.9956 20.5203 35.0484 22.1225 40.3537C25.5253 51.6205 31.5365 59.6318 39.9985 64.1845C48.4604 59.6318 54.4716 51.6205 57.8742 40.3537C59.4764 35.0488 60.1844 29.9959 60.493 26.3068L39.9985 16.0596L19.5039 26.3068Z" fill="url(#paint_linear_0)" fill-rule="nonzero" />
+		<g id="Group">
+			<g id="Clip path group" mask="url(#mask_0)">
+				<g id="Group">
+					<path id="Vector" d="M0 0L11.9824 6.91404" fill="rgb(255,255,255)" fill-opacity="0.00999999978" fill-rule="nonzero" transform="matrix(1,0,0,-1,28.0156,44.9141)" />
+					<path id="Vector" d="M0 0L11.9824 6.91404" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" transform="matrix(1,0,0,-1,28.0156,44.9141)" />
+					<path id="Vector" d="M0 5.74094L4.52776 4.5277L3.31452 0" fill="rgb(255,255,255)" fill-opacity="0.00999999978" fill-rule="nonzero" transform="matrix(1,0,0,-1,28.9922,46.2693)" />
+					<path id="Vector" d="M0 5.74094L4.52776 4.5277L3.31452 0" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" transform="matrix(1,0,0,-1,28.9922,46.2693)" />
+					<path id="Vector" d="M11.9824 6.91404L0 0" fill="rgb(255,255,255)" fill-opacity="0.00999999978" fill-rule="nonzero" transform="matrix(1,0,0,-1,40,38)" />
+					<path id="Vector" d="M11.9824 6.91404L0 0" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" transform="matrix(1,0,0,-1,40,38)" />
+					<path id="Vector" d="M1.21324 5.74094L0 1.21318L4.52776 0" fill="rgb(255,255,255)" fill-opacity="0.00999999978" fill-rule="nonzero" transform="matrix(1,0,0,-1,46.4805,35.4714)" />
+					<path id="Vector" d="M1.21324 5.74094L0 1.21318L4.52776 0" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" transform="matrix(1,0,0,-1,46.4805,35.4714)" />
+					<path id="Vector" d="M0 0L13.8281 0" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" transform="matrix(0,-1,-1,-0,40,51.8281)" />
+					<path id="Vector" d="M0 0L3.31452 3.31452L6.6291 0" fill="rgb(255,255,255)" fill-opacity="0.00999999978" fill-rule="nonzero" transform="matrix(1,0,0,-1,36.6836,48.7979)" />
+					<path id="Vector" d="M0 0L3.31452 3.31452L6.6291 0" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" transform="matrix(1,0,0,-1,36.6836,48.7979)" />
+					<path id="Vector" d="M13.8281 0L0 0" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" transform="matrix(0,-1,-1,-0,40,38)" />
+					<path id="Vector" d="M0 3.31452L3.31452 0L6.6291 3.31452" fill="rgb(255,255,255)" fill-opacity="0.00999999978" fill-rule="nonzero" transform="matrix(1,0,0,-1,36.6836,30.5166)" />
+					<path id="Vector" d="M0 3.31452L3.31452 0L6.6291 3.31452" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" transform="matrix(1,0,0,-1,36.6836,30.5166)" />
+					<path id="Vector" d="M11.9824 0L0 6.91404" fill="rgb(255,255,255)" fill-opacity="0.00999999978" fill-rule="nonzero" transform="matrix(1,0,0,-1,40,44.9141)" />
+					<path id="Vector" d="M11.9824 0L0 6.91404" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" transform="matrix(1,0,0,-1,40,44.9141)" />
+					<path id="Vector" d="M1.21324 0L0 4.52776L4.52776 5.74094" fill="rgb(255,255,255)" fill-opacity="0.00999999978" fill-rule="nonzero" transform="matrix(1,0,0,-1,46.4805,46.2695)" />
+					<path id="Vector" d="M1.21324 0L0 4.52776L4.52776 5.74094" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" transform="matrix(1,0,0,-1,46.4805,46.2695)" />
+					<path id="Vector" d="M0 6.91404L11.9824 0" fill="rgb(255,255,255)" fill-opacity="0.00999999978" fill-rule="nonzero" transform="matrix(1,0,0,-1,28.0156,38)" />
+					<path id="Vector" d="M0 6.91404L11.9824 0" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" transform="matrix(1,0,0,-1,28.0156,38)" />
+					<path id="Vector" d="M0 0L4.52776 1.21324L3.31452 5.74094" fill="rgb(255,255,255)" fill-opacity="0.00999999978" fill-rule="nonzero" transform="matrix(1,0,0,-1,28.9922,35.4717)" />
+					<path id="Vector" d="M0 0L4.52776 1.21324L3.31452 5.74094" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" transform="matrix(1,0,0,-1,28.9922,35.4717)" />
+				</g>
+			</g>
+		</g>
+		<path id="Vector" d="M74.4078 19.2291C74.3869 18.8254 74.2592 18.4346 74.0378 18.0964C73.8165 17.7582 73.5093 17.4848 73.1478 17.3041L41.0222 1.2412C40.7049 1.08258 40.355 1 40.0003 1C39.6456 1 39.2957 1.08258 38.9784 1.2412L6.85281 17.3041C6.49127 17.4848 6.18415 17.7582 5.96279 18.0964C5.74143 18.4346 5.61374 18.8254 5.59277 19.2291C5.56839 19.6968 5.04006 30.8328 8.83359 43.7618C11.0782 51.4116 14.3798 58.093 18.6467 63.6205C24.0237 70.586 30.9346 75.7101 39.1875 78.8508C39.7111 79.0498 40.2895 79.0498 40.8131 78.8508C49.066 75.7102 55.9769 70.586 61.3539 63.6205C65.6208 58.093 68.9224 51.4115 71.167 43.7618C74.9605 30.8328 74.4322 19.6968 74.4078 19.2291ZM41.0131 68.804C40.6982 68.9598 40.3516 69.0408 40.0003 69.0408C39.649 69.0408 39.3024 68.9598 38.9875 68.804C28.8121 63.773 21.6666 54.6454 17.7495 41.6752C15.7904 35.1879 15.083 29.0749 14.8347 25.0893C14.8068 24.6416 14.9113 24.1956 15.1351 23.8068C15.359 23.4181 15.6923 23.1039 16.0935 22.9033L38.9785 11.4609C39.2958 11.3023 39.6457 11.2198 40.0005 11.2198C40.3552 11.2198 40.7051 11.3023 41.0224 11.4609L63.9075 22.9033C64.3088 23.1039 64.6421 23.4182 64.866 23.8069C65.0898 24.1957 65.1943 24.6417 65.1663 25.0895C64.9179 29.0754 64.2105 35.1885 62.2514 41.6752C58.334 54.6453 51.1885 63.7728 41.0131 68.804Z" fill="url(#paint_linear_1)" fill-rule="nonzero" />
 	</g>
 </svg>
