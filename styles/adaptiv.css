@@ -208,3 +208,41 @@
     height: 40px;
   }
 }
+
+/* Kakie Doki Green Responsive */
+@media (max-width: 768px) {
+  .kakie__doki-green {
+    padding: 24px;
+  }
+
+  .kakie__doki-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .kakie__doki-column {
+    gap: 24px;
+  }
+
+  .kakie__doki-section {
+    gap: 12px;
+  }
+
+  .kakie__doki-section-title {
+    font-size: var(--body);
+  }
+
+  .kakie__doki-list-item p {
+    font-size: 15px;
+  }
+
+  .kakie__doki-buttons {
+    gap: 12px;
+  }
+
+  .kakie__doki-btn-calc,
+  .kakie__doki-btn-tariff {
+    padding: 10px 20px;
+    font-size: var(--body);
+  }
+}
