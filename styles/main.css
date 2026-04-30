@@ -88,11 +88,20 @@ body {
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  max-width: 1920px;
+  padding: 0 clamp(0px, calc((100vw - 2560px) / 2), 500px);
 }
 
 a {
   text-decoration: none;
+}
+
+.h2__white {
+  color: var(--white);
+  font-family: var(--primary);
+  font-weight: var(--w-bold);
+  font-size: var(--title);
+  line-height: var(--lh-normal);
+  margin: 0;
 }
 
 .title__h2 {
@@ -130,6 +139,14 @@ a {
 .black__text {
   color: var(--black) !important;
   margin: 0;
+}
+
+.wh_text {
+  font-family: var(--primary);
+  color: var(--white);
+  line-height: var(--lh-normal);
+  margin: 0;
+  font-weight: var(--w-normal);
 }
 
 .op-btn_green-arr {
@@ -701,6 +718,7 @@ a {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  max-width: fit-content;
 }
 
 .btn-primary:hover {
@@ -770,6 +788,8 @@ a {
   background: url('../img/hero-block.webp');
   background-size: cover;
   background-position: center center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header.o-kompanii {
@@ -830,7 +850,7 @@ a {
 .calculator-button {
   position: absolute;
   bottom: 20px;
-  right: 320px;
+  right: 16vw;
 }
 
 .calc-btn {
@@ -1755,6 +1775,8 @@ a {
   background-attachment: fixed;
   min-height: 100vh;
   padding-top: 80px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .vidy-perevozok {
@@ -1983,6 +2005,9 @@ a {
 .chto-vozim__container {
   max-width: 1440px;
   margin: 0 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .chto-vozim__grid {
@@ -2946,7 +2971,7 @@ line-height: var(--lh-normal);
 }
 
 .interesting__right-top {
-  background-image: url(../img/i-r-t.webp);
+  background-image: url('../img/i-r-t.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2955,7 +2980,7 @@ line-height: var(--lh-normal);
 }
 
 .interesting__right-bottom {
-  background-image: url(../img/i-r-b.webp);
+  background-image: url('../img/i-r-b.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2966,9 +2991,9 @@ line-height: var(--lh-normal);
 /* FAQ */
 
 .faq__items--grid {
-    display: grid !important;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
+  display: grid !important;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
 }
 
 .faq__block {
@@ -3041,11 +3066,11 @@ height: 224px;
 }
 
 .faq__item-2 {
-  background-image: url(../img/faq2.webp);
+  background-image: url('../img/faq2.webp');
 }
 
 .faq__item-3 {
-  background-image: url(../img/faq1.webp);
+  background-image: url('../img/faq1.webp');
 }
 
 .faq__content {
@@ -3181,7 +3206,7 @@ overflow: hidden;
 .news__left {
   display: flex;
   flex-direction: column;
-  background-image: url(../img/frame-16.webp);
+  background-image: url('../img/frame-16.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3241,7 +3266,7 @@ overflow: hidden;
 }
 
 .news-card-1 {
-  background-image: url(../img/river-nav.webp);
+  background-image: url('../img/river-nav.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3915,7 +3940,7 @@ margin-bottom: 100px;
 
 /* clients */
 
-.header.clients {
+.clients {
   background-image: url('../img/clients.webp');
   background-size: cover;
   background-position: center center;
@@ -4216,7 +4241,7 @@ gap: 20px;
 }
 
 .anonsy-1 {
-  background-image: url(../img/river-nav.webp);
+  background-image: url('../img/river-nav.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4224,7 +4249,7 @@ gap: 20px;
 }
 
 .anonsy-2 {
-  background-image: url(../img/port.webp);
+  background-image: url('../img/port.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4630,14 +4655,8 @@ gap: 20px;
 }
 
 .ready__left-button .btn-primary {
-  width: 220px;
   border: 1px solid var(--white);
 }
-
-.ready__left-button .we__open-btn {
-  max-width: 220px !important;
-}
-
 
 /*new page directions*/
 
@@ -5733,6 +5752,22 @@ font-family: var(--primary);
 
 /* new page charter */
 
+.charter-page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 80px 0;
+}
+
+.charter__right {
+  background-image: url('../img/gruz-bort.webp');
+  border-radius: 20px;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .charter__text {
   font-size: var(--font-32) !important;
   color: var(--black);
@@ -5783,7 +5818,6 @@ font-family: var(--primary);
 }
 
 .charter__info-item img {
-  
   width: 80px;
   height: 80px;
 }
@@ -6792,6 +6826,7 @@ font-family: var(--primary);
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin: 80px 0;
 }
 
 .stoimost__title {
@@ -7195,4 +7230,43 @@ font-family: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* new page do-dveri */
+
+.do-dveri__head {
+  background-image: url('../img/dostavka.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.do-dveri__head::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.do-dveri__head > * {
+  z-index: 2;
+}
+
+.do-dveri__plus {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.vhodit_do-dveri {
+  display: flex;
+  align-items: center;
+}
+
+.kakie__doki-section .wh_text {
+  font-size: var(--subtitle);
 }
