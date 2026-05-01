@@ -611,6 +611,7 @@ class InterestingSlider {
   constructor() {
     this.container = document.querySelector('.interesting');
     this.slides = document.querySelectorAll('.interesting__info');
+    this.titles = document.querySelectorAll('.geo__office-title');
     this.prevBtn = document.getElementById('geo-prev');
     this.nextBtn = document.getElementById('geo-next');
     this.currentIndex = 0;
@@ -652,6 +653,14 @@ class InterestingSlider {
         slide.classList.add('active');
       } else {
         slide.classList.remove('active');
+      }
+    });
+    
+    this.titles.forEach((title, index) => {
+      if (index === this.currentIndex) {
+        title.classList.add('active');
+      } else {
+        title.classList.remove('active');
       }
     });
   }

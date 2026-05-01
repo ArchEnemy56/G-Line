@@ -453,10 +453,10 @@ a {
   display: flex;
   justify-content: flex-end;
   gap: 40px;
-  margin-bottom: 24px;
   border: 2px solid var(--green);
   border-radius: 50px;
   width: fit-content;
+  height: fit-content;
   padding: 6px;
   margin-left: auto;
 }
@@ -502,6 +502,14 @@ a {
 
 .geo__nav button:disabled:hover img {
   filter: brightness(0) invert(0.5);
+}
+
+.geo__office-title {
+  display: none;
+}
+
+.geo__office-title.active {
+  display: block;
 }
 
 .interesting__info {
@@ -2976,7 +2984,25 @@ line-height: var(--lh-normal);
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 344px;
+  height: 100%;
+}
+
+.interesting__right-top2 {
+background-image: url('../img/bear.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.interesting__right-top3 {
+background-image: url('../img/teatr.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 .interesting__right-bottom {
@@ -2985,7 +3011,43 @@ line-height: var(--lh-normal);
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 344px;
+  height: 100%;
+}
+
+.interesting__right-bottom2 {
+  background-image: url('../img/orange-truck.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.interesting__right-bottom3 {
+  background-image: url('../img/actery.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.interesting__right-top4 {
+background-image: url('../img/plane.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.interesting__right-top5 {
+background-image: url('../img/vertolet.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 /* FAQ */
