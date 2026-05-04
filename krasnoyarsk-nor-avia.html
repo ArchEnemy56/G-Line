@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>G-Line</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@700&family=Futura:wght@700&family=Mulish:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/adaptiv.css" />
+</head>
+
+<body class="gl-tracking-page">
+    <header class="header white__header">
+        <nav class="site-navigation" role="navigation" aria-label="Основная навигация">
+            <div class="nav-wrapper">
+                <div class="nav-top-bar">
+                    <a href="/" class="site-logo" aria-label="G-Line - Главная страница">
+                        <img src="img/svg/logo-1.svg" alt="G-Line логотип" />
+                    </a>
+                    <div class="nav-actions-group" role="group" aria-label="Основные действия">
+                        <button class="nav-action-btn" type="button" aria-label="Рассчитать стоимость груза">
+                            Рассчитать стоимость груза
+                        </button>
+                        <button class="nav-action-btn" type="button" aria-label="Отследить груз">
+                            Отследить груз
+                        </button>
+                    </div>
+                    <form class="gray__search-form" role="search" aria-label="Поиск по сайту">
+                        <label for="search-input" class="visually-hidden">Поиск</label>
+                        <input type="search" id="search-input" class="nav-search-input" placeholder=""
+                            aria-label="Поле поиска" />
+                        <button type="submit" class="nav-search-btn" aria-label="Выполнить поиск">
+                            <img class="nav-search-icon" src="img/svg/search.svg" alt="" role="presentation" />
+                        </button>
+                    </form>
+                    <div class="nav-contact-info">
+                        <div class="nav-location-info">
+                            <div class="nav-location-icon" aria-hidden="true">
+                                <img class="nav-location-pin " src="img/icon-location.png" alt="" role="presentation" />
+                            </div>
+                            <div class="nav-city-selector">
+                                <button type="button" class="nav-city-btn black__text"
+                                    aria-label="Выбрать город: Норильск" aria-haspopup="listbox">
+                                    Норильск
+                                    <img class="nav-dropdown-icon" src="img/svg/drop-bl.svg" alt=""
+                                        role="presentation" />
+                                </button>
+                            </div>
+                        </div>
+                        <a href="tel:+73919324249" class="nav-phone-link black__text">+7 (3919) 32-42-49</a>
+                        <p class="nav-address-text black__text">ул. Вокзальная, 35а, стр. 4</p>
+                    </div>
+                </div>
+                <main class="nav-main-menu">
+                    <a href="/" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Главная</span>
+                    </a>
+                    <a href="o-kompanii.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">О компании</span>
+                    </a>
+                    <a href="uslugi.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Услуги</span>
+                    </a>
+                    <a href="directions.html" class="nav-menu-link" aria-current="page">
+                        <span class="nav-menu-text nav-menu-text--black">Направления</span>
+                    </a>
+                    <a href="clients.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Клиентам</span>
+                    </a>
+                    <a href="contacts.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Контакты</span>
+                    </a>
+                </main>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cont-in">
+
+        <!--Тарифная сетка-->
+        <div class="gl-tarif-matrix-wrapper">
+            <div class="gl-tarif-matrix-header">
+                <div class="gl-tarif-matrix-title-block">
+                    <h2 class="gl-tarif-matrix-route">Красноярск → Норильск</h2>
+                    <p class="gl-tarif-matrix-subtitle">Авиадоставка</p>
+                </div>
+
+            </div>
+
+            <div class="tarif__title">
+                <h2 class="title__h2">Тарифы на авиаперевозки</h2>
+                <a href="assets/pdf/avia-krasnoyarsk-norilsk.pdf" download class="gl-tarif-download-btn">
+                    <span>Скачать тариф</span>
+                    <img src="img/svg/arr-bl.svg" alt="Скачать" class="gl-tarif-download-icon">
+                </a>
+            </div>
+            <p class="gl-tarif-matrix-table-subtitle">По маршруту Новосибирск - Норильск с 05.11.2025 г</p>
+
+            <div class="gl-tarif-matrix-container">
+                <table class="gl-tarif-matrix-table">
+                    <thead>
+                        <tr>
+                            <th class="gl-tarif-matrix-th gl-tarif-matrix-th--corner">Вес груза/плотность</th>
+                            <th class="gl-tarif-matrix-th">Свыше<br> 400</th>
+                            <th class="gl-tarif-matrix-th">От 350<br> до 399</th>
+                            <th class="gl-tarif-matrix-th">От 300<br> до 349</th>
+                            <th class="gl-tarif-matrix-th">От 250<br> до 299</th>
+                            <th class="gl-tarif-matrix-th">От 200<br> до 249</th>
+                            <th class="gl-tarif-matrix-th">От 150<br> до 199</th>
+                            <th class="gl-tarif-matrix-th">От 100<br> до 149</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="gl-tarif-matrix-row">
+                            <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">Свыше 20 тонн</td>
+                            <td class="gl-tarif-matrix-cell">277</td>
+                            <td class="gl-tarif-matrix-cell">278</td>
+                            <td class="gl-tarif-matrix-cell">279</td>
+                            <td class="gl-tarif-matrix-cell">280</td>
+                            <td class="gl-tarif-matrix-cell">283</td>
+                            <td class="gl-tarif-matrix-cell">393</td>
+                            <td class="gl-tarif-matrix-cell">330</td>
+                        </tr>
+                        <tr class="gl-tarif-matrix-row">
+                            <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">От 10 до 20 тонн</td>
+                            <td class="gl-tarif-matrix-cell">278</td>
+                            <td class="gl-tarif-matrix-cell">279</td>
+                            <td class="gl-tarif-matrix-cell">280</td>
+                            <td class="gl-tarif-matrix-cell">282</td>
+                            <td class="gl-tarif-matrix-cell">284</td>
+                            <td class="gl-tarif-matrix-cell">394</td>
+                            <td class="gl-tarif-matrix-cell">331</td>
+                        </tr>
+                        <tr class="gl-tarif-matrix-row">
+                            <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">От 5 до 10 тонн</td>
+                            <td class="gl-tarif-matrix-cell">280</td>
+                            <td class="gl-tarif-matrix-cell">281</td>
+                            <td class="gl-tarif-matrix-cell">283</td>
+                            <td class="gl-tarif-matrix-cell">284</td>
+                            <td class="gl-tarif-matrix-cell">286</td>
+                            <td class="gl-tarif-matrix-cell">295</td>
+                            <td class="gl-tarif-matrix-cell">333</td>
+                        </tr>
+                        <tr class="gl-tarif-matrix-row">
+                            <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">От 3 до 5 тонн</td>
+                            <td class="gl-tarif-matrix-cell">282</td>
+                            <td class="gl-tarif-matrix-cell">283</td>
+                            <td class="gl-tarif-matrix-cell">285</td>
+                            <td class="gl-tarif-matrix-cell">286</td>
+                            <td class="gl-tarif-matrix-cell">288</td>
+                            <td class="gl-tarif-matrix-cell">296</td>
+                            <td class="gl-tarif-matrix-cell">335</td>
+                        </tr>
+                        <tr class="gl-tarif-matrix-row">
+                            <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">От 1 до 3 тонн</td>
+                            <td class="gl-tarif-matrix-cell">284</td>
+                            <td class="gl-tarif-matrix-cell">285</td>
+                            <td class="gl-tarif-matrix-cell">286</td>
+                            <td class="gl-tarif-matrix-cell">287</td>
+                            <td class="gl-tarif-matrix-cell">289</td>
+                            <td class="gl-tarif-matrix-cell">297</td>
+                            <td class="gl-tarif-matrix-cell">336</td>
+                        </tr>
+                        <tr class="gl-tarif-matrix-row">
+                            <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">Менее 1 тонны</td>
+                            <td class="gl-tarif-matrix-cell">286</td>
+                            <td class="gl-tarif-matrix-cell">287</td>
+                            <td class="gl-tarif-matrix-cell">288</td>
+                            <td class="gl-tarif-matrix-cell">289</td>
+                            <td class="gl-tarif-matrix-cell">290</td>
+                            <td class="gl-tarif-matrix-cell">298</td>
+                            <td class="gl-tarif-matrix-cell">338</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="8" class="gl-tarif-matrix-footer-cell">
+                                При плотности груза менее 100 кг/куб тариф считается из расчета 50 500 руб. м/кубический
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <!--Цена упаковки грузов-->
+        <div class="cena__upakovki">
+            <h3 class="title__h3">Упаковка груза расценивается исходя из объёма и вида упаковки:</h3>
+
+            <div class="cena__upakovki-grid">
+                <div class="cena__upakovki-item">
+                    <h3 class="title__h3">Жесткая (доска)</h3>
+                    <div class="cena__upakovki-item__price">
+                        <p class="black__text">5 500 руб/куб</p>
+                        <p class="black__text">мин 1000 руб</p>
+                    </div>
+                </div>
+                <div class="cena__upakovki-item">
+                    <h3 class="title__h3">Мягкая (картон, плёнка,<br> скотч)</h3>
+                    <div class="cena__upakovki-item__price">
+                        <p class="black__text">1000 руб/куб</p>
+                        <p class="black__text">мин 300 руб</p>
+                    </div>
+                </div>
+                <div class="cena__upakovki-item">
+                    <h3 class="title__h3">Упаковка в мешки</h3>
+                    <div class="cena__upakovki-item__price">
+                        <p class="black__text">50-200 руб/шт</p>
+                    </div>
+                </div>
+                <div class="cena__upakovki-item">
+                    <h3 class="title__h3">Опломбирование тары</h3>
+                    <div class="cena__upakovki-item__price">
+                        <p class="black__text">50 руб</p>
+                    </div>
+                </div>
+                <div class="cena__upakovki-item">
+                    <h3 class="title__h3">Паллетирование<br> (паллет+стрейч)</h3>
+                    <div class="cena__upakovki-item__price">
+                        <p class="black__text">650 руб</p>
+                    </div>
+                </div>
+                <div class="cena__upakovki-item">
+                    <h3 class="title__h3">Сборный паллет<br> для ценного, хрупкого,<br> и мелкого груза</h3>
+                    <div class="cena__upakovki-item__price">
+                        <p class="black__text">2500 руб/куб</p>
+                        <p class="black__text">мин 250 руб/куб</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="<?php echo esc_url(home_url('/contacts')); ?>" class="btn-primary">
+                Рассчитать стоимость груза
+                <span class="etapy__cta-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                </span>
+            </a>
+        </div>
+
+        <!--Памятка отправителю-->
+        <div class="pamyatka__otpravitelu">
+            <h2 class="title__h2">Памятка отправителю: как избежать доплат при перевозке в Норильск</h2>
+
+            <div class="pamyatka__otpravitelu__info">
+                <div class="pamyatka-accordion">
+                    <div class="pamyatka-accordion-item">
+                        <div class="pamyatka-accordion-header">
+                            <h3 class="pamyatka-accordion-title">Базовые условия и минимальные тарифы</h3>
+                            <button class="pamyatka-accordion-trigger">
+                                <img src="img/svg/arr-bl.svg" alt="Открыть" class="pamyatka-accordion-icon">
+                            </button>
+                        </div>
+                        <div class="pamyatka-accordion-content">
+                            <h4 class="pamyatka-accordion-content-title">Эти пункты формируют основу расчета стоимости
+                                для любого груза</h4>
+                            <ul class="pamyatka-accordion-list">
+                                <li class="pamyatka-accordion-list-item">«Агентское вознаграждение составляет 3 рубля за
+                                    1 кг перевезенного груза, если расчет стоимости производится по цене за 1 кг; 300
+                                    руб. за 1 м3, если расчет стоимости производится по цене за 1 м3, но не менее 300
+                                    рублей»</li>
+                                <li class="pamyatka-accordion-list-item">Минимальная сумма оплаты 2200 руб.+ 300 руб
+                                    агентское вознаграждение.</li>
+                                <li class="pamyatka-accordion-list-item">Производится страхование груза страховой
+                                    компанией в пользу грузовладельца. Сумма страховой премии составляет 0,4 % от
+                                    объявленной стоимости груза.</li>
+                                <li class="pamyatka-accordion-list-item">Проверьте соответствие фактического веса
+                                    заявленному</li>
+                                <li class="pamyatka-accordion-list-item">Документируйте результаты взвешивания</li>
+                            </ul>
+
+                            <div class="accordion-sub-header">
+                                <h3 class="pamyatka-accordion-title">Перевозка крупногабаритного и тяжеловесного груза:
+                                </h3>
+                                <ul class="pamyatka-accordion-list">
+                                    <li class="pamyatka-accordion-list-item">15 % к тарифу, масса одного места от 83 кг
+                                        до 299 кг, габариты не более 2*1,2*1,6 м;</li>
+                                    <li class="pamyatka-accordion-list-item">30 % к тарифу, масса одного места от 300 кг
+                                        до 2000 кг, габариты не более 2*2*1,6 м;</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="pamyatka-accordion-item">
+                        <div class="pamyatka-accordion-header">
+                            <h3 class="pamyatka-accordion-title">Особые (дополнительные) сборы</h3>
+                            <button class="pamyatka-accordion-trigger">
+                                <img src="img/svg/arr-bl.svg" alt="Открыть" class="pamyatka-accordion-icon">
+                            </button>
+                        </div>
+                        <div class="pamyatka-accordion-content">
+                            <h4 class="pamyatka-accordion-content-title">Дополнительные платежи, применяемые к тарифу в
+                                зависимости от
+                                характеристик груза</h4>
+                            <ul class="pamyatka-accordion-list">
+                                <li class="pamyatka-accordion-list-item">Груз с удельной стоимостью одного килограмма
+                                    свыше 5000 руб.
+                                    принимается только по согласованию с руководителем предприятия, сбор
+                                    15% к тарифу.</li>
+                                <li class="pamyatka-accordion-list-item">Опасный груз (предметы или вещества, которые
+                                    способны создавать
+                                    угрозу для здоровья, безопасности, имущества или окружающей среды
+                                    и которые указаны в перечне опасных грузов или классифицированы как опасные грузы в
+                                    соответствии с
+                                    законодательством Российской</li>
+                                <li class="pamyatka-accordion-list-item">Грузы, требующие специального температурного
+                                    режима (например,
+                                    продукты глубокой заморозки (мясо сырое, рыба свежая, п/ф мясные,
+                                    овощи, фрукты, ягода, мороженое), цветы, свежие овощи, фрукты, ягода и др.)
+                                    принимаются к перевозке под
+                                    самолёт и только по
+                                    предварительному письменному согласованию, дополнительный сбор 15% к тарифу.</li>
+                                <li class="pamyatka-accordion-list-item">При перевозке хрупкого груза (например, стекло,
+                                    зеркала, фарфор,
+                                    фаянс, керамика, люстры и др.) взимается дополнительная плата 10% от
+                                    тарифа.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pamyatka-accordion-item">
+                        <div class="pamyatka-accordion-header">
+                            <h3 class="pamyatka-accordion-title">Требования к упаковке и приему груза</h3>
+                            <button class="pamyatka-accordion-trigger">
+                                <img src="img/svg/arr-bl.svg" alt="Открыть" class="pamyatka-accordion-icon">
+                            </button>
+                        </div>
+                        <div class="pamyatka-accordion-content">
+                            <h4 class="pamyatka-accordion-content-title">Специфические условия, которые клиент должен
+                                выполнить до передачи
+                                груза</h4>
+                            <ul class="pamyatka-accordion-list">
+                                <li class="pamyatka-accordion-list-item">По согласованию, масса одного места более 2000
+                                    кг, габариты более
+                                    2*2*1,6 м, а также длина одного место более 3 м</li>
+                                <li class="pamyatka-accordion-list-item">Стёкла (автомобильные, мебельные, зеркала,
+                                    изделия из стекла,
+                                    картины и т.п.), легкодеформирующиеся изделия, механические средства
+                                    (двигатели, мотоциклы, мопеды, снегоходы, лодки, катера) и др. принимаются к
+                                    экспедированию только в
+                                    жесткой (деревянной) упаковке.</li>
+                        </div>
+                    </div>
+
+                    <div class="pamyatka-accordion-item">
+                        <div class="pamyatka-accordion-header">
+                            <h3 class="pamyatka-accordion-title">Сроки и дополнительные услуги</h3>
+                            <button class="pamyatka-accordion-trigger">
+                                <img src="img/svg/arr-bl.svg" alt="Открыть" class="pamyatka-accordion-icon">
+                            </button>
+                        </div>
+                        <div class="pamyatka-accordion-content">
+                            <h4 class="pamyatka-accordion-content-title">Условия, связанные со временем и сопутствующими
+                                услугами</h4>
+                            <ul class="pamyatka-accordion-list">
+                                <li class="pamyatka-accordion-list-item">Доставка груза до Норильска не позднее десяти
+                                    рабочих дней с момента передачи груза экспедитору, не включая дня приемки и время
+                                    нелётной погоды на маршруте следования груза.</li>
+                                <li class="pamyatka-accordion-list-item">Срок бесплатного хранения составляет 3 дня, не
+                                    считая дня поступления груза на склад-получатель, начиная с 4 дня хранение груза
+                                    является
+                                    платным и составляет 5 рублей за 1 кг. в сутки.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__column-1">
+                <img src="img/svg/Logo-footer.svg" alt="G-Line Logo" class="footer__logo" />
+                <ul class="footer__nav-list">
+                    <li><a href="/" class="footer__nav-link" aria-current="page">Главная</a></li>
+                    <li><a href="o-kompanii.html" class="footer__nav-link">О компании</a></li>
+                    <li><a href="directions.html" class="footer__nav-link">Направления</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-2">
+                <h3 class="footer__title">Услуги</h3>
+                <h4 class="footer__subtitle">Виды перевозок</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Авиаперевозки</a></li>
+                    <li><a href="#" class="footer__nav-link">Море</a></li>
+                    <li><a href="#" class="footer__nav-link">Река</a></li>
+                    <li><a href="#" class="footer__nav-link">Зимник</a></li>
+                    <li><a href="#" class="footer__nav-link">Автодоставка по Сибири</a></li>
+                </ul>
+                <h4 class="footer__subtitle">Услуги</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Экспедирование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Доставка от двери до двери</a></li>
+                    <li><a href="#" class="footer__nav-link">Погрузо-разгрузочные работы</a></li>
+                    <li><a href="#" class="footer__nav-link">Упаковка груза (жесткая и мягкая)</a></li>
+                    <li><a href="#" class="footer__nav-link">Страхование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка опасных грузов</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка грузов с температурным режимом</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-3">
+                <h3 class="footer__title">Клиентам</h3>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Блог (статьи)</a></li>
+                    <li><a href="#" class="footer__nav-link">Правила перевозок</a></li>
+                    <li><a href="#" class="footer__nav-link">Документы</a></li>
+                    <li><a href="#" class="footer__nav-link">Новости логистики</a></li>
+                </ul>
+                <h3 class="footer__title">Контакты</h3>
+                <p class="footer__contact-city">Норильск</p>
+                <p class="footer__contact-info">(3919) 32-42-49</p>
+                <p class="footer__contact-info">ул. Вокзальная, 35а, стр. 4</p>
+
+                <p class="footer__contact-city">Красноярск</p>
+                <p class="footer__contact-info">+7(391) 203-04-65</p>
+                <p class="footer__contact-info">ул. Северное шоссе, 35и</p>
+
+                <p class="footer__contact-city">Новосибирск</p>
+                <p class="footer__contact-info">+7(383) 363-22-06</p>
+                <p class="footer__contact-info">ул. Сухарная, 25</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/max.png" alt="Max" class="footer__social-icon" />
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/tg.png" alt="Telegram" class="footer__social-icon" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__text"> GreenLine 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>

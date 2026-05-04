@@ -906,4 +906,43 @@ document.addEventListener('DOMContentLoaded', () => {
   new InterestingSlider();
   new TrackingForm();
   new HeroContentRotation();
+  new PamyatkaAccordion();
 });
+
+// =============================================================================
+// ПАМЯТКА ОТПРАВИТЕЛЮ - АККОРДЕОН
+// =============================================================================
+
+class PamyatkaAccordion {
+  constructor() {
+    this.accordion = document.querySelector('.pamyatka-accordion');
+    
+    if (!this.accordion) return;
+    
+    this.items = this.accordion.querySelectorAll('.pamyatka-accordion-item');
+    this.headers = this.accordion.querySelectorAll('.pamyatka-accordion-header');
+    
+    this.init();
+  }
+  
+  init() {
+    this.headers.forEach((header, index) => {
+      header.addEventListener('click', () => this.toggleItem(index));
+    });
+  }
+  
+  toggleItem(index) {
+    const clickedItem = this.items[index];
+    const isActive = clickedItem.classList.contains('active');
+    
+    // Закрываем все открытые элементы
+    this.items.forEach(item => {
+      item.classList.remove('active');
+    });
+    
+    // Если кликнутый элемент не был активен, открываем его
+    if (!isActive) {
+      clickedItem.classList.add('active');
+    }
+  }
+}

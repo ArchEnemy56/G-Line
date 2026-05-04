@@ -4789,19 +4789,32 @@ gap: 20px;
   transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .directions_grid-item:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(60, 120, 61, 0.15);
   transform: translateY(-2px);
-  transition: all var(--tr) ease;
+  transition: all var(--tr) ease-in-out;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: all var(--tr) ease;
+  border: 2px solid var(--green);
+}
+
+.directions_grid-item:hover .we__open-btn-icon {
+  display: flex;
 }
 
 .directions_grid-cont {
   display: flex;
   gap: 20px;
+  
+}
+
+.directions_grid-item .we__open-btn-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: none;
 }
 
 .directions_grid-info {
@@ -7331,4 +7344,439 @@ font-family: var(--primary);
 
 .kakie__doki-section .wh_text {
   font-size: var(--subtitle);
+}
+
+/* =============================================================================
+    ТАРИФНАЯ МАТРИЦА АВИАПЕРЕВОЗОК
+   ============================================================================= */
+
+.gl-tarif-matrix-wrapper {
+  margin: 80px 0 40px 0;
+  padding: 0 20px;
+}
+
+.gl-tarif-matrix-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gl-tarif-matrix-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gl-tarif-matrix-route {
+  color: var(--black);
+  font-family: var(--secondary);
+  font-weight: var(--w-bold);
+  font-size: var(--h1-title);
+  line-height: var(--lh-normal);
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.gl-tarif-matrix-subtitle {
+  color: var(--black);
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--title);
+  line-height: var(--lh-normal);
+  margin: 0;
+}
+
+.gl-tarif-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all var(--tr);
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body-lg);
+  color: var(--green);
+  line-height: var(--lh-normal);
+  text-decoration: none;
+}
+
+.gl-tarif-download-btn:hover {
+  background-color: rgba(42, 98, 43, 0.1);
+  transition: var(--tr);
+  transform: translateY(-2px);
+}
+
+.gl-tarif-download-btn span {
+  text-decoration: none;
+}
+
+.gl-tarif-download-icon {
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+  filter: brightness(0) saturate(100%) invert(22%) sepia(67%) saturate(675%) hue-rotate(87deg) brightness(96%) contrast(89%);
+  border-right: 1px solid var(--green);
+  padding-right: 2px;
+}
+
+.gl-tarif-matrix-table-title {
+  color: var(--black);
+  font-family: var(--primary);
+  font-weight: var(--w-bold);
+  font-size: var(--title);
+  line-height: var(--lh-normal);
+  margin: 0 0 8px 0;
+}
+
+.gl-tarif-matrix-table-subtitle {
+  color: var(--op-black);
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body);
+  line-height: var(--lh-normal);
+  margin: 0 0 30px 0;
+}
+
+.gl-tarif-matrix-container {
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.gl-tarif-matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--primary);
+}
+
+.gl-tarif-matrix-th {
+  background: var(--green);
+  color: var(--white);
+  font-weight: var(--w-bold);
+  font-size: var(--body);
+  padding: 16px 12px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 160px;
+  height: 85px;
+}
+
+.gl-tarif-matrix-th--corner {
+  text-align: left;
+  padding-left: 20px;
+  width: 160px;
+  height: 85px;
+}
+
+.gl-tarif-matrix-row {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.gl-tarif-matrix-row:last-child {
+  border-bottom: none;
+}
+
+.gl-tarif-matrix-row:nth-child(even) {
+  background-color: rgba(154, 193, 117, 0.03);
+}
+
+.gl-tarif-matrix-row:hover {
+  background-color: rgba(154, 193, 117, 0.08);
+}
+
+.gl-tarif-matrix-cell {
+  padding: 15px 20px;
+  color: var(--black);
+  font-size: var(--body);
+  font-weight: var(--w-normal);
+  line-height: var(--lh-normal);
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  width: 160px;
+  height: 85px;
+}
+
+.gl-tarif-matrix-cell--header {
+  background: transparent;
+  color: var(--black);
+  font-weight: var(--w-semibold);
+  text-align: center;
+  padding-left: 20px;
+  border: 1px solid #e5e7eb;
+  width: 160px;
+  height: 85px;
+}
+
+.gl-tarif-matrix-note {
+  color: var(--op-black);
+  font-family: var(--primary);
+  font-size: 14px;
+  font-weight: var(--w-normal);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+  font-style: italic;
+}
+
+.gl-tarif-matrix-footer-cell {
+  background: transparent;
+  color: var(--op-black);
+  font-family: var(--primary);
+  font-size: var(--body-lg);
+  font-weight: var(--w-normal);
+  line-height: var(--lh-relaxed);
+  padding: 16px 20px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.tarif__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cena__upakovki {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.cena__upakovki-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.cena__upakovki-item {
+  display: flex;
+  border: 1px solid var(--op-black);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cena__upakovki-item__price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cena__upakovki-item__price .black__text {
+  font-family: var(--primary);
+  font-size: var(--body);
+  font-weight: var(--w-normal);
+  line-height: var(--lh-relaxed);
+}
+
+.pamyatka__otpravitelu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 80px 0;
+}
+
+/* =============================================================================
+    ПАМЯТКА ОТПРАВИТЕЛЮ - АККОРДЕОН
+   ============================================================================= */
+
+.pamyatka-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pamyatka-accordion-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--white);
+  transition: border-color var(--tr);
+}
+
+.pamyatka-accordion-item:hover {
+  border-color: var(--green);
+  transition: var(--tr);
+}
+
+.pamyatka-accordion-item.active {
+  border-color: var(--green);
+  background: var(--green);
+  transition: var(--tr);
+}
+
+.pamyatka-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  cursor: pointer;
+  background: var(--white);
+  transition: background-color var(--tr);
+}
+
+.pamyatka-accordion-header:hover {
+  background-color: rgba(154, 193, 117, 0.05);
+  transition: var(--tr);
+}
+
+.pamyatka-accordion-item.active .pamyatka-accordion-header {
+  background: transparent;
+  transition: var(--tr);
+}
+
+.pamyatka-accordion-title {
+  color: var(--black);
+  font-family: var(--primary);
+  font-weight: var(--w-semibold);
+  font-size: var(--body-lg);
+  line-height: var(--lh-normal);
+  margin: 0;
+  flex: 1;
+  padding-right: 20px;
+  transition: color var(--tr);
+}
+
+.pamyatka-accordion-item.active .pamyatka-accordion-title {
+  color: var(--white);
+  transition: var(--tr);
+}
+
+.pamyatka-accordion-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: transform var(--tr);
+  flex-shrink: 0;
+}
+
+.pamyatka-accordion-icon {
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+  transition: transform var(--tr), filter var(--tr);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(96%) contrast(89%);
+}
+
+.pamyatka-accordion-item.active .pamyatka-accordion-icon {
+  transform: rotate(-90deg);
+  transition: var(--tr);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(100%) contrast(100%);
+}
+
+.pamyatka-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.pamyatka-accordion-item.active .pamyatka-accordion-content {
+  max-height: 500px;
+  transition: max-height 0.3s ease-in;
+}
+
+.pamyatka-accordion-text {
+  color: var(--op-black);
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+  padding: 0 25px 25px 25px;
+  transition: color var(--tr);
+}
+
+.pamyatka-accordion-item.active .pamyatka-accordion-text {
+  color: var(--white);
+  transition: var(--tr);
+}
+
+.pamyatka-accordion-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 25px 25px 25px;
+}
+
+.pamyatka-accordion-content-title {
+  color: var(--op-black);
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body);
+  line-height: var(--lh-relaxed);
+  margin: 0 0 15px 0;
+  padding: 0 25px 0 25px;
+  transition: color var(--tr);
+}
+
+.pamyatka-accordion-item.active .pamyatka-accordion-content-title {
+  color: var(--white);
+  transition: var(--tr);
+}
+
+.pamyatka-accordion-list-item {
+  color: var(--op-black);
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body);
+  line-height: var(--lh-relaxed);
+  margin: 0 0 12px 0;
+  padding: 0 0 0 20px;
+  position: relative;
+  transition: color var(--tr);
+}
+
+.pamyatka-accordion-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.pamyatka-accordion-list-item::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-size: var(--body-lg);
+  line-height: var(--lh-normal);
+}
+
+.pamyatka-accordion-item.active .pamyatka-accordion-list-item {
+  color: var(--white);
+  transition: var(--tr);
+}
+
+.pamyatka-accordion-item.active .pamyatka-accordion-list-item::before {
+  color: var(--white);
+  transition: var(--tr);
+}
+
+.accordion-sub-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 0 15px 0;
+  padding: 0 25px 0 25px;
+}
+
+.accordion-sub-header .pamyatka-accordion-list {
+  padding: 0 0 25px 0;
 }
