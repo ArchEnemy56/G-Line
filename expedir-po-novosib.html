@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>G-Line</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@700&family=Futura:wght@700&family=Mulish:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/adaptiv.css" />
+</head>
+
+<body class="gl-tracking-page">
+    <header class="header white__header">
+        <nav class="site-navigation" role="navigation" aria-label="Основная навигация">
+            <div class="nav-wrapper">
+                <div class="nav-top-bar">
+                    <a href="/" class="site-logo" aria-label="G-Line - Главная страница">
+                        <img src="img/svg/logo-1.svg" alt="G-Line логотип" />
+                    </a>
+                    <div class="nav-actions-group" role="group" aria-label="Основные действия">
+                        <button class="nav-action-btn" type="button" aria-label="Рассчитать стоимость груза">
+                            Рассчитать стоимость груза
+                        </button>
+                        <button class="nav-action-btn" type="button" aria-label="Отследить груз">
+                            Отследить груз
+                        </button>
+                    </div>
+                    <form class="gray__search-form" role="search" aria-label="Поиск по сайту">
+                        <label for="search-input" class="visually-hidden">Поиск</label>
+                        <input type="search" id="search-input" class="nav-search-input" placeholder=""
+                            aria-label="Поле поиска" />
+                        <button type="submit" class="nav-search-btn" aria-label="Выполнить поиск">
+                            <img class="nav-search-icon" src="img/svg/search.svg" alt="" role="presentation" />
+                        </button>
+                    </form>
+                    <div class="nav-contact-info">
+                        <div class="nav-location-info">
+                            <div class="nav-location-icon" aria-hidden="true">
+                                <img class="nav-location-pin " src="img/icon-location.png" alt="" role="presentation" />
+                            </div>
+                            <div class="nav-city-selector">
+                                <button type="button" class="nav-city-btn black__text"
+                                    aria-label="Выбрать город: Норильск" aria-haspopup="listbox">
+                                    Норильск
+                                    <img class="nav-dropdown-icon" src="img/svg/drop-bl.svg" alt=""
+                                        role="presentation" />
+                                </button>
+                            </div>
+                        </div>
+                        <a href="tel:+73919324249" class="nav-phone-link black__text">+7 (3919) 32-42-49</a>
+                        <p class="nav-address-text black__text">ул. Вокзальная, 35а, стр. 4</p>
+                    </div>
+                </div>
+                <main class="nav-main-menu">
+                    <a href="/" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Главная</span>
+                    </a>
+                    <a href="o-kompanii.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">О компании</span>
+                    </a>
+                    <a href="uslugi.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Услуги</span>
+                    </a>
+                    <a href="directions.html" class="nav-menu-link" aria-current="page">
+                        <span class="nav-menu-text nav-menu-text--black">Направления</span>
+                    </a>
+                    <a href="clients.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Клиентам</span>
+                    </a>
+                    <a href="contacts.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Контакты</span>
+                    </a>
+                </main>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cont-in">
+
+        <h1 class="header__epn-title">Экспедирование грузов по<br> Новосибирску</h1>
+
+        <section class="expedir-po-novosib">
+            <a href="assets/pdf/expedirovanie-po-novosibirsku.pdf" download class="gl-tarif-download-btn">
+                    <span>Скачать тариф</span>
+                    <img src="img/svg/arr-bl.svg" alt="Скачать" class="gl-tarif-download-icon">
+                </a>
+
+            <div class="po-novosib-tab">
+                <table class="po-novosib-tariff-table">
+                    <thead>
+                        <tr>
+                            <th class="tariff-type-cell">Тип авто</th>
+                            <th class="tariff-closed-cell">Закрытая, руб.</th>
+                            <th class="tariff-bort-cell">Бортовая, руб.</th>
+                            <th class="tariff-time-cell">Нормативное время погрузки/выгрузки</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tariff-type-cell">До 300 кг/2 м3/1<br> паллет</td>
+                            <td class="tariff-closed-cell">850</td>
+                            <td class="tariff-bort-cell"><span class="tariff-not-available">X</span></td>
+                            <td class="tariff-time-cell" rowspan="2">
+                                <ul class="tariff-time-list">
+                                    <li>-длина не более 1,5 метров</li>
+                                    <li>-высота не более 0,8 метров</li>
+                                    <li>-загрузка/выгрузка не более 15 минут</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tariff-type-cell">До 1000 кг/5 м3/2 паллета</td>
+                            <td class="tariff-closed-cell">1600</td>
+                            <td class="tariff-bort-cell"><span class="tariff-not-available">X</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tariff-type-cell">До 1500 кг/8 м3v</td>
+                            <td class="tariff-closed-cell">3400</td>
+                            <td class="tariff-bort-cell">7600</td>
+                            <td class="tariff-time-cell">
+                                <ul class="tariff-time-list">
+                                    <li>-закрытая 1500 руб/час, минимально 2 часа</li>
+                                    <li>-бортовая 2400 руб/час, минимально 3 часа</li>
+                                    <li>-услуга экспедитора 400 руб</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tariff-type-cell">До 3000 кг/15 м3</td>
+                            <td class="tariff-closed-cell">6500</td>
+                            <td class="tariff-bort-cell">7600</td>
+                            <td class="tariff-time-cell">
+                                <ul class="tariff-time-list">
+                                    <li>-закрытая 2000 руб/час, минимально 3 часа</li>
+                                    <li>-бортовая 2400 руб/час, минимально 3 часа</li>
+                                    <li>-услуга экспедитора 500 руб</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tariff-type-cell">До 5000 кг/15 м3</td>
+                            <td class="tariff-closed-cell">8000</td>
+                            <td class="tariff-bort-cell">8900</td>
+                            <td class="tariff-time-cell">
+                                <ul class="tariff-time-list">
+                                    <li>-закрытая 2500 руб/час, минимально 3 часа</li>
+                                    <li>-бортовая 2800 руб/час, минимально 3 часа</li>
+                                    <li>-услуга экспедитора 500 руб</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tariff-type-cell">До 10 тонн/15 м3</td>
+                            <td class="tariff-closed-cell">13300</td>
+                            <td class="tariff-bort-cell">14300</td>
+                            <td class="tariff-time-cell">
+                                <ul class="tariff-time-list">
+                                    <li>-закрытая 3200 руб/час, минимально 4 часа</li>
+                                    <li>-бортовая 3450 руб/час, минимально 4 часа</li>
+                                    <li>-зуслуга экспедитора 500 руб</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="green__line-text">Согласовывать с менеджером, есть надбавки за удаленный район</p>
+        </section>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__column-1">
+                <img src="img/svg/Logo-footer.svg" alt="G-Line Logo" class="footer__logo" />
+                <ul class="footer__nav-list">
+                    <li><a href="/" class="footer__nav-link" aria-current="page">Главная</a></li>
+                    <li><a href="o-kompanii.html" class="footer__nav-link">О компании</a></li>
+                    <li><a href="directions.html" class="footer__nav-link">Направления</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-2">
+                <h3 class="footer__title">Услуги</h3>
+                <h4 class="footer__subtitle">Виды перевозок</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Авиаперевозки</a></li>
+                    <li><a href="#" class="footer__nav-link">Море</a></li>
+                    <li><a href="#" class="footer__nav-link">Река</a></li>
+                    <li><a href="#" class="footer__nav-link">Зимник</a></li>
+                    <li><a href="#" class="footer__nav-link">Автодоставка по Сибири</a></li>
+                </ul>
+                <h4 class="footer__subtitle">Услуги</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Экспедирование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Доставка от двери до двери</a></li>
+                    <li><a href="#" class="footer__nav-link">Погрузо-разгрузочные работы</a></li>
+                    <li><a href="#" class="footer__nav-link">Упаковка груза (жесткая и мягкая)</a></li>
+                    <li><a href="#" class="footer__nav-link">Страхование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка опасных грузов</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка грузов с температурным режимом</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-3">
+                <h3 class="footer__title">Клиентам</h3>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Блог (статьи)</a></li>
+                    <li><a href="#" class="footer__nav-link">Правила перевозок</a></li>
+                    <li><a href="#" class="footer__nav-link">Документы</a></li>
+                    <li><a href="#" class="footer__nav-link">Новости логистики</a></li>
+                </ul>
+                <h3 class="footer__title">Контакты</h3>
+                <p class="footer__contact-city">Норильск</p>
+                <p class="footer__contact-info">(3919) 32-42-49</p>
+                <p class="footer__contact-info">ул. Вокзальная, 35а, стр. 4</p>
+
+                <p class="footer__contact-city">Красноярск</p>
+                <p class="footer__contact-info">+7(391) 203-04-65</p>
+                <p class="footer__contact-info">ул. Северное шоссе, 35и</p>
+
+                <p class="footer__contact-city">Новосибирск</p>
+                <p class="footer__contact-info">+7(383) 363-22-06</p>
+                <p class="footer__contact-info">ул. Сухарная, 25</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/max.png" alt="Max" class="footer__social-icon" />
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/tg.png" alt="Telegram" class="footer__social-icon" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__text"> GreenLine 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
