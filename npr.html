@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>G-Line</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@700&family=Futura:wght@700&family=Mulish:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/adaptiv.css" />
+</head>
+
+<body class="gl-tracking-page">
+    <header class="header white__header">
+        <nav class="site-navigation" role="navigation" aria-label="Основная навигация">
+            <div class="nav-wrapper">
+                <div class="nav-top-bar">
+                    <a href="/" class="site-logo" aria-label="G-Line - Главная страница">
+                        <img src="img/svg/logo-1.svg" alt="G-Line логотип" />
+                    </a>
+                    <div class="nav-actions-group" role="group" aria-label="Основные действия">
+                        <button class="nav-action-btn" type="button" aria-label="Рассчитать стоимость груза">
+                            Рассчитать стоимость груза
+                        </button>
+                        <button class="nav-action-btn" type="button" aria-label="Отследить груз">
+                            Отследить груз
+                        </button>
+                    </div>
+                    <form class="gray__search-form" role="search" aria-label="Поиск по сайту">
+                        <label for="search-input" class="visually-hidden">Поиск</label>
+                        <input type="search" id="search-input" class="nav-search-input" placeholder=""
+                            aria-label="Поле поиска" />
+                        <button type="submit" class="nav-search-btn" aria-label="Выполнить поиск">
+                            <img class="nav-search-icon" src="img/svg/search.svg" alt="" role="presentation" />
+                        </button>
+                    </form>
+                    <div class="nav-contact-info">
+                        <div class="nav-location-info">
+                            <div class="nav-location-icon" aria-hidden="true">
+                                <img class="nav-location-pin " src="img/icon-location.png" alt="" role="presentation" />
+                            </div>
+                            <div class="nav-city-selector">
+                                <button type="button" class="nav-city-btn black__text"
+                                    aria-label="Выбрать город: Норильск" aria-haspopup="listbox">
+                                    Норильск
+                                    <img class="nav-dropdown-icon" src="img/svg/drop-bl.svg" alt=""
+                                        role="presentation" />
+                                </button>
+                            </div>
+                        </div>
+                        <a href="tel:+73919324249" class="nav-phone-link black__text">+7 (3919) 32-42-49</a>
+                        <p class="nav-address-text black__text">ул. Вокзальная, 35а, стр. 4</p>
+                    </div>
+                </div>
+                <main class="nav-main-menu">
+                    <a href="/" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Главная</span>
+                    </a>
+                    <a href="o-kompanii.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">О компании</span>
+                    </a>
+                    <a href="uslugi.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Услуги</span>
+                    </a>
+                    <a href="directions.html" class="nav-menu-link" aria-current="page">
+                        <span class="nav-menu-text nav-menu-text--black">Направления</span>
+                    </a>
+                    <a href="clients.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Клиентам</span>
+                    </a>
+                    <a href="contacts.html" class="nav-menu-link">
+                        <span class="nav-menu-text nav-menu-text--black">Контакты</span>
+                    </a>
+                </main>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cont-in">
+
+        <div class="gl-tarif-matrix-wrapper">
+            <div class="gl-tarif-matrix-header">
+                <div class="gl-tarif-matrix-title-block">
+                    <h2 class="gl-tarif-matrix-route">Доставка по Норильску и Дудинке</h2>
+                </div>
+            </div>
+
+            <!--Аэропорт "Норильск" → Склад-->
+            <div class="nor-sklad">
+                <div class="tarif__title">
+                    <h2 class="title__h2">Аэропорт "Норильск" → Склад</h2>
+                    <a href="assets/pdf/dostavka-po-npr.pdf" download class="gl-tarif-download-btn">
+                        <span>Скачать тариф</span>
+                        <img src="img/svg/arr-bl.svg" alt="Скачать" class="gl-tarif-download-icon">
+                    </a>
+                </div>
+                <p class="gl-tarif-matrix-table-subtitle">Тарифы на доставка с 19.01.2026г.</p>
+
+                <div class="nor-sklad-grid">
+                    <div class="nor-sklad-tables">
+                        <table class="nor-sklad-table-content">
+                            <tr>
+                                <th colspan="3" class="nor-sklad-table-title">Стоимость доставки</th>
+                            </tr>
+
+                            <tr>
+                                <td>до 200кг-3500руб</td>
+                                <td>до 700кг-4500руб</td>
+                                <td>свыше 700кг-7руб/кг</td>
+                            </tr>
+                            <tr>
+                                <th colspan="3" class="nor-sklad-table-title">Доставка с других транспортных
+                                    компаний</th>
+                            </tr>
+                            <tr class="split-row">
+                                <td colspan="3" class="split-cell">
+                                    <div class="split-content">
+                                        <div class="split-item">до 1000 кг - 2000 руб</div>
+                                        <div class="split-item">свыше 2000 кг - 2,1 руб/кг</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Таблица дополнительных услуг -->
+                    <table class="nor-sklad-table-content single-column-table">
+                        <tr>
+                            <td>ТОГ - 205р с 1 авианакладной</td>
+                        </tr>
+                        <tr>
+                            <td>Услуги грузчиков (аэропорт)-1,5 руб/кг;</td>
+                        </tr>
+                        <tr>
+                            <td>Если груз не идет на доставку, выставляется обработка 3 руб/кг;</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <p class="green__line-text">Срок доставки-2 суток с момента прибытия воздушного судна;<br>Наличие
+                заполненной заявки
+                на экспедирование груза, с описанием услуг, условий доставки<br> (температурный режим, скоропорт) за 2-3
+                дня до
+                получения в аэропорту;
+            </p>
+        </div>
+        <!--Доставка грузов по НПР-->
+        <div class="tarif__title">
+            <h2 class="title__h2">Доставка грузов по НПР</h2>
+            <a href="assets/pdf/dostavka-po-npr.pdf" download class="gl-tarif-download-btn">
+                <span>Скачать тариф</span>
+                <img src="img/svg/arr-bl.svg" alt="Скачать" class="gl-tarif-download-icon">
+            </a>
+        </div>
+        <p class="gl-tarif-matrix-table-subtitle">По маршруту аэропорт Норильск - склад с 19.01.2026 г.</p>
+
+        <div class="gl-tarif-matrix-container">
+            <table class="gl-tarif-matrix-table">
+                <thead>
+                    <tr>
+                        <th class="gl-tarif-matrix-th gl-tarif-matrix-th--corner">Вес груза/город</th>
+                        <th class="gl-tarif-matrix-th">до 50кг</th>
+                        <th class="gl-tarif-matrix-th">От 51 до<br> 200кг</th>
+                        <th class="gl-tarif-matrix-th">От 201 до<br> 500кг</th>
+                        <th class="gl-tarif-matrix-th">От 501кг<br> до 1т</th>
+                        <th class="gl-tarif-matrix-th">От 1т до<br> 3т</th>
+                        <th class="gl-tarif-matrix-th">От 3т до<br> 5т</th>
+                        <th class="gl-tarif-matrix-th">Свыше 5т<br> Спецвоз,<br> бортовая</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="gl-tarif-matrix-row">
+                        <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">Норильск </td>
+                        <td class="gl-tarif-matrix-cell">1100</td>
+                        <td class="gl-tarif-matrix-cell">1900</td>
+                        <td class="gl-tarif-matrix-cell">2700</td>
+                        <td class="gl-tarif-matrix-cell">3500</td>
+                        <td class="gl-tarif-matrix-cell">5000</td>
+                        <td class="gl-tarif-matrix-cell">1,7 р/кг</td>
+                        <td class="gl-tarif-matrix-cell">По<br> согласованию</td>
+                    </tr>
+
+                    <tr class="gl-tarif-matrix-row">
+                        <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">Оганер<br> Валек<br> Надежда</td>
+                        <td class="gl-tarif-matrix-cell">1500</td>
+                        <td class="gl-tarif-matrix-cell">2000</td>
+                        <td class="gl-tarif-matrix-cell">2900</td>
+                        <td class="gl-tarif-matrix-cell">3600</td>
+                        <td class="gl-tarif-matrix-cell">6000</td>
+                        <td class="gl-tarif-matrix-cell">2 р/кг</td>
+                        <td class="gl-tarif-matrix-cell">По<br> согласованию</td>
+                    </tr>
+                    <tr class="gl-tarif-matrix-row">
+                        <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">Талнах<br> Кайеркан</td>
+                        <td class="gl-tarif-matrix-cell">2000</td>
+                        <td class="gl-tarif-matrix-cell">2800</td>
+                        <td class="gl-tarif-matrix-cell">3400</td>
+                        <td class="gl-tarif-matrix-cell">4700</td>
+                        <td class="gl-tarif-matrix-cell">8000</td>
+                        <td class="gl-tarif-matrix-cell">2,7 р/кг</td>
+                        <td class="gl-tarif-matrix-cell">По<br> согласованию</td>
+                    </tr>
+                    <tr class="gl-tarif-matrix-row">
+                        <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">Дудинка</td>
+                        <td class="gl-tarif-matrix-cell">3800</td>
+                        <td class="gl-tarif-matrix-cell">6400</td>
+                        <td class="gl-tarif-matrix-cell">7400</td>
+                        <td class="gl-tarif-matrix-cell">9000</td>
+                        <td class="gl-tarif-matrix-cell">12000</td>
+                        <td class="gl-tarif-matrix-cell">4 р/кг</td>
+                        <td class="gl-tarif-matrix-cell">По<br> согласованию</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="green__line-text">Груз доставляется экспедитором до подъезда (склада) заказчика.</p>
+
+        <!--подъем на этаж-->
+
+        <div class="tarif__title" style="margin-top: 80px;">
+            <h2 class="title__h2">Дополнительный занос груза на склад заказчика и<br> подъем на этаж осуществляется
+                исходя из расчета</h2>
+            <a href="assets/pdf/dostavka-po-npr.pdf" download class="gl-tarif-download-btn">
+                <span>Скачать тариф</span>
+                <img src="img/svg/arr-bl.svg" alt="Скачать" class="gl-tarif-download-icon">
+            </a>
+        </div>
+        <p class="gl-tarif-matrix-table-subtitle">По маршруту аэропорт Норильск - склад с 19.01.2026 г.</p>
+
+        <div class="gl-tarif-matrix-container">
+            <table class="gl-tarif-matrix-table">
+                <thead>
+                    <tr>
+                        <th class="gl-tarif-matrix-th gl-tarif-matrix-th--corner">Вес груза/город</th>
+                        <th class="gl-tarif-matrix-th">до 50кг</th>
+                        <th class="gl-tarif-matrix-th">От 51 до<br> 200кг</th>
+                        <th class="gl-tarif-matrix-th">От 201 до<br> 500кг</th>
+                        <th class="gl-tarif-matrix-th">От 501кг<br> до 1т</th>
+                        <th class="gl-tarif-matrix-th">От 1т до<br> 3т</th>
+                        <th class="gl-tarif-matrix-th">От 3т до<br> 8т</th>
+                        <th class="gl-tarif-matrix-th">От 8т</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="gl-tarif-matrix-row">
+                        <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">Норильск</td>
+                        <td class="gl-tarif-matrix-cell">1200</td>
+                        <td class="gl-tarif-matrix-cell">2400</td>
+                        <td class="gl-tarif-matrix-cell">4200</td>
+                        <td class="gl-tarif-matrix-cell">5000</td>
+                        <td class="gl-tarif-matrix-cell">7000</td>
+                        <td class="gl-tarif-matrix-cell">По<br> согласованию</td>
+                        <td class="gl-tarif-matrix-cell">По<br> согласованию</td>
+                    </tr>
+                    <tr class="gl-tarif-matrix-row">
+                        <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">Оганер<br> Валек<br> Надежда</td>
+                        <td class="gl-tarif-matrix-cell">1400</td>
+                        <td class="gl-tarif-matrix-cell">2500</td>
+                        <td class="gl-tarif-matrix-cell">4500</td>
+                        <td class="gl-tarif-matrix-cell">5200</td>
+                        <td class="gl-tarif-matrix-cell">8000</td>
+                        <td class="gl-tarif-matrix-cell">По<br> согласованию</td>
+                        <td class="gl-tarif-matrix-cell">По<br> согласованию</td>
+                    </tr>
+                    <tr class="gl-tarif-matrix-row">
+                        <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">Талнах<br> Кайеркан</td>
+                        <td class="gl-tarif-matrix-cell">292</td>
+                        <td class="gl-tarif-matrix-cell">293</td>
+                        <td class="gl-tarif-matrix-cell">295</td>
+                        <td class="gl-tarif-matrix-cell">296</td>
+                        <td class="gl-tarif-matrix-cell">298</td>
+                        <td class="gl-tarif-matrix-cell">По<br> согласованию</td>
+                        <td class="gl-tarif-matrix-cell">По<br> согласованию</td>
+                    </tr>
+                    <tr class="gl-tarif-matrix-row">
+                        <td class="gl-tarif-matrix-cell gl-tarif-matrix-cell--header">Дудинка</td>
+                        <td class="gl-tarif-matrix-cell">1900</td>
+                        <td class="gl-tarif-matrix-cell">3100</td>
+                        <td class="gl-tarif-matrix-cell">5200</td>
+                        <td class="gl-tarif-matrix-cell">6000</td>
+                        <td class="gl-tarif-matrix-cell">9000</td>
+                        <td class="gl-tarif-matrix-cell">По<br> согласованию</td>
+                        <td class="gl-tarif-matrix-cell">По<br> согласованию</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="green__line-text" style="margin-bottom: 80px;">- Тарифы указаны с учетом подъема груза на один этаж,
+            последующий этаж +25% до
+            тарифа<br>
+            - ТНП, оборудование, мебель доставляется до подъезда, либо по согласованию<br>
+            - Негабарит по согласованию<br>- Вынужденное время простоя по вине заказчика, а также доставка более чем по
+            одному адресу заказчика оплачивается дополнительно согласно прайса на транспортно-экспедиторское
+            обслуживание
+        </p>
+
+    </div>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__column-1">
+                <img src="img/svg/Logo-footer.svg" alt="G-Line Logo" class="footer__logo" />
+                <ul class="footer__nav-list">
+                    <li><a href="/" class="footer__nav-link" aria-current="page">Главная</a></li>
+                    <li><a href="o-kompanii.html" class="footer__nav-link">О компании</a></li>
+                    <li><a href="directions.html" class="footer__nav-link">Направления</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-2">
+                <h3 class="footer__title">Услуги</h3>
+                <h4 class="footer__subtitle">Виды перевозок</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Авиаперевозки</a></li>
+                    <li><a href="#" class="footer__nav-link">Море</a></li>
+                    <li><a href="#" class="footer__nav-link">Река</a></li>
+                    <li><a href="#" class="footer__nav-link">Зимник</a></li>
+                    <li><a href="#" class="footer__nav-link">Автодоставка по Сибири</a></li>
+                </ul>
+                <h4 class="footer__subtitle">Услуги</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Экспедирование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Доставка от двери до двери</a></li>
+                    <li><a href="#" class="footer__nav-link">Погрузо-разгрузочные работы</a></li>
+                    <li><a href="#" class="footer__nav-link">Упаковка груза (жесткая и мягкая)</a></li>
+                    <li><a href="#" class="footer__nav-link">Страхование груза</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка опасных грузов</a></li>
+                    <li><a href="#" class="footer__nav-link">Перевозка грузов с температурным режимом</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-3">
+                <h3 class="footer__title">Клиентам</h3>
+                <ul class="footer__nav-list">
+                    <li><a href="#" class="footer__nav-link">Блог (статьи)</a></li>
+                    <li><a href="#" class="footer__nav-link">Правила перевозок</a></li>
+                    <li><a href="#" class="footer__nav-link">Документы</a></li>
+                    <li><a href="#" class="footer__nav-link">Новости логистики</a></li>
+                </ul>
+                <h3 class="footer__title">Контакты</h3>
+                <p class="footer__contact-city">Норильск</p>
+                <p class="footer__contact-info">(3919) 32-42-49</p>
+                <p class="footer__contact-info">ул. Вокзальная, 35а, стр. 4</p>
+
+                <p class="footer__contact-city">Красноярск</p>
+                <p class="footer__contact-info">+7(391) 203-04-65</p>
+                <p class="footer__contact-info">ул. Северное шоссе, 35и</p>
+
+                <p class="footer__contact-city">Новосибирск</p>
+                <p class="footer__contact-info">+7(383) 363-22-06</p>
+                <p class="footer__contact-info">ул. Сухарная, 25</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/max.png" alt="Max" class="footer__social-icon" />
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="img/tg.png" alt="Telegram" class="footer__social-icon" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__text"> GreenLine 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
