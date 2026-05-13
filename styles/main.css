@@ -8002,3 +8002,380 @@ font-family: var(--primary);
 .nor-sklad-table-content tr:not(.split-row) td:not(:last-child) {
   border-right: 1px solid rgba(27, 29, 31, 0.2);
 }
+
+/*new page novosib-krasn-auto*/
+
+.sib__auto-green {
+  background: linear-gradient(to right, rgba(42, 98, 43, 1) 0%, rgba(98, 145, 72, 1) 50%, rgba(42, 98, 43, 1) 100%);
+  padding: 40px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 80px 0;
+}
+
+.sib__auto-item,
+.sib__auto-block {
+  display: flex;
+  gap: 10px;
+}
+
+.sib__auto-block {
+  flex-direction: column;
+}
+
+.sib__auto-item img {
+  width: 25px;
+  height: 25px;
+}
+
+.sib__auto-item p {
+  margin: 0;
+  color: var(--white);
+  font-family: var(--primary);
+  font-size: var(--body);
+  line-height: var(--lh-normal);
+}
+
+.sib__auto-info {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Таблица тарифов для Новосибирск-Красноярск */
+.sib__tarif-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(27, 29, 31, 0.08);
+}
+
+.sib__tarif-table thead tr:first-child {
+  background: var(--green);
+}
+
+.sib__tarif-table thead tr:not(:first-child) {
+  background: transparent;
+}
+
+.sib__tarif-table th {
+  padding: 16px 12px;
+  text-align: center;
+  font-family: var(--primary);
+  font-size: var(--body-lg);
+  border-right: 1px solid rgba(27, 29, 31, 0.1);
+  line-height: var(--lh-normal);
+}
+
+.sib__tarif-table thead tr:first-child th {
+  color: var(--white);
+  font-weight: var(--w-bold);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sib__tarif-table thead tr:not(:first-child) th {
+  color: var(--black);
+  font-weight: var(--w-normal);
+}
+
+.sib__tarif-table thead tr:nth-child(2) th {
+  border-bottom: 1px solid rgba(27, 29, 31, 0.1);
+}
+
+.sib__tarif-table thead tr:last-child th {
+  border-bottom: 1px solid rgba(27, 29, 31, 0.1);
+}
+
+.sib__tarif-table th:last-child {
+  border-right: none;
+}
+
+.sib__tarif-header-directions {
+  width: 180px;
+}
+
+.sib__tarif-header-min {
+  width: 200px;
+}
+
+.sib__tarif-subheader {
+  font-size: var(--body-lg);
+}
+
+.sib__tarif-range {
+  font-size: var(--body-lg);
+  border-right: 1px solid rgba(27, 29, 31, 0.1);
+}
+
+.sib__tarif-table tbody tr:not(:last-child) .sib__tarif-cell-value,
+.sib__tarif-table tbody tr:not(:last-child) .sib__tarif-range,
+.sib__tarif-table tbody tr .sib__tarif-subheader {
+  border-bottom: 1px solid rgba(27, 29, 31, 0.1);
+}
+
+
+.sib__tarif-table td {
+  padding: 16px 12px;
+  text-align: center;
+  font-family: var(--primary);
+  font-size: var(--body-lg);
+  font-weight: var(--w-normal);
+  color: var(--black);
+  border-right: 1px solid rgba(27, 29, 31, 0.1);
+  line-height: var(--lh-normal);
+  vertical-align: middle;
+}
+
+.sib__tarif-table td:last-child {
+  border-right: none;
+}
+
+.sib__tarif-cell-directions {
+  font-size: var(--body-lg);
+  text-align: center;
+  height: 100%;
+  border-bottom: none !important;
+}
+
+.sib__tarif-cell-min-wrapper {
+  height: 100%;
+  padding: 0;
+  border-bottom: none !important;
+  position: relative;
+}
+
+.sib__tarif-cell-min-wrapper::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(27, 29, 31, 0.1);
+}
+
+.sib__min-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.sib__min-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 12px;
+}
+
+.sib__min-col > div {
+  font-size: var(--body-lg);
+  font-weight: var(--w-normal);
+  color: var(--black);
+  line-height: var(--lh-normal);
+  text-align: center;
+}
+
+.sib__tarif-cell-min {
+  text-align: left;
+  padding-left: 16px;
+}
+
+.sib__min-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.sib__min-item:last-child {
+  margin-bottom: 0;
+}
+
+.sib__min-label {
+  font-size: var(--body);
+  color: var(--op-black);
+}
+
+.sib__min-value {
+  font-weight: var(--w-semibold);
+  color: var(--green);
+  font-size: var(--body-lg);
+}
+
+.sib__tarif-cell-value {
+  font-size: var(--body-lg);
+  color: var(--black);
+  border-right: 1px solid rgba(27, 29, 31, 0.1);
+}
+
+.sib__tarif-blank {
+  background: transparent;
+  border-right: 1px solid rgba(27, 29, 31, 0.1);
+  border-bottom: none !important;
+}
+
+.sib__tarif-directions-sub {
+  background: transparent;
+  font-size: var(--body-lg);
+}
+
+.sib__tarif-min-subheader {
+  background: transparent;
+  font-size: var(--body-lg);
+}
+
+.tarifs__cities {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(27, 29, 31, 0.08);
+  margin-bottom: 20px;
+}
+
+.tarifs__cities .black__text {
+  font-size: var(--body-lg);
+  font-family: var(--primary);
+  line-height: var(--lh-normal);
+  font-weight: var(--w-normal);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.tarifs__cities-inner {
+  display: flex;
+  width: 100%;
+}
+
+.tarifs__cities-left,
+.tarifs__cities-right {
+  flex: 1;
+  width: 33.333%;
+}
+
+.tarifs__cities-table {
+  width: 100%;
+  border-collapse: collapse;
+  height: 100%;
+  box-sizing: border-box;
+  table-layout: fixed;
+}
+
+.tarifs__cities-table th:nth-child(1),
+.tarifs__cities-table th:nth-child(2),
+.tarifs__cities-table th:nth-child(3),
+.tarifs__cities-table td:nth-child(1),
+.tarifs__cities-table td:nth-child(2),
+.tarifs__cities-table td:nth-child(3) {
+  width: 33.333%;
+}
+
+.tarifs__cities-table th,
+.tarifs__cities-table td {
+  padding: 16px 12px;
+  text-align: center;
+  font-family: var(--primary);
+  font-size: var(--body-lg);
+  line-height: var(--lh-normal);
+  border: 1px solid rgba(27, 29, 31, 0.1);
+}
+
+.tarifs__cities-table thead th {
+  background: var(--green);
+  color: var(--white);
+  font-weight: var(--w-bold);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tarifs__cities-table thead th:last-child {
+  border-right: 1px solid rgba(27, 29, 31, 0.1);
+}
+
+.tarifs__cities-table tbody td {
+  color: var(--black);
+  font-weight: var(--w-normal);
+}
+
+.tarifs__cities-right {
+  background: var(--green);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tarifs__cities-right p {
+  font-family: var(--primary);
+  font-size: var(--body-lg);
+  line-height: var(--lh-normal);
+  margin: 0 0 8px 0;
+}
+
+.tarifs__cities-right p:last-child {
+  margin-bottom: 0;
+}
+
+.tarifs__cities-tab2 {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(27, 29, 31, 0.08);
+  margin-bottom: 20px;
+}
+
+.tarifs__cities-table2 {
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  table-layout: fixed;
+}
+
+.tarifs__cities-table2 td {
+  padding: 16px 12px;
+  text-align: center;
+  font-family: var(--primary);
+  font-size: var(--body-lg);
+  font-weight: var(--w-normal);
+  color: var(--black);
+  line-height: var(--lh-normal);
+  border: 1px solid rgba(27, 29, 31, 0.1);
+  vertical-align: middle;
+}
+
+.tarifs__cities-table2 td:nth-child(1),
+.tarifs__cities-table2 td:nth-child(2),
+.tarifs__cities-table2 td:nth-child(3) {
+  width: 16.666%;
+}
+
+.tarifs__cities-table2 td:last-child {
+  text-align: center;
+  width: 50%;
+}
+
+.tarifs__cities-table2 td p {
+  margin: 0 0 4px 0;
+}
+
+.tarifs__cities-table2 td p:last-child {
+  margin-bottom: 0;
+}
+
+.sib__auto-info a {
+  margin-left: auto;
+}
