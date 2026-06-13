@@ -611,10 +611,48 @@
                     <p class="razgruz-pogruz__banner-text">С экспедированием Greenline вы экономите<br> время и силы: мы берем на себя все этапы<br>  перевозки, от забора до передачи. </p>
                     <p class="razgruz-pogruz__banner-text">Контролируем документы, маршрут и <br>сохранность груза, предупреждаем о рисках и <br>решаем вопросы на месте</p>
                     <div class="strahovanie__banner-buttons">
-                        <a href="#" class="form-button">Обсудить мой груз</a>
+                        <a href="#" class="form-button discuss-goods-btn">Обсудить мой груз</a>
                         <a href="#" class="gl-back">Скачать договор<img src="img/svg/symbol_download.svg" alt="Arrow"></a>
+                        <div class="contact-popup" id="contactPopup">
+                            <div class="contact-popup-content">
+                                <h3 class="contact-popup-title">Выберите удобный вариант для связи</h3>
+                                <div class="contact-popup-item">
+                                    <div class="contact-popup-icon">
+                                        <img src="img/svg/phone-icon.svg" alt="Телефон">
+                                    </div>
+                                    <div class="contact-popup-info">
+                                        <p class="contact-popup-label">Позвонить нашему менеджеру</p>
+                                        <a href="tel:+73919324249" class="contact-popup-link">+7 (3919) 32-42-49</a>
+                                    </div>
+                                </div>
+                                <div class="contact-popup-item">
+                                    <div class="contact-popup-icon">
+                                        <img src="img/svg/chat.svg" alt="Чат">
+                                    </div>
+                                    <div class="contact-popup-info">
+                                        <p class="contact-popup-label">Написать в чат</p>
+                                        <div class="contact-popup-social">
+                                            <a href="<?php echo esc_url(get_field('max_link') ?: 'tg://resolve?domain='); ?>" class="contact-social-link" aria-label="Max">
+                                                <img src="img/max.png" alt="Max">
+                                            </a>
+                                            <a href="<?php echo esc_url(get_field('telegram_link') ?: 'https://t.me/username'); ?>" class="contact-social-link" aria-label="Telegram">
+                                                <img src="img/tg.png" alt="Telegram">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-popup-item">
+                                    <div class="contact-popup-icon">
+                                        <img src="img/svg/email-icon.svg" alt="Почта">
+                                    </div>
+                                    <div class="contact-popup-info">
+                                        <p class="contact-popup-label">Написать на почту</p>
+                                        <a href="mailto:sibaeroline@mail.ru" class="contact-popup-link">sibaeroline@mail.ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
                 <div class="expedirovanie__banner-right"></div>
             </section>

@@ -2555,12 +2555,23 @@ margin-bottom: 40px;
   color: var(--white);
 }
 
-.footer__subtitle {
+.footer__subtitle,
+.footer__subtitle a {
   font-family: var(--primary);
   font-weight: var(--w-extrabold);
   font-size: var(--body);
   margin: 0;
   color: var(--white);
+  transition: var(--tr);
+}
+
+.footer__subtitle a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer__subtitle a:hover {
+  transform: translateY(-2px) scale(1.1);
 }
 
 .footer__nav-list {
@@ -2628,11 +2639,19 @@ margin-bottom: 40px;
   height: 40px;
 }
 
+.footer-bottom {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer-bottom__text {
 opacity: 0.5;
 font-family: var(--primary);
 font-weight: var(--w-normal);
 font-size: var(--body);
+margin: 0;
 }
 
 /* Почему выбирают нашу компанию */
@@ -3754,8 +3773,7 @@ margin-bottom: 100px;
 .logist h3 {
   font-family: var(--primary);
   font-size: var(--mid-title);
-  line-height: var(--lh-normal);
-  color: var(--black);
+  line-height: var(--lh-normal); 
   margin: 0 0 20px 0;
 }
 
@@ -3774,8 +3792,8 @@ margin-bottom: 100px;
   line-height: var(--lh-normal);
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  max-width: 250px;
   margin-top: 20px;
+  padding: 0 20px;
 }
 
 .btn--logist:hover {
@@ -5615,18 +5633,21 @@ font-family: var(--primary);
 /* Orders Section */
 .gl-tracking-orders {
   flex: 0 0 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .gl-orders-card {
   background: var(--white);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   padding: 24px;
-  box-shadow: 0 4px 20px rgba(27, 29, 31, 0.08);
-  border: 1px solid rgba(27, 29, 31, 0.06);
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(42, 98, 43, 0.12);
 }
 
 .gl-orders-title {
-  font-family: var(--secondary);
+  font-family: var(--primary);
   font-size: var(--subtitle);
   font-weight: var(--w-bold);
   color: var(--black);
@@ -5687,6 +5708,71 @@ font-family: var(--primary);
   color: #28a745;
 }
 
+.gl-tracking-detail-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.gl-tracking-detail-section {
+  border: 1px solid rgba(42, 98, 43, 0.12);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  background: rgba(154, 193, 117, 0.08);
+}
+
+.gl-tracking-detail-title {
+  font-family: var(--primary);
+  font-size: var(--body);
+  font-weight: var(--w-bold);
+  line-height: var(--lh-normal);
+  color: var(--green);
+  margin: 0 0 12px 0;
+}
+
+.gl-tracking-detail-row {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.42fr) 1fr;
+  gap: 12px;
+  padding: 8px 0;
+  border-top: 1px solid rgba(27, 29, 31, 0.08);
+}
+
+.gl-tracking-detail-row:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.gl-tracking-detail-row:last-of-type {
+  padding-bottom: 0;
+}
+
+.gl-tracking-detail-label,
+.gl-tracking-detail-value {
+  font-family: var(--primary);
+  font-size: 14px;
+  line-height: var(--lh-relaxed);
+}
+
+.gl-tracking-detail-label {
+  color: var(--op-black);
+}
+
+.gl-tracking-detail-value {
+  color: var(--black);
+  font-weight: var(--w-medium);
+  overflow-wrap: anywhere;
+}
+
+.gl-service-name {
+  font-weight: var(--w-bold);
+}
+
+.gl-service-price {
+  color: var(--green);
+  font-weight: var(--w-bold);
+}
+
 .gl-show-more {
   font-family: var(--primary);
   font-size: var(--body-lg);
@@ -5719,6 +5805,7 @@ font-family: var(--primary);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 380px;
 }
 
 .charter__text {
@@ -5888,7 +5975,6 @@ font-family: var(--primary);
 .strahovanie__banner {
   background-image: url('../img/frame-16.webp');
   border-radius: 40px;
-  overflow: hidden;
   border: 1px solid var(--green);
   padding: 80px 40px 100px 40px;
   display: flex;
@@ -8778,6 +8864,27 @@ font-family: var(--primary);
   margin: 0;
 }
 
+.cargo-calculator__summary-alternatives {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cargo-calculator__summary-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  text-align: right;
+}
+
+.cargo-calculator__summary-meta {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--primary);
+  font-size: 14px;
+  font-weight: var(--w-normal);
+  line-height: var(--lh-normal);
+}
+
 .cargo-calculator__actions {
   display: flex;
   flex-direction: column;
@@ -9183,4 +9290,676 @@ font-family: var(--primary);
 
 .faq__accordion-title {
   transition: opacity 0.2s ease;
+}
+
+/* ==========================================================================
+    Contact Popup (hover on "Обсудить мой груз" button)
+   ========================================================================== */
+
+.strahovanie__banner-buttons {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.contact-popup {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 0;
+  background-color: var(--green);
+  border-radius: 20px;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  
+}
+
+.contact-popup::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid var(--green);
+}
+
+.contact-popup.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.contact-popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.contact-popup-title {
+  color: var(--white);
+  font-family: var(--primary);
+  font-weight: var(--w-bold);
+  font-size: var(--body-lg) !important;
+  margin: 0;
+  line-height: var(--lh-normal);
+}
+
+.contact-popup-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 6px;
+  border-radius: 20px;
+  transition: background-color 0.2s ease;
+  justify-content: flex-start;
+}
+
+.contact-popup-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-popup-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-popup-icon img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.contact-popup-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+.contact-popup-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body);
+  margin: 0;
+  line-height: var(--lh-relaxed);
+}
+
+.contact-popup-link {
+  color: var(--white);
+  font-family: var(--primary);
+  font-weight: var(--w-bold);
+  font-size: var(--body-lg);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.contact-popup-link:hover {
+  opacity: 0.8;
+}
+
+.contact-popup-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.contact-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-social-link:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.contact-social-link img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+}
+
+/* ==========================================================================
+    Docs Selector Block - Documents Category Selector with Sections
+   ========================================================================== */
+
+.docs-selector__block {
+  display: flex;
+  margin: 40px 0 100px 0;
+}
+
+.docs-selector__items {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.docs-selector__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.docs-selector__grid {
+  display: grid;
+  grid-template-rows: column;
+  gap: 20px;
+}
+
+.docs-selector__grid-item {
+  border: 1px solid var(--green);
+  border-radius: 20px;
+  padding: 20px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--tr) ease;
+  background-color: transparent;
+}
+
+.docs-selector__grid-item p {
+  color: var(--black);
+  font-family: var(--primary);
+  font-size: var(--body-lg);
+  font-weight: var(--w-bold);
+  margin: 0;
+  transition: color 0.3s ease;
+  text-align: start;
+}
+
+.docs-selector__grid-item--active {
+  background-color: var(--green);
+  border-color: var(--green);
+  transition: var(--tr);
+}
+
+.docs-selector__grid-item--active p {
+  color: var(--white);
+  transition: var(--tr);
+}
+
+.docs-selector__grid-item:hover {
+  background-color: rgba(42, 98, 43, 0.05);
+}
+
+.docs-selector__grid-item--active:hover {
+  background-color: var(--green);
+}
+
+.docs-selector__right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Docs Sections Styles */
+.docs-selector__section {
+  margin-bottom: 30px;
+}
+
+.docs-selector__section-title {
+  font-family: var(--primary);
+  font-weight: var(--w-bold);
+  font-size: 20px;
+  color: var(--black);
+  margin: 0 0 15px 0;
+}
+
+.docs-selector__docs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.docs-selector__docs-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: var(--white);
+  border: 1px solid var(--op-gray);
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.docs-selector__docs-item:hover {
+  border-color: var(--green);
+  box-shadow: 0 4px 12px rgba(42, 98, 43, 0.1);
+  transform: translateY(-2px);
+}
+
+.docs-selector__docs-item-title {
+  font-family: var(--primary);
+  font-size: var(--body);
+  color: var(--black);
+  font-weight: var(--w-normal);
+  margin: 0;
+  flex: 1;
+}
+
+/* Download Button Styles */
+.docs-selector__download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background-color: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 50px;
+  font-family: var(--primary);
+  font-size: var(--body);
+  font-weight: var(--w-medium);
+  cursor: pointer;
+  transition: all var(--tr) ease;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.docs-selector__download-btn:hover {
+  background-color: var(--green);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-btn);
+}
+
+.docs-selector__download-btn:hover img.docs__download-icon {
+  filter: brightness(0) invert(1);
+  transition: filter 0.2s ease;
+}
+
+.docs-selector__download-btn:active {
+  transform: translateY(0);
+}
+
+.btn--logist .contact-popup.show {
+  width: 430px !important;
+}
+
+.logistika-severa {
+  display: grid;
+  grid-template-columns: 1fr 4px 380px;
+  gap: 0;
+  margin: 40px 0 80px 0;
+  min-height: 600px;
+}
+
+.logistika-severa__content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.logistika-severa__info {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.logistika-severa__info.active {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logistika-severa__title {
+  color: var(--black);
+  font-family: var(--primary);
+  font-weight: var(--w-bold);
+  font-size: var(--title);
+  line-height: var(--lh-normal);
+  margin: 0;
+}
+
+.logistika-severa__text {
+  color: var(--black);
+  font-family: var(--primary);
+  font-size: var(--body-lg);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+.logistika-severa__separator {
+  background: linear-gradient(to bottom, var(--green) 0%, var(--accent-green) 100%);
+  border-radius: 2px;
+  position: relative;
+  margin: 0 20px 0 -20px;
+  display: block;
+  height: 100%;
+  min-height: 400px;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+.logistika-severa__arrow {
+  position: absolute;
+  right: -10px;
+  top: 40px;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 24px solid var(--accent-green);
+  transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.logistika-severa__menu {
+  background: linear-gradient(135deg, #1A4A1B 0%, #2A622B 50%, #3A723B 100%);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-green) transparent;
+}
+
+.logistika-severa__menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.logistika-severa__menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.logistika-severa__menu::-webkit-scrollbar-thumb {
+  background: var(--accent-green);
+  border-radius: 3px;
+}
+
+.logistika-severa__menu-item {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: var(--primary);
+  font-size: var(--body);
+  font-weight: var(--w-normal);
+  line-height: var(--lh-relaxed);
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: var(--radius-sm);
+  display: block;
+  cursor: pointer;
+}
+
+.logistika-severa__menu-item:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(4px);
+}
+
+.logistika-severa__menu-item.active {
+  color: var(--white);
+  font-weight: var(--w-bold);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.logistika-severa__menu-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 2px 0;
+}
+
+.logistika-severa__menu-item.active + .logistika-severa__menu-divider,
+.logistika-severa__menu-item + .logistika-severa__menu-divider.active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.novosti__title {
+  color: var(--black);
+  font-family: var(--primary);
+  font-weight: var(--w-bold);
+  font-size: var(--h1-title);
+  line-height: var(--lh-normal);
+  margin: 80px 0 40px 0;
+}
+
+/* ==========================================================================
+   NOVOSTI ACCORDION STYLES - UPDATED
+   ========================================================================== */
+
+.novosti {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 40px 0;
+}
+
+.novosti__accordion-item {
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: var(--transition-card);
+}
+
+.novosti__accordion-item:hover {
+  box-shadow: var(--shadow-card);
+}
+
+.novosti__accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  background: var(--white);
+  cursor: pointer;
+  user-select: none;
+  transition: background var(--tr);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.novosti__accordion-header:hover {
+  background: #f9fafb;
+}
+
+.novosti__accordion-year {
+  font-family: var(--primary);
+  font-weight: var(--w-bold);
+  font-size: var(--font-32);
+  color: var(--green);
+  line-height: var(--lh-normal);
+  text-align: center;
+  flex: 1;
+}
+
+.novosti__accordion-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--green);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background var(--tr), transform 0.4s ease;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.novosti__accordion-toggle:hover {
+  background: var(--hover-green);
+}
+
+.novosti__accordion-toggle[aria-expanded="true"] {
+  transform: rotate(180deg);
+}
+
+.novosti__accordion-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--white);
+  transition: transform 0.4s ease;
+}
+
+.novosti__accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  background: #fafafa;
+}
+
+.novosti__accordion-content.active {
+  max-height: 10000px;
+  transition: max-height 0.6s ease-in;
+}
+
+.novosti__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 60px;
+  padding: 24px;
+  border-bottom: 1px solid #e5e7eb;
+  align-items: stretch;
+}
+
+.novosti__list:last-child {
+  border-bottom: none;
+}
+
+.novosti__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.novosti__column:first-child {
+  flex: 0 0 200px;
+}
+
+.novosti__column:nth-child(2) {
+  flex: 1;
+}
+
+.novosti__column:last-child {
+  flex: 0 0 220px;
+}
+
+.novosti__item-title {
+  font-family: var(--primary);
+  font-weight: var(--w-semibold);
+  font-size: var(--body-lg);
+  line-height: var(--lh-normal);
+  color: var(--black);
+  margin: 0;
+}
+
+.novosti__item-date {
+  font-family: var(--primary);
+  font-size: var(--body);
+  color: var(--op-black);
+  font-weight: var(--w-normal);
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.novosti__item-desc {
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body-lg);
+  line-height: var(--lh-relaxed);
+  color: var(--black);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+}
+
+
+
+.novosti__item-desc.expanded {
+  -webkit-line-clamp: unset;
+}
+
+.novosti__item-link {
+  font-family: var(--primary);
+  font-weight: var(--w-semibold);
+  font-size: var(--body);
+  color: var(--green);
+  text-decoration: none;
+  transition: color var(--tr);
+  cursor: pointer;
+  margin-top: 12px;
+  align-self: flex-end;
+}
+
+.novosti__item-link:hover {
+  color: var(--hover-green);
+}
+
+.novosti__item-image {
+  width: 100%;
+  height: 295px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.novosti__item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--tr);
+}
+
+.novosti__item-img:hover {
+  transform: scale(1.05);
+}
+
+/* Novosti Accordion Active State */
+.novosti__accordion-item.active .novosti__accordion-content {
+  max-height: 10000px;
+  transition: max-height 0.6s ease-in;
+}
+
+.novosti__accordion-item.active .novosti__accordion-toggle {
+  transform: rotate(180deg);
+}
+
+.novosti__accordion-item.active .novosti__accordion-toggle[aria-expanded="true"] {
+  transform: rotate(180deg);
+}
+
+.novosti__item-desc .vidy-perevozok__popup-btn {
+  font-family: var(--primary);
+  font-weight: var(--w-normal);
+  font-size: var(--body-lg);
+  line-height: var(--lh-relaxed) 1.4;
+  color: var(--black);
+  margin: 0;
+  text-decoration: none;
 }
