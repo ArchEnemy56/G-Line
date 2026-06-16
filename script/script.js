@@ -347,11 +347,7 @@ class ArticlesSlider {
     this.currentIndex = Math.min(this.currentIndex, this.maxIndex);
     this.scrollToCard();
   }
-}
-
-// =============================================================================
-// GRID INTERACTIVITY FUNCTIONALITY (FAQ)
-// =============================================================================
+} 
 
 // =============================================================================
 // GRID INTERACTIVITY FUNCTIONALITY (FAQ)
@@ -1165,6 +1161,7 @@ class ContactPopup {
 
       btn.addEventListener('mouseleave', () => {
         clearTimeout(hoverTimeout);
+        popup.classList.remove('show');
       });
 
       popup.addEventListener('mouseenter', () => {

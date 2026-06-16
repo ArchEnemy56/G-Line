@@ -102,6 +102,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0 auto;
@@ -6461,7 +6465,7 @@ font-family: var(--primary);
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 80px;
+  margin: 80px 0;
 }
 
 .pogruz__usluga-grid {
@@ -9299,6 +9303,10 @@ font-family: var(--primary);
 .strahovanie__banner-buttons {
   display: flex;
   gap: 20px;
+  position: relative;
+}
+
+.dlya_pop {
   position: relative;
 }
 
