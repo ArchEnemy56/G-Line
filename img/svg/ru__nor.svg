@@ -1,0 +1,18 @@
+<svg width="1280" height="200" viewBox="0 0 1920 200" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .text-gradient {
+          font-family: sans-serif;
+          font-weight: 800;
+          font-size: 165px;
+          dominant-baseline: middle;
+          text-anchor: start;
+        }
+    </style>
+    <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color: #9ac175;stop-opacity:1" />
+            <stop offset="100%" style="stop-color: #2a622b;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <text x="20" y="130" class="text-gradient" fill="url(#grad)">РОССИЯ НОРИЛЬСК</text>
+</svg>

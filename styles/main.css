@@ -37,7 +37,6 @@
   navigation: auto;
 }
 
-
 :root {
   /* Colors */
   --black: rgba(27, 29, 31, 1);
@@ -162,6 +161,13 @@ a {
 .black__text {
   color: var(--black) !important;
   margin: 0;
+}
+
+.green__a {
+  color: var(--green);
+  margin: 0;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .wh_text {
@@ -494,6 +500,95 @@ a {
 .review-9 {
   background-image: url('../img/screen-9.jpg');
 }
+
+.review-10 {
+  background-image: url('../img/screen-10.jpg');
+}
+
+.review-11 {
+  background-image: url('../img/screen-11.jpg');
+}
+
+.review-12 {
+  background-image: url('../img/screen-12.jpg');
+}
+
+.review-13 {
+  background-image: url('../img/screen-13.jpg');
+}
+
+.review-14 {
+  background-image: url('../img/screen-14.jpg');
+}
+
+.review-15 {
+  background-image: url('../img/screen-15.jpg');
+}
+
+.review-16 {
+  background-image: url('../img/screen-16.jpg');
+}
+
+.review-17 {
+  background-image: url('../img/screen-17.jpg');
+}
+
+.review-18 {
+  background-image: url('../img/screen-18.jpg');
+}
+
+.review-19 {
+  background-image: url('../img/screen-19.jpg');
+}
+
+.review-20 {
+  background-image: url('../img/screen-20.jpg');
+}
+
+.review-21 {
+  background-image: url('../img/screen-21.jpg');
+}
+
+.review-22 {
+  background-image: url('../img/screen-22.jpg');
+}
+
+.review-23 {
+  background-image: url('../img/screen-23.jpg');
+}
+
+.review-24 {
+  background-image: url('../img/screen-24.jpg');
+}
+
+.review-25 {
+  background-image: url('../img/screen-25.jpg');
+}
+
+.review-26 {
+  background-image: url('../img/screen-26.jpg');
+}
+
+.review-27 {
+  background-image: url('../img/screen-27.jpg');
+}
+
+.review-28 {
+  background-image: url('../img/screen-28.jpg');
+}
+
+.review-29 {
+  background-image: url('../img/screen-29.jpg');
+}
+
+.review-30 {
+  background-image: url('../img/screen-30.jpg');
+}
+
+.review-31 {
+  background-image: url('../img/screen-31.jpg');
+}
+
 
 /* Touch and drag scrolling */
 .slider-container.dragging {
@@ -3686,10 +3781,10 @@ justify-content: center;
   background-color: var(--white);
   border: none;
   border-radius: 50px;
-  padding: 14px 32px;
+  padding: 14px 20px;
   font-family: var(--primary);
   font-weight: var(--w-bold);
-  font-size: var(--body-lg);
+  font-size: var(--body);
   line-height: var(--lh-normal);
   cursor: pointer;
   transition: var(--transition-card);
@@ -4565,6 +4660,7 @@ gap: 20px;
 }
 
 .ready__left {
+  gap: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -4590,6 +4686,7 @@ gap: 20px;
 }
 
 .ready__left_info ul {
+  max-width: 475px;
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -4649,6 +4746,10 @@ gap: 20px;
   background-repeat: no-repeat;
   width: 100%;
   height: 117px;
+}
+
+.russia__norilsk {
+  background-size: cover !important;
 }
 
 .goroda__info {
@@ -4750,12 +4851,21 @@ gap: 20px;
   margin-top: 80px;
 }
 
+.russia__norilsk {
+  background-image: url('../img/svg/ru__nor.svg');
+}
+
 .norilsk_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin-top: -35px;
   margin-bottom: 20px;
+}
+
+.ru__nor {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
 }
 
 h3.green__line-text {
@@ -4850,10 +4960,6 @@ h3.green__line-text {
 
 .ready__right-more {
   background-image: url('../img/more__gruz.webp');
-}
-
-.ready__left_info ul {
-  max-width: 475px;
 }
 
 .rli__more-text {
@@ -6012,6 +6118,7 @@ font-family: var(--primary);
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: space-between;
 }
 
 .strahovanie__banner-buttons {
@@ -7191,10 +7298,20 @@ font-family: var(--primary);
   flex-direction: column;
 }
 
+.polnaya__info-text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .skolko__stoit-expedir,
 .expedir__upr-left {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.skolko__stoit-expedir {
   gap: 20px;
 }
 
@@ -7227,7 +7344,7 @@ font-family: var(--primary);
 
 .expedir__upr-left {
   background: linear-gradient(to right, rgba(42, 98, 43, 1) 0%, rgba(98, 145, 72, 1) 50%, rgba(42, 98, 43, 1) 100%);
-  padding: 80px 40px 100px 40px;
+  padding: 80px 40px;
 }
 
 .expedir__info-grid {
@@ -9310,6 +9427,12 @@ font-family: var(--primary);
   position: relative;
 }
 
+.dlya_pop-2 {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
 .contact-popup {
   position: absolute;
   bottom: calc(100% + 12px);
@@ -9323,7 +9446,7 @@ font-family: var(--primary);
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
   z-index: 1000;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-  
+  border: 1px solid var(--white);
 }
 
 .contact-popup::before {
@@ -9970,4 +10093,207 @@ font-family: var(--primary);
   color: var(--black);
   margin: 0;
   text-decoration: none;
+}
+
+/* Кнопка прокрутки вверх */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: calc(50% - 900px + 30px); /* Центрируем относительно контента (ширина .cont-in ~1200px) */
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #66cc33 0%, #2d8a1a 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(45, 138, 26, 0.4);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top-btn:hover {
+    background: linear-gradient(135deg, #77dd44 0%, #3d9a2a 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(45, 138, 26, 0.5);
+}
+
+/* Адаптивность: на мобильных кнопка ближе к краю */
+@media (max-width: 1400px) {
+    .scroll-top-btn {
+        right: calc(50% - 500px + 20px);
+        bottom: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .scroll-top-btn {
+        right: 20px; /* На узких экранах — просто 20px от края */
+    }
+}
+
+/* Стили для иконок Telegram и Max в контактах */
+
+/* Делаем иконки Telegram и Max тоньше и аккуратнее */
+.filial__info-icon img[src*="telegram.svg"],
+.filial__info-icon img[src*="max_logo.svg"] {
+    width: 32px;
+    height: 32px;
+    opacity: 0.85;
+    filter: brightness(0) saturate(100%) invert(22%) sepia(67%) saturate(675%) hue-rotate(87deg) brightness(96%) contrast(89%);
+    transition: all var(--tr) ease;
+}
+
+.filial__info-icon img[src*="telegram.svg"]:hover,
+.filial__info-icon img[src*="max_logo.svg"]:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.filial__info-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.filial__info-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filial__info-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(22%) sepia(67%) saturate(675%) hue-rotate(87deg) brightness(96%) contrast(89%);
+}
+
+.filial__info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.filial__info-title {
+    font-family: var(--primary);
+    font-weight: var(--w-normal);
+    font-size: var(--body-lg);
+    color: var(--black);
+    line-height: var(--lh-normal);
+    margin: 0;
+}
+
+.filial__address {
+    font-family: var(--primary);
+    font-weight: var(--w-normal);
+    font-size: var(--body);
+    color: var(--black);
+    margin: 0;
+    line-height: var(--lh-normal);
+}
+
+.filial__contact {
+    font-family: var(--primary);
+    font-weight: var(--w-normal);
+    font-size: var(--body);
+    color: var(--black);
+    text-decoration: none;
+    transition: var(--tr);
+}
+
+.filial__contact:hover {
+    color: var(--hover-green);
+    text-decoration: underline;
+    transition: var(--tr);
+}
+
+.filial__schedule {
+    font-family: var(--primary);
+    font-weight: var(--w-normal);
+    font-size: var(--body);
+    color: var(--black);
+    margin: 0;
+    line-height: var(--lh-relaxed);
+}
+
+/* Увеличенная карта */
+.filial__map iframe {
+    height: 450px;
+}
+
+/* Стили для contact-popup внутри dlya_pop-2 — инверсия цветов */
+.dlya_pop-2 .contact-popup {
+  background-color: var(--white) !important;
+  border: 1px solid var(--green);
+}
+
+.dlya_pop-2 .contact-popup::before {
+  border-top-color: var(--white) !important;
+}
+
+.dlya_pop-2 .contact-popup-title {
+  color: var(--green) !important;
+}
+
+.dlya_pop-2 .contact-popup-item {
+  color: var(--green);
+}
+
+.dlya_pop-2 .contact-popup-item:hover {
+  background-color: rgba(42, 98, 43, 0.08) !important;
+}
+
+.dlya_pop-2 .contact-popup-icon img {
+  filter: brightness(0) saturate(100%) invert(22%) sepia(67%) saturate(675%) hue-rotate(87deg) brightness(96%) contrast(89%) !important;
+}
+
+.dlya_pop-2 .contact-popup-label {
+  color: var(--green) !important;
+}
+
+.dlya_pop-2 .contact-popup-link {
+  color: var(--green) !important;
+}
+
+.dlya_pop-2 .contact-social-link {
+  background-color: rgba(42, 98, 43, 0.1) !important;
+}
+
+.dlya_pop-2 .contact-social-link:hover {
+  background-color: rgba(42, 98, 43, 0.2) !important;
+}
+
+.dlya_pop-2 .contact-social-link img {
+  filter: brightness(0) saturate(100%) invert(22%) sepia(67%) saturate(675%) hue-rotate(87deg) brightness(96%) contrast(89%) !important;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.steps .gl-tarif-matrix-subtitle {
+  margin-top: 40px;
+}
+
+.steps .black__text {
+  font-size: var(--subtitle);
 }

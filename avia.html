@@ -417,19 +417,74 @@
                         </ul>
                     </div>
                     <div class="ready__left-button">
-                        <a href="#" class="we__open-btn">
-                                Рассчитать
-                                <div class="we__open-btn-icon">
-                                    <img src="img/svg/arr-bl.svg" alt="Arrow icon" />
-                                </div>
-                            </a>
-                        <a href="#" class="btn-primary">
-                            Узнать тарифы
-                            <span class="etapy__cta-icon">
-                                <img src="../img/svg/arr-bl.svg" alt="Arrow right">
-                            </span>
-                        </a>
+
+            <div class="dlya_pop-2">
+            
+            <a class="btn-primary discuss-goods-btn">
+                Связаться с менеджером 
+                <span class="etapy__cta-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow right">
+                </span>
+            </a>
+
+            <a href="<?php echo esc_url(home_url('/kalkulator/')); ?>" class="we__open-btn">
+                Рассчитать стоимость
+                <div class="we__open-btn-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/arr-bl.svg" alt="Arrow icon" />
+                </div>
+            </a>
+
+            <div class="contact-popup">
+            <div class="contact-popup-content">
+                <h3 class="contact-popup-title">Выберите удобный вариант для связи</h3>
+                <div class="contact-popup-item">
+                    <div class="contact-popup-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/phone-icon.svg"
+                            alt="Телефон">
                     </div>
+                    <div class="contact-popup-info">
+                        <p class="contact-popup-label">Позвонить нашему менеджеру</p>
+                        <a href="tel:+73919324249" class="contact-popup-link">+7 (3919) 32-42-49</a>
+                    </div>
+                </div>
+                <div class="contact-popup-item">
+                    <div class="contact-popup-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/icon_cont.svg" alt="Чат">
+                    </div>
+                    <div class="contact-popup-info">
+                        <p class="contact-popup-label">Написать в чат</p>
+                        <div class="contact-popup-social">
+                            <!-- MAX Messenger -->
+                            <a href="<?php echo esc_url(get_theme_mod('max_social_link', 'https://max.ru/твой_ник')); ?>"
+                                class="contact-social-link" aria-label="Max" target="_blank" rel="noopener noreferrer">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/max.png" alt="Max">
+                            </a>
+
+                            <!-- Telegram -->
+                            <a href="<?php echo esc_url(get_theme_mod('telegram_social_link', 'https://t.me/твой_ник')); ?>"
+                                class="contact-social-link" aria-label="Telegram" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tg.png" alt="Telegram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-popup-item">
+                    <div class="contact-popup-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/email-icon.svg"
+                            alt="Почта">
+                    </div>
+                    <div class="contact-popup-info">
+                        <p class="contact-popup-label">Написать на почту</p>
+                        <a href="mailto:sibaeroline@mail.ru" class="contact-popup-link">sibaeroline@mail.ru</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            </div>
+
+        </div>
                 </div>
                 <div class="ready__right"></div>
             </div>
