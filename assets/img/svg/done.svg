@@ -1,9 +1,0 @@
-<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.000000" height="60.000000" fill="none">
-	<rect id="icon/done" width="60.000000" height="60.000000" x="0.000000" y="0.000000" />
-	<g id="Group">
-		<g id="60-Checked">
-			<path id="Vector" d="M24.9844 56.3155C38.2305 56.3155 48.9687 45.5772 48.9687 32.3307C48.9687 19.0843 38.2305 8.34595 24.9844 8.34595C11.7382 8.34595 1 19.0843 1 32.3307C1 45.5772 11.7382 56.3155 24.9844 56.3155Z" fill="rgb(176,239,143)" fill-rule="evenodd" />
-			<path id="Vector" d="M25.8671 49.311L7.59375 29.5906L12.7287 21.2122L25.7823 31.7015L49.3052 3.68469L59.0003 13.9618L25.8671 49.311Z" fill="rgb(0,144,69)" fill-rule="nonzero" />
-		</g>
-	</g>
-</svg>
